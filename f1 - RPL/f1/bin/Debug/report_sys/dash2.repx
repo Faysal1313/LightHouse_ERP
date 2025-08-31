@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="20.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Report1" Landscape="true" Margins="100, 100, 469, 6" PaperKind="A4" PageWidth="1169" PageHeight="827" Version="20.2" DataMember="expenses" DataSource="#Ref-0" Font="Arial, 9.75pt">
+  <Bands>
+    <Item1 Ref="2" ControlType="TopMarginBand" Name="TopMargin" HeightF="468.617371">
+      <Controls>
+        <Item1 Ref="3" ControlType="XRChart" Name="chart1" DataSource="#Ref-0" SizeF="966.9167,406.4962" LocationFloat="2.08331585,62.1211853" BorderColor="Black" Borders="None">
+          <Chart Ref="4" PaletteName="Blue">
+            <AutoSeriesCheckedInLegendStates>
+              <Item1 Ref="5" AutoSeriesName="Series 3" CheckState="true" />
+              <Item2 Ref="6" AutoSeriesName="Series 2" CheckState="true" />
+              <Item3 Ref="7" AutoSeriesName="Series 1" CheckState="true" />
+              <Item4 Ref="8" AutoSeriesName="1" CheckState="true" />
+            </AutoSeriesCheckedInLegendStates>
+            <DataContainer Ref="9" SeriesDataMember="expenses.month" ValidateDataMembers="true">
+              <SeriesTemplate Ref="10" SeriesDataMember="expenses.month" ArgumentDataMember="expenses.month" ValueDataMembersSerializable="expenses.cr" SeriesPointsSorting="Ascending">
+                <View Ref="11" BarWidth="2" TypeNameSerializable="SideBySideBarSeriesView" />
+              </SeriesTemplate>
+            </DataContainer>
+            <Diagram Ref="12" TypeNameSerializable="XYDiagram">
+              <AxisX Ref="13" VisibleInPanesSerializable="-1" />
+              <AxisY Ref="14" VisibleInPanesSerializable="-1" />
+              <DefaultPane Ref="15" EnableAxisXScrolling="False" EnableAxisYScrolling="False" EnableAxisXZooming="False" EnableAxisYZooming="False">
+                <StackedBarTotalLabel Ref="16">
+                  <ConnectorLineStyle Ref="17" />
+                </StackedBarTotalLabel>
+              </DefaultPane>
+            </Diagram>
+            <Legend Ref="18" Visibility="False" TextVisible="false" MarkerMode="CheckBox" Name="Default Legend" />
+            <OptionsPrint Ref="19" ImageFormat="Metafile" />
+            <Titles>
+              <Item1 Ref="20" Dock="Left" Text="إجمالي المصروفات" />
+            </Titles>
+          </Chart>
+        </Item1>
+        <Item2 Ref="21" ControlType="XRLabel" Name="label1" Multiline="true" Text="إجمالي المصروفات خلال فتره" TextAlignment="TopCenter" SizeF="341.6667,41.74999" LocationFloat="627.3333,10" Font="Arabic Typesetting, 28pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="22" UseFont="false" UseTextAlignment="false" />
+        </Item2>
+      </Controls>
+    </Item1>
+    <Item2 Ref="23" ControlType="DetailBand" Name="Detail" HeightF="0" />
+    <Item3 Ref="24" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="5.624994" />
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v20.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImNuIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJTdG9yZWRQcm9jUXVlcnkiIE5hbWU9ImV4cGVuc2VzIj48UHJvY05hbWU+ZXhwZW5zZXM8L1Byb2NOYW1lPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMSI+PFZpZXcgTmFtZT0iZXhwZW5zZXMiPjxGaWVsZCBOYW1lPSJhY2NfbnVtIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImFjY19uYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImNyIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJkYXRlcyIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9ImRhdGVzXzEiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJkYXkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJtb250aCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InllYXIiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>

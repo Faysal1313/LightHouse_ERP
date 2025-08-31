@@ -1,0 +1,79 @@
+alter procedure [dbo].[sum_credit_by_prams](@acc_num nvarchar(50),@d1 date ,@d2 date)
+as
+
+select isnull(sum(entry.credit),0) as Sum_credit
+,
+
+(select isnull(sum(entry.depit),0) as Sum_depit
+  from dbo.entry entry
+ where ((entry.code_entry <> N'-11')
+       and ((@d1 <= entry.dates)
+       and (entry.dates <= @d2))
+       and (entry.depit > 0.0)
+       and (entry.type_acc = N'قائمة دخل')
+       and (entry.acc_num = '410201') and entry.acc_num <>'510401')) as resale
+,
+
+(select isnull(sum(entry.depit),0) as Sum_depit
+  from dbo.entry entry
+ where ((entry.code_entry <> N'-11')
+       and ((@d1 <= entry.dates)
+       and (entry.dates <= @d2))
+       and (entry.depit > 0.0)
+       and (entry.type_acc = N'قائمة دخل')
+       and (entry.acc_num = '410301') and entry.acc_num <>'510401')) as alldescount
+       
+       ,
+       (select isnull(sum(entry.depit),0) as Sum_depit
+  from dbo.entry entry
+ where ((entry.code_entry <> N'-11')
+       and ((@d1 <= entry.dates)
+       and (entry.dates <= @d2))
+       and (entry.depit > 0.0)
+       and (entry.type_acc = N'قائمة دخل')
+       and (entry.acc_num <> '410201') and entry.acc_num <>@acc_num and entry.acc_num <>'410301'))as expenses
+       ,
+       (select isnull(sum(entry.depit),0) as Sum_depit
+  from dbo.entry entry
+ where ((entry.code_entry <> N'-11')
+       and ((@d1 <= entry.dates)
+       and (entry.dates <= @d2))
+       and (entry.depit > 0.0)
+       and (entry.type_acc = N'قائمة دخل')
+       and (entry.acc_num = @acc_num) ))as cogs
+    
+    
+    
+    ,
+    
+       (select isnull(sum(entry.credit),0) as Sum_depit
+  from dbo.entry entry
+ where ((entry.code_entry <> N'-11')
+       and ((@d1 <= entry.dates)
+       and (entry.dates <= @d2))
+       and (entry.credit > 0.0)
+       and (entry.type_acc = N'قائمة دخل')
+       and (entry.acc_num = @acc_num) ))as recogs
+    
+       
+  from dbo.entry entry
+ where ((entry.code_entry <> N'-11')
+       and (entry.acc_num = N'410101')
+       and ((@d1 <= entry.dates)
+       and (entry.dates <= @d2))
+       and (entry.credit > 0.0))
+
+
+
+
+create  procedure wares_adj (@id int)
+as
+
+select code_items,qty,*,(select top 1 barcode from barcode where code_items=wares.code_items) as barcode from wares 
+where code_items <>'0' and id_ware=@id
+
+update vcs set rootlevel_name='الموردين' ,rootlevel='2212101210101' where mode='vendor'
+update vcs set rootlevel_name='العملاء' ,rootlevel='1111107110701' where mode='customer'
+
+
+delete from entry where code_entry <>'-11'

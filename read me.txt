@@ -1,0 +1,58 @@
+# Lighthouse ERP – Overview
+
+## What is Lighthouse ERP
+A desktop ERP system built with **C# and SQL Server** for small and medium businesses.  
+It helps manage:
+
+- Sales & Purchases  
+- Inventory  
+- Accounting & Reports  
+- Company Profile & Settings  
+- Data Import & Backup  
+
+Interface is **Arabic**, designed for local clients.
+
+---
+
+## Key Features
+
+- **Dashboard:** view key indicators  
+- **Sales & Purchases:** create invoices, manage suppliers/customers  
+- **Inventory Control:** track stock levels  
+- **Accounting:** automatic journal entries and trial balance  
+- **Company Profile:** manage business details and exchange rates  
+- **Reports:** detailed and summary (DevExpress Reports)  
+- **Backup:** manual and automatic
+
+---
+
+## Technical Notes
+
+- **UI:** DevExpress  
+- **Data:** SQL Server with ADO.NET  
+- **Reports:** DevExpress (some use stored procedures)  
+- **Security:** Role-based access control
+
+---
+
+## Demo Video
+
+- Duration: **5–6 minutes**  
+- Shows Dashboard, Purchase & Sales Invoices, Inventory, Backup & Restore  
+- Explains the ERP in English, while the interface is in Arabic
+
+---
+
+## Notes
+
+- Used in **real client environments**  
+- All journal entries handled in **C# code**  
+- Designed for clarity and ease of use
+
+---
+
+## Future Plans
+
+- Web version (ASP.NET Core MVC)  
+- API for mobile integration  
+- Cloud deployment support

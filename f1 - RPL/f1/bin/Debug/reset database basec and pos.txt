@@ -1,0 +1,50 @@
+delete  from entry where code_entry >'-11'
+delete  from entry where code_entry ='002' 
+delete  from entry where code_entry ='001' 
+delete  from entry where code_entry=''
+
+delete from entry_hd
+delete from exp_date
+
+delete from pay_dt
+delete from pay_hd
+delete from recev_hd
+delete from recev_dt
+
+delete from purchase_dt
+delete from purchase_hd
+
+delete from rpurchase_dt
+delete from rpurchase_hd
+
+delete from sale_dt
+delete from sale_hd
+
+delete from rsale_dt
+delete from rsale_hd
+
+delete from pos_cash
+delete from pos_dt
+delete from pos_shift
+delete from issuer_inv_dt
+delete from issuer_inv_hd
+delete from wares_overdraft
+delete from jn_temp
+delete from recever_dt
+delete from recever_hd
+delete from trans_dt
+delete from trans_hd
+
+delete from jn_jopnumber
+delete from jn_consolidated_invoice
+delete from jn_consolidated_invoice_d
+
+
+delete from items_trans
+
+delete from opening_qty
+
+update wares set qty='0' ,cost='0'
+
+delete from wares_overdraft
+delete from action

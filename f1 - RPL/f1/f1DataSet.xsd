@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="f1DataSet" targetNamespace="http://tempuri.org/f1DataSet.xsd" xmlns:mstns="http://tempuri.org/f1DataSet.xsd" xmlns="http://tempuri.org/f1DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="f1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="f1ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.f1.Properties.Settings.GlobalReference.Default.f1ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_expensses_vs_revenueTableAdapter" GeneratorDataComponentClassName="v_expensses_vs_revenueTableAdapter" Name="v_expensses_vs_revenue" UserDataComponentName="v_expensses_vs_revenueTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="f1ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     sum(depit) as depit,SUM( credit) as depit,convert(nvarchar(50),(month(dates)))+' شهر ' as dates
+FROM         dbo.entry
+WHERE     (code_entry &lt;&gt; '-11') AND (type_acc = 'قائمه دخل')
+
+group by (month(dates)) 
+order by dates asc </CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="depit" DataSetColumn="depit" />
+              <Mapping SourceColumn="dates" DataSetColumn="dates" />
+              <Mapping SourceColumn="depit1" DataSetColumn="depit1" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="f1DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="f1DataSet" msprop:Generator_UserDSName="f1DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_expensses_vs_revenue" msprop:Generator_TableClassName="v_expensses_vs_revenueDataTable" msprop:Generator_TableVarName="tablev_expensses_vs_revenue" msprop:Generator_TablePropName="v_expensses_vs_revenue" msprop:Generator_RowDeletingName="v_expensses_vs_revenueRowDeleting" msprop:Generator_RowChangingName="v_expensses_vs_revenueRowChanging" msprop:Generator_RowEvHandlerName="v_expensses_vs_revenueRowChangeEventHandler" msprop:Generator_RowDeletedName="v_expensses_vs_revenueRowDeleted" msprop:Generator_UserTableName="v_expensses_vs_revenue" msprop:Generator_RowChangedName="v_expensses_vs_revenueRowChanged" msprop:Generator_RowEvArgName="v_expensses_vs_revenueRowChangeEvent" msprop:Generator_RowClassName="v_expensses_vs_revenueRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="depit" msprop:Generator_ColumnVarNameInTable="columndepit" msprop:Generator_ColumnPropNameInRow="depit" msprop:Generator_ColumnPropNameInTable="depitColumn" msprop:Generator_UserColumnName="depit" type="xs:decimal" minOccurs="0" />
+              <xs:element name="dates" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columndates" msprop:Generator_ColumnPropNameInRow="dates" msprop:Generator_ColumnPropNameInTable="datesColumn" msprop:Generator_UserColumnName="dates" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="55" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="depit1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columndepit1" msprop:Generator_ColumnPropNameInRow="depit1" msprop:Generator_ColumnPropNameInTable="depit1Column" msprop:Generator_UserColumnName="depit1" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

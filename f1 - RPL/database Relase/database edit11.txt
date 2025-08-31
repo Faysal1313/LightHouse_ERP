@@ -1,0 +1,108 @@
+
+--update database version 10 
+ update info_co set dbv='10'
+ 
+ 
+create procedure [dbo].[purchase_invoices_tot_AllItem]@d1 date,@d2 date
+as 
+
+select 
+h.purchase_hd_id,h .vcs_name,h.vcs_code,h.date_P,h.due_date,h.incloud_taxes as net_invoice_purchase,
+d.code_items,d.name_items,sum(d.qty)as qty,d.item_price,d.discount,d.incloud_taxes,
+(select top 1 cost from wares where code_items=d.code_items)as cost
+ from purchase_hd h left join purchase_dt d on h.purchase_hd_id=d.purchase_hd_id
+ where h.date_P between @d1 and @d2 
+ 
+group by 
+h.purchase_hd_id,h .vcs_name,h.vcs_code,h.date_P,h.due_date,h.incloud_taxes ,
+d.code_items,d.name_items,d.item_price,d.discount,d.incloud_taxes
+order by h.date_P desc
+
+
+
+
+create procedure [dbo].[purchase_invoices_tot_AllItem_specefic  ]@d1 date,@d2 date,@codeItems nvarchar(50)
+as 
+
+select 
+h.purchase_hd_id,h .vcs_name,h.vcs_code,h.date_P,h.due_date,h.incloud_taxes as net_invoice_purchase,
+d.code_items,d.name_items,sum(d.qty)as qty,d.item_price,d.discount,d.incloud_taxes,
+(select top 1 cost from wares where code_items=d.code_items)as cost
+ from purchase_hd h left join purchase_dt d on h.purchase_hd_id=d.purchase_hd_id
+ where h.date_P between @d1 and @d2 and d.code_items= @codeItems
+group by 
+h.purchase_hd_id,h .vcs_name,h.vcs_code,h.date_P,h.due_date,h.incloud_taxes ,
+d.code_items,d.name_items,d.item_price,d.discount,d.incloud_taxes
+order by h.date_P desc
+
+
+
+
+
+
+create procedure [dbo].[sales_invoices_tot_AllItem]@d1 date,@d2 date
+as 
+
+select 
+h.sale_hd_id,h.vcs_name,h.vcs_code,h.date_P,h.due_date,h.incloud_taxes as net_invoice_sale,
+d.code_items,d.name_items,sum(d.qty)as qty,d.item_price,d.discount,d.incloud_taxes,
+(select top 1 cost from wares where code_items=d.code_items)as cost
+ from sale_hd h left join sale_dt d on h.sale_hd_id=d.sale_hd_id
+  where h.date_P between @d1 and @d2
+group by 
+h.sale_hd_id,h.vcs_name,h.vcs_code,h.date_P,h.due_date,h.incloud_taxes ,
+d.code_items,d.name_items,d.item_price,d.discount,d.incloud_taxes
+
+
+
+
+
+
+
+create procedure [dbo].[sales_invoices_tot_AllItem_specefic]@d1 date,@d2 date,@codeItems nvarchar(50)
+as 
+
+select 
+h.sale_hd_id,h.vcs_name,h.vcs_code,h.date_P,h.due_date,h.incloud_taxes as net_invoice_sale,
+d.code_items,d.name_items,sum(d.qty)as qty,d.item_price,d.discount,d.incloud_taxes,
+(select top 1 cost from wares where code_items=d.code_items)as cost
+ from sale_hd h left join sale_dt d on h.sale_hd_id=d.sale_hd_id
+  where h.date_P between @d1 and @d2 and d.code_items=@codeItems
+group by 
+h.sale_hd_id,h.vcs_name,h.vcs_code,h.date_P,h.due_date,h.incloud_taxes ,
+d.code_items,d.name_items,d.item_price,d.discount,d.incloud_taxes
+
+
+ 
+
+alter table room_operation_hot add  txt2  nvarchar(10)
+alter table room_operation_hot add  txt3  nvarchar(10)
+alter table room_operation_hot add  type_pay nvarchar(50)
+alter table room_operation_hot add  mode nvarchar(50)
+Alter table room_operation_hot ADD groupby  bit 
+    update room_operation_hot set groupby='0'
+
+
+alter table room_history_hot add  type_pay nvarchar(10)
+alter table room_history_hot add  mode nvarchar(10)
+alter table guest_hot add  gender  nvarchar(3)
+update guest_hot set gender='MR'
+
+CREATE TABLE [dbo].[temp](
+	[pinid] [nvarchar](50) NOT NULL,
+	[col1] [nvarchar](50) NULL,
+	[col2] [nvarchar](50) NULL,
+	[col3] [nvarchar](50) NULL,
+	[col4] [nvarchar](50) NULL,
+	[col5] [nvarchar](50) NULL,
+	[col6] [nvarchar](50) NULL,
+	[col7] [nvarchar](50) NULL,
+	[col8] [nvarchar](50) NULL,
+	[col9] [nvarchar](50) NULL,
+	[col10] [nvarchar](50) NULL,
+ CONSTRAINT [PK_temp] PRIMARY KEY CLUSTERED 
+(
+	[pinid] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+)
+

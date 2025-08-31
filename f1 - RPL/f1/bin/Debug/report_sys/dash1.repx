@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="22.1.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Report1" Landscape="true" Margins="100, 100, 469, 6" PaperKind="A4" PageWidth="1169" PageHeight="827" Version="22.1" DataMember="revenue" DataSource="#Ref-0" Font="Arial, 9.75pt">
+  <Bands>
+    <Item1 Ref="2" ControlType="TopMarginBand" Name="TopMargin" HeightF="468.617371">
+      <Controls>
+        <Item1 Ref="3" ControlType="XRChart" Name="chart1" DataSource="#Ref-0" SizeF="966.9167,406.4962" LocationFloat="2.08331585,62.1211853" BorderColor="Black" Borders="None">
+          <Chart Ref="4" PaletteName="Blue">
+            <AutoSeriesCheckedInLegendStates>
+              <Item1 Ref="5" AutoSeriesName="Series 3" CheckState="true" />
+              <Item2 Ref="6" AutoSeriesName="Series 2" CheckState="true" />
+              <Item3 Ref="7" AutoSeriesName="Series 1" CheckState="true" />
+              <Item4 Ref="8" AutoSeriesName="2" CheckState="true" />
+              <Item5 Ref="9" AutoSeriesName="2/3/2023 12:00:00 AM" CheckState="true" />
+              <Item6 Ref="10" AutoSeriesName="اجمالي مبيعات" CheckState="true" />
+              <Item7 Ref="11" AutoSeriesName="3" CheckState="true" />
+            </AutoSeriesCheckedInLegendStates>
+            <DataContainer Ref="12" SeriesDataMember="revenue.day" ValidateDataMembers="true">
+              <SeriesTemplate Ref="13" SeriesDataMember="revenue.day" ArgumentDataMember="revenue.dates" ColorDataMember="revenue.acc_name" ValueDataMembersSerializable="revenue.cr" SeriesPointsSorting="Ascending">
+                <View Ref="14" BarWidth="2" TypeNameSerializable="SideBySideBarSeriesView" />
+              </SeriesTemplate>
+            </DataContainer>
+            <Diagram Ref="15" TypeNameSerializable="XYDiagram">
+              <AxisX Ref="16" Visibility="True" VisibleInPanesSerializable="-1">
+                <CustomLabels>
+                  <Item1 Ref="17" AxisValueSerializable="01/01/2021 00:00:00.000" Name="يناير" />
+                  <Item2 Ref="18" AxisValueSerializable="01/31/2021 00:00:00.000" Name="فبراير" />
+                  <Item3 Ref="19" AxisValueSerializable="03/01/2021 00:00:00.000" Name="مارس" />
+                  <Item4 Ref="20" AxisValueSerializable="04/01/2021 00:00:00.000" Name="ابريل" />
+                  <Item5 Ref="21" AxisValueSerializable="05/01/2021 00:00:00.000" Name="مايو" />
+                  <Item6 Ref="22" AxisValueSerializable="06/01/2021 00:00:00.000" Name="يونيو" />
+                  <Item7 Ref="23" AxisValueSerializable="07/01/2021 00:00:00.000" Name="يوليو" />
+                  <Item8 Ref="24" AxisValueSerializable="08/01/2021 00:00:00.000" Name="اغسطس" />
+                  <Item9 Ref="25" AxisValueSerializable="09/01/2021 00:00:00.000" Name="سبتمبر" />
+                  <Item10 Ref="26" AxisValueSerializable="10/01/2021 00:00:00.000" Name="اكتوبر" />
+                  <Item11 Ref="27" AxisValueSerializable="11/01/2021 00:00:00.000" Name="نوفمبر" />
+                  <Item12 Ref="28" AxisValueSerializable="12/31/2021 00:00:00.000" Name="ديسمبر" />
+                </CustomLabels>
+              </AxisX>
+              <AxisY Ref="29" VisibleInPanesSerializable="-1" />
+              <DefaultPane Ref="30" EnableAxisXScrolling="False" EnableAxisYScrolling="False" EnableAxisXZooming="False" EnableAxisYZooming="False">
+                <StackedBarTotalLabel Ref="31">
+                  <ConnectorLineStyle Ref="32" />
+                </StackedBarTotalLabel>
+              </DefaultPane>
+            </Diagram>
+            <Legend Ref="33" MarkerMode="CheckBox" Visibility="False" TextVisible="false" Name="Default Legend" />
+            <OptionsPrint Ref="34" ImageFormat="Metafile" />
+            <Titles>
+              <Item1 Ref="35" Dock="Left" Text="إجمالي الايرادات" />
+            </Titles>
+          </Chart>
+        </Item1>
+        <Item2 Ref="36" ControlType="XRLabel" Name="label1" Multiline="true" Text="إجمالي الايرادات خلال فتره" TextAlignment="TopCenter" SizeF="341.6667,41.74999" LocationFloat="627.3333,10" Font="Arabic Typesetting, 28pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="37" UseFont="false" UseTextAlignment="false" />
+        </Item2>
+      </Controls>
+    </Item1>
+    <Item2 Ref="38" ControlType="DetailBand" Name="Detail" HeightF="0" />
+    <Item3 Ref="39" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="5.624994" />
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v22.1" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImNuIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJTdG9yZWRQcm9jUXVlcnkiIE5hbWU9InJldmVudWUiPjxQcm9jTmFtZT5yZXZlbnVlPC9Qcm9jTmFtZT48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9InJldmVudWUiPjxGaWVsZCBOYW1lPSJhY2NfbnVtIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImFjY19uYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImNyIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJkYXRlcyIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9ImRhdGVzXzEiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJkYXkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJtb250aCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InllYXIiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>

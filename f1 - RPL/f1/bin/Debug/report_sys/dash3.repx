@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="20.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Report1" Landscape="true" Margins="100, 100, 469, 6" PaperKind="A4" PageWidth="1169" PageHeight="827" Version="20.2" DataMember="exp_vs_rev_report" DataSource="#Ref-0" Font="Arial, 9.75pt">
+  <Bands>
+    <Item1 Ref="2" ControlType="TopMarginBand" Name="TopMargin" HeightF="468.617371">
+      <Controls>
+        <Item1 Ref="3" ControlType="XRChart" Name="chart1" DataSource="#Ref-0" SizeF="969,416.867371" LocationFloat="0,51.7499924" BorderColor="Black" Borders="None">
+          <Chart Ref="4">
+            <DataContainer Ref="5" ValidateDataMembers="true">
+              <SeriesSerializable>
+                <Item1 Ref="6" Name="الايرادات" ArgumentDataMember="exp_vs_rev_report.acc_name" ValueDataMembersSerializable="exp_vs_rev_report.cr" />
+                <Item2 Ref="7" Name="المصروفات" ArgumentDataMember="exp_vs_rev_report.acc_name" ValueDataMembersSerializable="exp_vs_rev_report.dep" />
+              </SeriesSerializable>
+            </DataContainer>
+            <Diagram Ref="8" TypeNameSerializable="XYDiagram">
+              <AxisX Ref="9" VisibleInPanesSerializable="-1" />
+              <AxisY Ref="10" VisibleInPanesSerializable="-1" />
+              <DefaultPane Ref="11" EnableAxisXScrolling="False" EnableAxisYScrolling="False" EnableAxisXZooming="False" EnableAxisYZooming="False">
+                <StackedBarTotalLabel Ref="12">
+                  <ConnectorLineStyle Ref="13" />
+                </StackedBarTotalLabel>
+              </DefaultPane>
+            </Diagram>
+            <OptionsPrint Ref="14" ImageFormat="Metafile" />
+          </Chart>
+        </Item1>
+        <Item2 Ref="15" ControlType="XRLabel" Name="label1" Multiline="true" Text="علاقه الايرادات بالمصروفات" TextAlignment="TopCenter" SizeF="341.6667,41.74999" LocationFloat="627.3333,10" Font="Arabic Typesetting, 28pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="16" UseFont="false" UseTextAlignment="false" />
+        </Item2>
+      </Controls>
+    </Item1>
+    <Item2 Ref="17" ControlType="DetailBand" Name="Detail" HeightF="0" />
+    <Item3 Ref="18" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="5.624994" />
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v20.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImNuIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJTdG9yZWRQcm9jUXVlcnkiIE5hbWU9ImV4cF92c19yZXZfcmVwb3J0Ij48UHJvY05hbWU+ZXhwX3ZzX3Jldl9yZXBvcnQ8L1Byb2NOYW1lPjwvUXVlcnk+PFJlc3VsdFNjaGVtYT48RGF0YVNldCBOYW1lPSJzcWxEYXRhU291cmNlMSI+PFZpZXcgTmFtZT0iZXhwX3ZzX3Jldl9yZXBvcnQiPjxGaWVsZCBOYW1lPSJhY2NfbnVtIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImFjY19uYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImRlcCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iY3IiIFR5cGU9IkRlY2ltYWwiIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>

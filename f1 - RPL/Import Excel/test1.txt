@@ -1,0 +1,1 @@
+Data Source=. ;Initial Catalog=f7 ;Integrated Security=False ; USER ID='sa' ; Password='sa@123456'

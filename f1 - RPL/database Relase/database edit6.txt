@@ -1,0 +1,145 @@
+ALTER PROCEDURE [dbo].[report_acc_statment_gl]@datee date,@acc nvarchar(50)
+
+as
+select attachno,txt_desc,f_currance,currance,code_entry,name_book,depit,credit,(depit-credit)as def,attachnamebook,acc_num,acc_name,dates,type_acc,rootlevel_name ,attachtext
+from entry
+ where  acc_num=@acc and dates <= @datee --rootlevel_name = '0' and
+ order by dates
+
+
+
+-- /////////////////////////////////////////
+CREATE TABLE [dbo].[jn_truck](
+	[id] [int] NULL,
+	[name] [nvarchar](50) NULL,
+	[model] [nvarchar](50) NULL,
+	[tank] [decimal](10, 2) NULL
+) ON [PRIMARY]
+
+GO
+
+--///////////////////////////
+
+CREATE TABLE [dbo].[jn_storehouse](
+	[id] [nvarchar](50) NOT NULL,
+	[name] [nvarchar](50) NULL,
+	[address] [nvarchar](50) NULL,
+	[mode] [nvarchar](50) NULL,
+	[account] [nvarchar](50) NULL,
+	[code_tree] [nvarchar](50) NULL,
+	[name_tree] [nvarchar](50) NULL,
+	[rootlevel] [nvarchar](50) NULL,
+	[rootlevel_name] [nvarchar](50) NULL,
+	[type_acc] [nvarchar](50) NULL,
+	[sort] [nvarchar](50) NULL,
+ CONSTRAINT [PK_jn_storehouse] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+--/////////////////////////////////////////////////
+CREATE TABLE [dbo].[jn_station](
+	[id] [nvarchar](50) NOT NULL,
+	[name] [nvarchar](50) NULL,
+	[address] [nvarchar](50) NULL,
+	[mode] [nvarchar](50) NULL,
+	[account] [nvarchar](50) NULL,
+	[code_tree] [nvarchar](50) NULL,
+	[name_tree] [nvarchar](50) NULL,
+	[rootlevel] [nvarchar](50) NULL,
+	[rootlevel_name] [nvarchar](50) NULL,
+	[type_acc] [nvarchar](50) NULL,
+	[sort] [nvarchar](20) NULL,
+	[price] [decimal](10, 2) NULL,
+	[kilometers] [decimal](10, 2) NULL,
+ CONSTRAINT [PK_jn_station] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+--/////////////////////////////////////
+CREATE TABLE [dbo].[jn_jopnumber](
+	[code_book] [nvarchar](50) NULL,
+	[id] [nvarchar](50) NULL,
+	[id_truk] [int] NULL,
+	[name_truck] [nvarchar](50) NULL,
+	[date_from] [date] NULL,
+	[date_to] [date] NULL,
+	[time_to] [nvarchar](50) NULL,
+	[time_from] [nvarchar](50) NULL,
+	[trip_counter_befor] [nvarchar](50) NULL,
+	[trip_counter_after] [nvarchar](50) NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[qty] [int] NULL,
+	[strohouse_name] [nvarchar](50) NULL,
+	[strohouse_code] [nvarchar](50) NULL,
+	[station_name] [nvarchar](50) NULL,
+	[station_code] [nvarchar](50) NULL,
+	[price_stations] [decimal](10, 2) NULL,
+	[no_voucher] [nvarchar](50) NULL,
+	[Loaded_distance] [nvarchar](50) NULL,
+	[unLoaded_distance] [nvarchar](50) NULL,
+	[fess1] [decimal](10, 2) NULL,
+	[fess2] [decimal](10, 2) NULL,
+	[fess3] [decimal](10, 2) NULL,
+	[date_d] [date] NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[name_driver] [nvarchar](50) NULL,
+	[code_driver] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[pin] [nvarchar](50) NULL,
+	[pin2] [nvarchar](50) NULL
+) ON [PRIMARY]
+--//////////////////////////////////////////////////////////
+
+CREATE TABLE [dbo].[jn_consolidated_invoice_d](
+	[id] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[date_dute] [date] NULL,
+	[date_p] [date] NULL,
+	[no_jop] [nvarchar](50) NULL,
+	[d_vale] [nvarchar](50) NULL,
+	[d_price] [nvarchar](50) NULL,
+	[d_qty] [nvarchar](50) NULL,
+	[d_code_stations] [nvarchar](50) NULL,
+	[d_name_stations] [nvarchar](50) NULL,
+	[d_code_stroehouse] [nvarchar](50) NULL,
+	[d_name_stroehouse] [nvarchar](50) NULL,
+	[d_novocher_dlv] [nvarchar](50) NULL,
+	[d_code_truck] [nvarchar](50) NULL,
+	[date_pp] [date] NULL
+) ON [PRIMARY]
+--////////////////////////////////////////////////////
+CREATE TABLE [dbo].[jn_consolidated_invoice](
+	[code_book] [nvarchar](50) NULL,
+	[id] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[date_dute] [date] NULL,
+	[date_p] [date] NULL,
+	[c_value] [nvarchar](50) NULL,
+	[c_qty] [nvarchar](50) NULL,
+	[c_code_stations] [nvarchar](50) NULL,
+	[c_name_stations] [nvarchar](50) NULL,
+	[c_number_cargo] [nvarchar](50) NULL,
+	[c_qty_cargo] [nvarchar](50) NULL
+) ON [PRIMARY]
+
+GO
+
+
+--/////////////////////////////////////////////
+
+  Alter table info_co 
+  ADD dbv int
+  
+  update info_co set dbv='6'
+--/////////////////////////////////////////////

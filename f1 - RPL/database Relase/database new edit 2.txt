@@ -1,0 +1,193 @@
+ALTER TABLE info_co
+ADD def_taxes nvarchar(10),
+    def_name_unite nvarchar(10)
+update info_co set def_taxes='0' , def_name_unite='قطعة'
+alter table pos_dt
+Add discount_all decimal(10, 2)
+alter table pos_cash
+add [type] nvarchar(10),
+    currency_name nvarchar(10)
+
+delete from pos_cash
+delete from pos_permission
+delete from pos_shift
+delete from pos_permission
+insert into pos_permission (user_code,unite,torf)values('002','setings','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','shift','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','shift_open','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','shift_close','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','shift_detials','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','report','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','items','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','pos','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','peniding_inv','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','del_inv','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','code_customer','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','contral_sale','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','discount_rows','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','full_discount','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','blow_cost','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','pos_retuern_inv','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','pos_state','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','pos_show_customer','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','pos_cash','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','pos_visa','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','dgv_unite','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','dgv_price','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','dgv_price_incl','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','dgv_tot_bef_discount','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','dgv_discount','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','dgv_after_diescount','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','dgv_taxes','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','dgv_incloud_taxes_tot','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','dgv_taxes_value','TRUE')
+insert into pos_permission (user_code,unite,torf)values('002','dgv_exp_date','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','setings','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','shift','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','shift_open','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','shift_close','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','shift_detials','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','report','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','items','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','pos','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','peniding_inv','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','del_inv','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','code_customer','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','contral_sale','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','discount_rows','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','full_discount','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','blow_cost','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','pos_retuern_inv','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','pos_state','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','pos_show_customer','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','pos_cash','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','pos_visa','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','dgv_unite','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','dgv_price','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','dgv_price_incl','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','dgv_tot_bef_discount','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','dgv_discount','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','dgv_after_diescount','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','dgv_taxes','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','dgv_incloud_taxes_tot','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','dgv_taxes_value','TRUE')
+insert into pos_permission (user_code,unite,torf)values('003','dgv_exp_date','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','pos_t_f','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','pind_inv','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','return_inv','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','vcs_code','FALSE')
+insert into pos_permission (user_code,unite,torf)values('001','vcs_show','FALSE')
+insert into pos_permission (user_code,unite,torf)values('001','sale_price','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','discount_rows','FALSE')
+insert into pos_permission (user_code,unite,torf)values('001','discount','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','blow_cost','FALSE')
+insert into pos_permission (user_code,unite,torf)values('001','state','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','cash','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','exp','FALSE')
+insert into pos_permission (user_code,unite,torf)values('001','c_unit','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','c_price_no_taxes','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','c_price_taxes','FALSE')
+insert into pos_permission (user_code,unite,torf)values('001','c_tot_befor_discount','FALSE')
+insert into pos_permission (user_code,unite,torf)values('001','c_discount','FALSE')
+insert into pos_permission (user_code,unite,torf)values('001','c_tot_after_discount','FALSE')
+insert into pos_permission (user_code,unite,torf)values('001','c_taxes','FALSE')
+insert into pos_permission (user_code,unite,torf)values('001','c_incloud_taxes','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','c_value_taxes','FALSE')
+insert into pos_permission (user_code,unite,torf)values('001','shift','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','state_shift','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','open_shift','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','close_shift','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','det_shift','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','inventroy','FALSE')
+insert into pos_permission (user_code,unite,torf)values('001','code_items','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','balance_qty','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','offer','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','barcode','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','adj','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','purchase','FALSE')
+insert into pos_permission (user_code,unite,torf)values('001','inv_pur','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','inv_rpur','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','gl','FALSE')
+insert into pos_permission (user_code,unite,torf)values('001','recev_cash','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','pay_cash','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','settings','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','report','TRUE')
+insert into pos_permission (user_code,unite,torf)values('001','delet_inv','TRUE')
+----------delete and create table pos_cash_account
+drop table pos_cash_account
+CREATE TABLE [dbo].[pos_cash_account](
+	[user_code] [nvarchar](50) NULL,
+	[cash_main] [nvarchar](50) NULL,
+	[sales_acc] [nvarchar](50) NULL,
+	[re_sales_acc] [nvarchar](50) NULL,
+	[disocount] [nvarchar](50) NULL,
+	[wares] [nvarchar](50) NULL,
+	[code_book] [nvarchar](3) NULL,
+	[cogs] [nvarchar](50) NULL,
+	[def_or_inc] [nvarchar](50) NULL,
+	[medil] [nvarchar](50) NULL,
+	[cash1_account] [nvarchar](50) NULL,
+	[cash2_account] [nvarchar](50) NULL,
+	[cash3_account] [nvarchar](50) NULL,
+	[cash4_account] [nvarchar](50) NULL,
+	[cash5_account] [nvarchar](50) NULL,
+	[cash6_account] [nvarchar](50) NULL,
+	[cash7_account] [nvarchar](50) NULL,
+	[cash8_account] [nvarchar](50) NULL,
+	[cash9_account] [nvarchar](50) NULL,
+	[cash10_account] [nvarchar](50) NULL,
+	[cash1_name] [nvarchar](50) NULL,
+	[cash2_name] [nvarchar](50) NULL,
+	[cash3_name] [nvarchar](50) NULL,
+	[cash4_name] [nvarchar](50) NULL,
+	[cash5_name] [nvarchar](50) NULL,
+	[cash6_name] [nvarchar](50) NULL,
+	[cash7_name] [nvarchar](50) NULL,
+	[cash8_name] [nvarchar](50) NULL,
+	[cash9_name] [nvarchar](50) NULL,
+	[cash10_name] [nvarchar](50) NULL,
+	[cash1_type] [nchar](10) NULL,
+	[cash2_type] [nchar](10) NULL,
+	[cash3_type] [nchar](10) NULL,
+	[cash4_type] [nchar](10) NULL,
+	[cash5_type] [nchar](10) NULL,
+	[cash6_type] [nchar](10) NULL,
+	[cash7_type] [nchar](10) NULL,
+	[cash8_type] [nchar](10) NULL,
+	[cash9_type] [nchar](10) NULL,
+	[cash10_type] [nchar](10) NULL,
+	[cash1_currency] [nchar](10) NULL,
+	[cash2_currency] [nchar](10) NULL,
+	[cash3_currency] [nchar](10) NULL,
+	[cash4_currency] [nchar](10) NULL,
+	[cash5_currency] [nchar](10) NULL,
+	[cash6_currency] [nchar](10) NULL,
+	[cash7_currency] [nchar](10) NULL,
+	[cash8_currency] [nchar](10) NULL,
+	[cash9_currency] [nchar](10) NULL,
+	[cash10_currency] [nchar](10) NULL
+)
+--1)creat table
+
+CREATE TABLE [dbo].[pd](
+	[code] [nvarchar](50) NULL,
+	[bal] [decimal](10, 2) NULL
+)
+CREATE TABLE [dbo].[pd2](
+	[code] [nvarchar](50) NULL,
+	[bal] [decimal](10, 2) NULL
+)
+CREATE TABLE [dbo].[pd3](
+	[code] [nvarchar](50) NULL,
+	[bal] [decimal](10, 2) NULL
+)
+
+
+001	1201	4101	4102	4103	10	sj1	5101	5303	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+002	1201	4101	4102	4103	10	sj1	5101	5303	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+003	1202	4101	4102	4103	10	sj1	5101	5303	1250	1230	1203	-	-	-	-	-	-	-	-	visa cib	USD									visa      	currency  	         	         	         	         	         	         	         	         	EGP       	usd       	         	         	         	         	         	         	         	         
+
+
+--select code_items,(select isnull(SUM(qty),0) from purchase_dt where code_items=i.code_items)-(select isnull(SUM(qty),0) from pos_dt where code_items=i.code_items)as pos,(select top 1 isnull(SUM(cost),0)  from wares where code_items=i.code_items)as cost from items i
+
+ 

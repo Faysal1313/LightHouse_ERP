@@ -1,0 +1,1704 @@
+E:\c sharp\f1\f1\bin\Debug\f1.exe
+E:\c sharp\f1\f1\bin\Debug\f1.pdb
+E:\c sharp\f1\f1\obj\Debug\f1.csprojResolveAssemblyReference.cache
+E:\c sharp\f1\f1\obj\Debug\f1.Form1.resources
+E:\c sharp\f1\f1\obj\Debug\f1.Properties.Resources.resources
+E:\c sharp\f1\f1\obj\Debug\f1.csproj.GenerateResource.Cache
+E:\c sharp\f1\f1\obj\Debug\f1.exe.licenses
+E:\c sharp\f1\f1\obj\Debug\f1.exe
+E:\c sharp\f1\f1\obj\Debug\f1.pdb
+G:\f1\f1\obj\Debug\f1.exe
+G:\f1\f1\obj\Debug\f1.pdb
+D:\C#\f1\f1\obj\Debug\f1.exe
+D:\C#\f1\f1\obj\Debug\f1.pdb
+D:\C#\f1\f1\bin\Debug\f1.exe
+D:\C#\f1\f1\bin\Debug\f1.pdb
+D:\C#\f1\f1\obj\Debug\f1.csprojResolveAssemblyReference.cache
+D:\C#\f1\f1\obj\Debug\f1.frm_login.resources
+D:\C#\f1\f1\obj\Debug\f1.Properties.Resources.resources
+D:\C#\f1\f1\obj\Debug\f1.csproj.GenerateResource.Cache
+D:\C#\f1\f1\obj\Debug\f1.exe.licenses
+D:\C#\f1\f1\obj\Debug\f1.frm_main.resources
+D:\C#\f1\f1\bin\Debug\ar\f1.resources.dll
+D:\C#\f1\f1\obj\Debug\f1.frm_main.ar.resources
+D:\C#\f1\f1\obj\Debug\ar\f1.resources.dll
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.exe
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.pdb
+D:\C#\Real ERP\F1\f1\f1\bin\Debug\f1.exe
+D:\C#\Real ERP\F1\f1\f1\bin\Debug\f1.pdb
+D:\C#\Real ERP\F1\f1\f1\bin\Debug\ar\f1.resources.dll
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.csprojResolveAssemblyReference.cache
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.frm_main.resources
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.frm_login.resources
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.frm_purchase.resources
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.Properties.Resources.resources
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.frm_main.ar.resources
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.csproj.GenerateResource.Cache
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.exe.licenses
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\ar\f1.resources.dll
+D:\C#\Real ERP\F1\f1\f1\bin\Debug\f1.exe.config
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.frm_sales.resources
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.frm_item.resources
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.frm_sub_ledger_wares.resources
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.frm_wares.resources
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.frm_clint.resources
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.frm_vendor.resources
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.frm_emp.resources
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.frm_emp_salary.resources
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.frm_entry.resources
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.frm_payable.resources
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.frm_recevable.resources
+D:\C#\Real ERP\F1\f1\f1\obj\Debug\f1.salary.resources
+E:\c sharp\Real ERP\F1\f1\f1\bin\Debug\f1.exe.config
+E:\c sharp\Real ERP\F1\f1\f1\bin\Debug\f1.exe
+E:\c sharp\Real ERP\F1\f1\f1\bin\Debug\f1.pdb
+E:\c sharp\Real ERP\F1\f1\f1\bin\Debug\ar\f1.resources.dll
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.account.frm_statment_test.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.account.frm_trial_bal.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.hr.frm_test_stats.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.hr.frm_empwage.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.hr.frm_pay_salary.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.hr.frm_subempwage.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.inventory.adjustment_qty_exp.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_adjustment_qty.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.inventory.frm_wizard_adjustment_qty.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.Log_in.frm_change_password.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.Classes.test_combo.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.Log_in.log_in.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.opening_closing.close_db.frm_close_db.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.opening_closing.frm_openig_and_close_wizard.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.opening_closing.frm_opening_entry.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.opening_closing.frm_opening_qty.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.opening_closing.frm_opening_vcs.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_book.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_customer.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_emp.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_emp_salary.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_entry.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_item.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_main.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_test_report_purchase.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_payable.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_purchase.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_recevable.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_sale.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_sub_ledger_wares.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_taxes.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_tree.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_type.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_vendor.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_wares.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.Log_in.frm_connection_db.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.open.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.Properties.Resources.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.test_dgv.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_main.ar.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.csproj.GenerateResource.Cache
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.exe.licenses
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\ar\f1.resources.dll
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.exe
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.pdb
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_test_chart.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_info_co.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.sales.test_sale.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_notficaion.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_cogs_adj.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.Classes.test_Excel.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.Classes.frm_excel_purchase.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.csproj.ResolveComReference.cache
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.import_excel.frm_excel_sale.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.import_excel.frm_excel_items.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.import_excel.frm_excel_vcs.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.trm_start.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_send_email.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.pos.pos_main.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.pos.pos_sheft.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.pos.frm_pos.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.pos.pos_receve_mony.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.account.frm_currance.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_permissions.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.inventory.frm_limit_maximum_qty.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.notification.frm_notif_depit.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.notification.frm_notif_recev.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.inventory.frm_sale_dis.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.inventory.printer_items.frm_printer_barcode.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.sales.sales_report.frm_report_sale.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.account.report_account.frm_report_account.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.frm_test1.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.ttt.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.csprojResolveAssemblyReference.cache
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.inventory.printer_items.frm_report_inventory.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.hr.report_hr.frm_hr_report_view.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.Purchase.report_purchase.frm_report_purchase.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.Purchase.report_purchase.frm_purchase_invoice_report.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.inventory.printer_items.report_items.frm_rep_items_card.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.inventory.printer_items.report_items.frm_rbt_trial_item_cost_and_sale_value.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.account.report_account.frm_rbt_Trial_balance_general.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_Trial_balance_customer.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_Trial_balance_vendor.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_report_acc_statment_gl.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_report_acc_statment_vcs.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.hr.report_hr.frm_rpt_Action1.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.sales.sales_report.frm_rbt_items_profit.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.sales.sales_report.sale_forms.frm_rbt_sales_invoice_profit.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.account.report_account.report_finance_statment.frm_rpt_balance_sheet.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.sales.sales_report.frm_max_min_items.resources
+E:\c sharp\Real ERP\F1\f1\f1\obj\Debug\f1.inventory.frm_trans_items.resources
+D:\project\f1\f1\obj\Debug\f1.csproj.ResolveComReference.cache
+D:\project\f1\f1\obj\Debug\f1.account.frm_currance.resources
+D:\project\f1\f1\obj\Debug\f1.account.frm_statment_test.resources
+D:\project\f1\f1\obj\Debug\f1.account.frm_trial_bal.resources
+D:\project\f1\f1\obj\Debug\f1.account.report_account.frm_rbt_Trial_balance_general.resources
+D:\project\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_report_acc_statment_gl.resources
+D:\project\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_report_acc_statment_vcs.resources
+D:\project\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_Trial_balance_customer.resources
+D:\project\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_Trial_balance_vendor.resources
+D:\project\f1\f1\obj\Debug\f1.account.report_account.report_finance_statment.frm_rpt_balance_sheet.resources
+D:\project\f1\f1\obj\Debug\f1.frm_permissions.resources
+D:\project\f1\f1\obj\Debug\f1.frm_send_email.resources
+D:\project\f1\f1\obj\Debug\f1.import_excel.frm_excel_items.resources
+D:\project\f1\f1\obj\Debug\f1.Classes.frm_excel_purchase.resources
+D:\project\f1\f1\obj\Debug\f1.frm_cogs_adj.resources
+D:\project\f1\f1\obj\Debug\f1.frm_info_co.resources
+D:\project\f1\f1\obj\Debug\f1.inventory.frm_sale_dis.resources
+D:\project\f1\f1\obj\Debug\f1.inventory.frm_trans_items.resources
+D:\project\f1\f1\obj\Debug\f1.inventory.printer_items.report_items.frm_rbt_trial_item_cost_and_sale_value.resources
+D:\project\f1\f1\obj\Debug\f1.inventory.printer_items.report_items.frm_rep_items_card.resources
+D:\project\f1\f1\obj\Debug\f1.frm_notficaion.resources
+D:\project\f1\f1\obj\Debug\f1.frm_test_chart.resources
+D:\project\f1\f1\obj\Debug\f1.hr.frm_test_stats.resources
+D:\project\f1\f1\obj\Debug\f1.hr.frm_empwage.resources
+D:\project\f1\f1\obj\Debug\f1.hr.frm_pay_salary.resources
+D:\project\f1\f1\obj\Debug\f1.hr.frm_subempwage.resources
+D:\project\f1\f1\obj\Debug\f1.import_excel.frm_excel_sale.resources
+D:\project\f1\f1\obj\Debug\f1.import_excel.frm_excel_vcs.resources
+D:\project\f1\f1\obj\Debug\f1.inventory.adjustment_qty_exp.resources
+D:\project\f1\f1\obj\Debug\f1.frm_adjustment_qty.resources
+D:\project\f1\f1\obj\Debug\f1.inventory.frm_limit_maximum_qty.resources
+D:\project\f1\f1\obj\Debug\f1.inventory.frm_wizard_adjustment_qty.resources
+D:\project\f1\f1\obj\Debug\f1.Log_in.frm_change_password.resources
+D:\project\f1\f1\obj\Debug\f1.notification.frm_notif_depit.resources
+D:\project\f1\f1\obj\Debug\f1.notification.frm_notif_recev.resources
+D:\project\f1\f1\obj\Debug\f1.opening_closing.close_db.frm_close_db.resources
+D:\project\f1\f1\obj\Debug\f1.opening_closing.frm_openig_and_close_wizard.resources
+D:\project\f1\f1\obj\Debug\f1.opening_closing.frm_opening_entry.resources
+D:\project\f1\f1\obj\Debug\f1.opening_closing.frm_opening_qty.resources
+D:\project\f1\f1\obj\Debug\f1.opening_closing.frm_opening_vcs.resources
+D:\project\f1\f1\obj\Debug\f1.pos.frm_pos.resources
+D:\project\f1\f1\obj\Debug\f1.pos.pos_main.resources
+D:\project\f1\f1\obj\Debug\f1.pos.pos_receve_mony.resources
+D:\project\f1\f1\obj\Debug\f1.Purchase.report_purchase.frm_purchase_invoice_report.resources
+D:\project\f1\f1\obj\Debug\f1.sales.sales_report.frm_max_min_items.resources
+D:\project\f1\f1\obj\Debug\f1.sales.sales_report.sale_forms.frm_rbt_sales_invoice_profit.resources
+D:\project\f1\f1\obj\Debug\f1.sales.test_sale.resources
+D:\project\f1\f1\obj\Debug\f1.frm_book.resources
+D:\project\f1\f1\obj\Debug\f1.frm_customer.resources
+D:\project\f1\f1\obj\Debug\f1.frm_emp.resources
+D:\project\f1\f1\obj\Debug\f1.frm_emp_salary.resources
+D:\project\f1\f1\obj\Debug\f1.frm_entry.resources
+D:\project\f1\f1\obj\Debug\f1.frm_item.resources
+D:\project\f1\f1\obj\Debug\f1.frm_main.resources
+D:\project\f1\f1\obj\Debug\f1.frm_test_report_purchase.resources
+D:\project\f1\f1\obj\Debug\f1.frm_payable.resources
+D:\project\f1\f1\obj\Debug\f1.frm_purchase.resources
+D:\project\f1\f1\obj\Debug\f1.frm_recevable.resources
+D:\project\f1\f1\obj\Debug\f1.frm_sale.resources
+D:\project\f1\f1\obj\Debug\f1.frm_sub_ledger_wares.resources
+D:\project\f1\f1\obj\Debug\f1.frm_taxes.resources
+D:\project\f1\f1\obj\Debug\f1.frm_tree.resources
+D:\project\f1\f1\obj\Debug\f1.frm_type.resources
+D:\project\f1\f1\obj\Debug\f1.frm_vendor.resources
+D:\project\f1\f1\obj\Debug\f1.frm_wares.resources
+D:\project\f1\f1\obj\Debug\f1.Log_in.frm_connection_db.resources
+D:\project\f1\f1\obj\Debug\f1.open.resources
+D:\project\f1\f1\obj\Debug\f1.Properties.Resources.resources
+D:\project\f1\f1\obj\Debug\f1.frm_main.ar.resources
+D:\project\f1\f1\obj\Debug\f1.csproj.GenerateResource.cache
+D:\project\f1\f1\obj\Debug\f1.exe.licenses
+D:\project\f1\f1\obj\Debug\f1.csproj.CoreCompileInputs.cache
+D:\project\f1\f1\obj\Debug\f1.exe
+D:\project\f1\f1\obj\Debug\f1.pdb
+D:\project\f1\f1\bin\Debug\f1.exe.config
+D:\project\f1\f1\bin\Debug\f1.exe
+D:\project\f1\f1\bin\Debug\f1.pdb
+D:\project\f1\f1\bin\Debug\ar\f1.resources.dll
+D:\project\f1\f1\bin\Debug\DevExpress.BonusSkins.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.Charts.v21.1.Core.dll
+D:\project\f1\f1\bin\Debug\DevExpress.CodeParser.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.Dashboard.v21.1.Core.dll
+D:\project\f1\f1\bin\Debug\DevExpress.Data.Desktop.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.Data.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.DataAccess.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.DataVisualization.v21.1.Core.dll
+D:\project\f1\f1\bin\Debug\DevExpress.Images.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.Office.v21.1.Core.dll
+D:\project\f1\f1\bin\Debug\DevExpress.Pdf.v21.1.Core.dll
+D:\project\f1\f1\bin\Debug\DevExpress.Pdf.v21.1.Drawing.dll
+D:\project\f1\f1\bin\Debug\DevExpress.PivotGrid.v21.1.Core.dll
+D:\project\f1\f1\bin\Debug\DevExpress.Printing.v21.1.Core.dll
+D:\project\f1\f1\bin\Debug\DevExpress.RichEdit.v21.1.Core.dll
+D:\project\f1\f1\bin\Debug\DevExpress.RichEdit.v21.1.Export.dll
+D:\project\f1\f1\bin\Debug\DevExpress.Sparkline.v21.1.Core.dll
+D:\project\f1\f1\bin\Debug\DevExpress.SpellChecker.v21.1.Core.dll
+D:\project\f1\f1\bin\Debug\DevExpress.Spreadsheet.v21.1.Core.dll
+D:\project\f1\f1\bin\Debug\DevExpress.TreeMap.v21.1.Core.dll
+D:\project\f1\f1\bin\Debug\DevExpress.Utils.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.Utils.v21.1.UI.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraBars.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraCharts.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraCharts.v21.1.Extensions.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraCharts.v21.1.UI.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraCharts.v21.1.Wizard.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraEditors.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraGauges.v21.1.Core.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraGrid.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraLayout.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraNavBar.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraPdfViewer.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraPrinting.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraReports.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraReports.v21.1.Extensions.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraRichEdit.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraScheduler.v21.1.Core.Desktop.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraScheduler.v21.1.Core.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraScheduler.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraScheduler.v21.1.Extensions.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraSpellChecker.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraSpreadsheet.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraTreeList.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraTreeMap.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraTreeMap.v21.1.UI.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraWizard.v21.1.dll
+D:\project\f1\f1\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+D:\project\f1\f1\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+D:\project\f1\f1\bin\Debug\Microsoft.SqlServer.Smo.dll
+D:\project\f1\f1\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
+D:\project\f1\f1\bin\Debug\DevExpress.Map.v21.1.Core.dll
+D:\project\f1\f1\bin\Debug\DevExpress.Xpo.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraVerticalGrid.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.DataAccess.v21.1.UI.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraPivotGrid.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraDiagram.v21.1.dll
+D:\project\f1\f1\bin\Debug\DevExpress.Diagram.v21.1.Core.dll
+D:\project\f1\f1\bin\Debug\DevExpress.TreeMap.v21.1.Core.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraTreeMap.v21.1.UI.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraTreeMap.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.Dashboard.v21.1.Core.xml
+D:\project\f1\f1\bin\Debug\DevExpress.Data.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.DataAccess.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.Office.v21.1.Core.xml
+D:\project\f1\f1\bin\Debug\DevExpress.Pdf.v21.1.Core.xml
+D:\project\f1\f1\bin\Debug\DevExpress.Pdf.v21.1.Drawing.xml
+D:\project\f1\f1\bin\Debug\DevExpress.PivotGrid.v21.1.Core.xml
+D:\project\f1\f1\bin\Debug\DevExpress.Printing.v21.1.Core.xml
+D:\project\f1\f1\bin\Debug\DevExpress.RichEdit.v21.1.Core.xml
+D:\project\f1\f1\bin\Debug\DevExpress.Sparkline.v21.1.Core.xml
+D:\project\f1\f1\bin\Debug\DevExpress.SpellChecker.v21.1.Core.xml
+D:\project\f1\f1\bin\Debug\DevExpress.Spreadsheet.v21.1.Core.xml
+D:\project\f1\f1\bin\Debug\DevExpress.Data.Desktop.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.Utils.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.Utils.v21.1.UI.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraBars.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraCharts.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraCharts.v21.1.UI.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraCharts.v21.1.Wizard.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraEditors.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraGauges.v21.1.Core.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraGrid.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraLayout.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraNavBar.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraPdfViewer.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraPrinting.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraReports.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraReports.v21.1.Extensions.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraRichEdit.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraScheduler.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraScheduler.v21.1.Core.Desktop.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraScheduler.v21.1.Core.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraScheduler.v21.1.Extensions.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraSpellChecker.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraSpreadsheet.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraTreeList.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraWizard.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.Map.v21.1.Core.xml
+D:\project\f1\f1\bin\Debug\DevExpress.Xpo.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraVerticalGrid.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.DataAccess.v21.1.UI.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraPivotGrid.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.XtraDiagram.v21.1.xml
+D:\project\f1\f1\bin\Debug\DevExpress.Diagram.v21.1.Core.xml
+D:\project\f1\f1\bin\Debug\de\DevExpress.Dashboard.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.Dashboard.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.Dashboard.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.Dashboard.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.Data.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.Data.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.Data.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.Data.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.DataAccess.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.DataAccess.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.DataAccess.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.DataAccess.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.Office.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.Office.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.Office.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.Office.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.Pdf.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.Pdf.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.Pdf.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.Pdf.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.PivotGrid.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.PivotGrid.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.PivotGrid.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.PivotGrid.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.Printing.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.Printing.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.Printing.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.Printing.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.RichEdit.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.RichEdit.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.RichEdit.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.RichEdit.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.Sparkline.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.Sparkline.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.Sparkline.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.Sparkline.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.Spreadsheet.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.Spreadsheet.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.Spreadsheet.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.Spreadsheet.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.Utils.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.Utils.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.Utils.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.Utils.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.Utils.v21.1.UI.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.Utils.v21.1.UI.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.Utils.v21.1.UI.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.Utils.v21.1.UI.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraBars.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraBars.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraBars.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraBars.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraCharts.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraCharts.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraCharts.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraCharts.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraCharts.v21.1.Wizard.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraCharts.v21.1.Wizard.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraCharts.v21.1.Wizard.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraCharts.v21.1.Wizard.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraEditors.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraEditors.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraEditors.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraEditors.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraGauges.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraGauges.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraGauges.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraGauges.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraGrid.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraGrid.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraGrid.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraGrid.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraLayout.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraLayout.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraLayout.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraLayout.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraNavBar.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraNavBar.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraNavBar.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraNavBar.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraPdfViewer.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraPdfViewer.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraPdfViewer.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraPdfViewer.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraPrinting.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraPrinting.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraPrinting.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraPrinting.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraReports.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraReports.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraReports.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraReports.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraReports.v21.1.Extensions.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraReports.v21.1.Extensions.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraReports.v21.1.Extensions.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraReports.v21.1.Extensions.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraRichEdit.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraRichEdit.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraRichEdit.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraRichEdit.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraScheduler.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraScheduler.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraScheduler.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraScheduler.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraScheduler.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraScheduler.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraScheduler.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraScheduler.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraScheduler.v21.1.Extensions.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraScheduler.v21.1.Extensions.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraScheduler.v21.1.Extensions.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraScheduler.v21.1.Extensions.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraSpellChecker.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraSpellChecker.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraSpellChecker.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraSpellChecker.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraSpreadsheet.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraSpreadsheet.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraSpreadsheet.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraSpreadsheet.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraTreeList.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraTreeList.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraTreeList.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraTreeList.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraWizard.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraWizard.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraWizard.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraWizard.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.Map.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.Map.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.Map.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.Map.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.Xpo.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.Xpo.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.Xpo.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.Xpo.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraVerticalGrid.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraVerticalGrid.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraVerticalGrid.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraVerticalGrid.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.DataAccess.v21.1.UI.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.DataAccess.v21.1.UI.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.DataAccess.v21.1.UI.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.DataAccess.v21.1.UI.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.XtraPivotGrid.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.XtraPivotGrid.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.XtraPivotGrid.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.XtraPivotGrid.v21.1.resources.dll
+D:\project\f1\f1\bin\Debug\de\DevExpress.Diagram.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\es\DevExpress.Diagram.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ja\DevExpress.Diagram.v21.1.Core.resources.dll
+D:\project\f1\f1\bin\Debug\ru\DevExpress.Diagram.v21.1.Core.resources.dll
+D:\project\f1\f1\obj\Debug\ar\f1.resources.dll
+D:\project\f1\f1\obj\Debug\f1.csproj.CopyComplete
+D:\project\f1\f1\obj\Debug\f1.Log_in.frm_login.resources
+D:\project\f1\f1\obj\Debug\f1.pos.pos_shift1.resources
+D:\project\f1\f1\bin\Debug\DevExpress.XtraReports.v21.1.CodeCompletion.dll
+D:\project\f1\f1\bin\Debug\DevExpress.XtraReports.v21.1.CodeCompletion.xml
+D:\project\f1\f1\obj\Debug\f1.frm_desgin_report_main.resources
+D:\project\f1\f1\obj\Debug\f1.pos.frm_barcode.resources
+D:\project\f1\f1\obj\Debug\f1.pos.frm_settings.resources
+D:\project\f1\f1\obj\Debug\f1.pos.frm_offer.resources
+D:\project\f1\f1\obj\Debug\f1.csprojAssemblyReference.cache
+D:\project\f1\f1\obj\Debug\f1.pos.frm_balance_qty.resources
+D:\project\f1\f1\obj\Debug\f1.pos.frm_items_card.resources
+D:\project\f1\f1\obj\Debug\f1.pos.frm_pos_settings_cash.resources
+D:\Program\project\f1b\f1\bin\Debug\f1.exe.config
+D:\Program\project\f1b\f1\bin\Debug\f1.exe.manifest
+D:\Program\project\f1b\f1\bin\Debug\f1.application
+D:\Program\project\f1b\f1\bin\Debug\f1.exe
+D:\Program\project\f1b\f1\bin\Debug\f1.pdb
+D:\Program\project\f1b\f1\bin\Debug\ar\f1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.BonusSkins.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Charts.v21.1.Core.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.CodeParser.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Dashboard.v21.1.Core.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Data.Desktop.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Data.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.DataAccess.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.DataAccess.v21.1.UI.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.DataVisualization.v21.1.Core.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Diagram.v21.1.Core.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Images.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Office.v21.1.Core.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Pdf.v21.1.Core.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Pdf.v21.1.Drawing.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.PivotGrid.v21.1.Core.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Printing.v21.1.Core.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.RichEdit.v21.1.Core.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.RichEdit.v21.1.Export.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Sparkline.v21.1.Core.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.SpellChecker.v21.1.Core.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Spreadsheet.v21.1.Core.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.TreeMap.v21.1.Core.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Utils.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Utils.v21.1.UI.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Xpo.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraBars.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraCharts.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraCharts.v21.1.Extensions.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraCharts.v21.1.UI.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraCharts.v21.1.Wizard.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraDiagram.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraEditors.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraGauges.v21.1.Core.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraGrid.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraLayout.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraNavBar.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraPdfViewer.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraPivotGrid.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraPrinting.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraReports.v21.1.CodeCompletion.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraReports.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraReports.v21.1.Extensions.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraRichEdit.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraScheduler.v21.1.Core.Desktop.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraScheduler.v21.1.Core.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraScheduler.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraScheduler.v21.1.Extensions.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraSpellChecker.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraSpreadsheet.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraTreeList.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraTreeMap.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraTreeMap.v21.1.UI.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraVerticalGrid.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraWizard.v21.1.dll
+D:\Program\project\f1b\f1\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+D:\Program\project\f1b\f1\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+D:\Program\project\f1b\f1\bin\Debug\Microsoft.SqlServer.Smo.dll
+D:\Program\project\f1b\f1\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Map.v21.1.Core.dll
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.DataAccess.v21.1.UI.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Diagram.v21.1.Core.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.TreeMap.v21.1.Core.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Xpo.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraDiagram.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraPivotGrid.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraReports.v21.1.CodeCompletion.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraTreeMap.v21.1.UI.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraTreeMap.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Dashboard.v21.1.Core.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Data.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.DataAccess.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Office.v21.1.Core.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Pdf.v21.1.Core.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Pdf.v21.1.Drawing.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.PivotGrid.v21.1.Core.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Printing.v21.1.Core.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.RichEdit.v21.1.Core.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Sparkline.v21.1.Core.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.SpellChecker.v21.1.Core.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Spreadsheet.v21.1.Core.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Data.Desktop.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Utils.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Utils.v21.1.UI.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraBars.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraCharts.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraCharts.v21.1.UI.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraCharts.v21.1.Wizard.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraEditors.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraGauges.v21.1.Core.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraGrid.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraLayout.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraNavBar.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraPdfViewer.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraPrinting.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraReports.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraReports.v21.1.Extensions.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraRichEdit.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraScheduler.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraScheduler.v21.1.Core.Desktop.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraScheduler.v21.1.Core.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraScheduler.v21.1.Extensions.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraSpellChecker.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraSpreadsheet.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraTreeList.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraVerticalGrid.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.XtraWizard.v21.1.xml
+D:\Program\project\f1b\f1\bin\Debug\DevExpress.Map.v21.1.Core.xml
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.DataAccess.v21.1.UI.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.DataAccess.v21.1.UI.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.DataAccess.v21.1.UI.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.DataAccess.v21.1.UI.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.Diagram.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.Diagram.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.Diagram.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.Diagram.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.Xpo.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.Xpo.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.Xpo.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.Xpo.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraPivotGrid.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraPivotGrid.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraPivotGrid.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraPivotGrid.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.Dashboard.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.Dashboard.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.Dashboard.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.Dashboard.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.Data.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.Data.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.Data.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.Data.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.DataAccess.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.DataAccess.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.DataAccess.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.DataAccess.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.Office.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.Office.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.Office.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.Office.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.Pdf.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.Pdf.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.Pdf.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.Pdf.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.PivotGrid.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.PivotGrid.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.PivotGrid.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.PivotGrid.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.Printing.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.Printing.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.Printing.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.Printing.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.RichEdit.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.RichEdit.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.RichEdit.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.RichEdit.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.Sparkline.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.Sparkline.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.Sparkline.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.Sparkline.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.Spreadsheet.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.Spreadsheet.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.Spreadsheet.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.Spreadsheet.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.Utils.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.Utils.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.Utils.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.Utils.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.Utils.v21.1.UI.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.Utils.v21.1.UI.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.Utils.v21.1.UI.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.Utils.v21.1.UI.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraBars.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraBars.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraBars.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraBars.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraCharts.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraCharts.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraCharts.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraCharts.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraCharts.v21.1.Wizard.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraCharts.v21.1.Wizard.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraCharts.v21.1.Wizard.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraCharts.v21.1.Wizard.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraEditors.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraEditors.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraEditors.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraEditors.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraGauges.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraGauges.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraGauges.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraGauges.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraGrid.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraGrid.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraGrid.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraGrid.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraLayout.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraLayout.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraLayout.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraLayout.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraNavBar.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraNavBar.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraNavBar.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraNavBar.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraPdfViewer.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraPdfViewer.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraPdfViewer.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraPdfViewer.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraPrinting.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraPrinting.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraPrinting.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraPrinting.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraReports.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraReports.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraReports.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraReports.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraReports.v21.1.Extensions.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraReports.v21.1.Extensions.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraReports.v21.1.Extensions.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraReports.v21.1.Extensions.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraRichEdit.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraRichEdit.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraRichEdit.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraRichEdit.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraScheduler.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraScheduler.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraScheduler.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraScheduler.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraScheduler.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraScheduler.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraScheduler.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraScheduler.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraScheduler.v21.1.Extensions.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraScheduler.v21.1.Extensions.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraScheduler.v21.1.Extensions.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraScheduler.v21.1.Extensions.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraSpellChecker.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraSpellChecker.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraSpellChecker.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraSpellChecker.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraSpreadsheet.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraSpreadsheet.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraSpreadsheet.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraSpreadsheet.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraTreeList.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraTreeList.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraTreeList.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraTreeList.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraVerticalGrid.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraVerticalGrid.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraVerticalGrid.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraVerticalGrid.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.XtraWizard.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.XtraWizard.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.XtraWizard.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.XtraWizard.v21.1.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\de\DevExpress.Map.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\es\DevExpress.Map.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ja\DevExpress.Map.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\bin\Debug\ru\DevExpress.Map.v21.1.Core.resources.dll
+D:\Program\project\f1b\f1\obj\Debug\f1.csproj.ResolveComReference.cache
+D:\Program\project\f1b\f1\obj\Debug\f1.account.frm_currance.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.account.frm_statment_test.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.account.frm_trial_bal.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.account.report_account.frm_rbt_Trial_balance_general.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.account.report_account.frm_rpt_report_acc_statment_gl.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.account.report_account.frm_rpt_report_acc_statment_vcs.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.account.report_account.frm_rpt_Trial_balance_customer.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.account.report_account.frm_rpt_Trial_balance_vendor.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.account.report_account.report_finance_statment.frm_rpt_balance_sheet.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.account.report_account.report_finance_statment.frm_schema_statment.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.Form2.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_desgin_report_main.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_permissions.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_picture.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_report.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_send_email.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.import_excel.frm_excel_items.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.Classes.frm_excel_purchase.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_cogs_adj.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_info_co.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.inventory.frm_sale_dis.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.inventory.frm_trans_items.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.inventory.printer_items.report_items.frm_rbt_trial_item_cost_and_sale_value.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.inventory.printer_items.report_items.frm_rep_items_card.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.Log_in.frm_login.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_notficaion.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_test_chart.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.hr.frm_test_stats.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.hr.frm_empwage.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.hr.frm_pay_salary.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.hr.frm_subempwage.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.import_excel.frm_excel_sale.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.import_excel.frm_excel_vcs.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.inventory.adjustment_qty_exp.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_adjustment_qty.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.inventory.frm_limit_maximum_qty.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.inventory.frm_wizard_adjustment_qty.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.Log_in.frm_change_password.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.notification.frm_notif_depit.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.notification.frm_notif_recev.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.opening_closing.close_db.frm_close_db.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.opening_closing.frm_openig_and_close_wizard.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.opening_closing.frm_opening_entry.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.opening_closing.frm_opening_qty.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.opening_closing.frm_opening_vcs.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.pos.frm_balance_qty.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.pos.frm_barcode.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.pos.frm_exp_list.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.pos.frm_items_card.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.pos.frm_matrex_search.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.pos.frm_note.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.pos.frm_offer.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.pos.frm_pos.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.pos.frm_pos_permission.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.pos.frm_pos_screen_rep.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.pos.frm_pos_settings_cash.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.pos.frm_settings.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.pos.pos_main.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.pos.pos_screen_sumer.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.pos.pos_shift1.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.pos.rest_frm.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.Purchase.frm_rpurchase.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.Purchase.frm_search_adv.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.Purchase.report_purchase.frm_purchase_invoice_report.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.sales.frm_rsale.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.sales.sales_report.frm_max_min_items.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.sales.sales_report.sale_forms.frm_rbt_sales_invoice_profit.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.sales.test_sale.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_book.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_customer.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_emp.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_emp_salary.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_entry.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_item.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_main.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_test_report_purchase.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_payable.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_purchase.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_recevable.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_sale.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_sub_ledger_wares.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_taxes.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_tree.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_type.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_vendor.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_wares.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.Log_in.frm_connection_db.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.open.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.Properties.Resources.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.frm_main.ar.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.csproj.GenerateResource.cache
+D:\Program\project\f1b\f1\obj\Debug\f1.exe.licenses
+D:\Program\project\f1b\f1\obj\Debug\f1.csproj.CoreCompileInputs.cache
+D:\Program\project\f1b\f1\obj\Debug\ar\f1.resources.dll
+D:\Program\project\f1b\f1\obj\Debug\f1.TrustInfo.xml
+D:\Program\project\f1b\f1\obj\Debug\f1.exe.manifest
+D:\Program\project\f1b\f1\obj\Debug\f1.application
+D:\Program\project\f1b\f1\obj\Debug\f1.csproj.CopyComplete
+D:\Program\project\f1b\f1\obj\Debug\f1.exe
+D:\Program\project\f1b\f1\obj\Debug\f1.pdb
+D:\Program\project\f1b\f1\bin\Debug\DotNetZip.dll
+D:\Program\project\f1b\f1\bin\Debug\DotNetZip.pdb
+D:\Program\project\f1b\f1\bin\Debug\DotNetZip.xml
+D:\Program\project\f1b\f1\obj\Debug\f1.Log_in.frm_restore.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.ship_jop.frm_jop_number.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.ship_jop.frm_station.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.ship_jop.frm_storehouse.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.ship_jop.frm_truck.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.ship_jop.frm_consolidated_invoice.resources
+D:\Program\project\f1b\f1\obj\Debug\f1.csproj.AssemblyReference.cache
+D:\Program\project\f1\f1\obj\Debug\f1.csproj.AssemblyReference.cache
+D:\Program\project\f1\f1\obj\Debug\f1.csproj.ResolveComReference.cache
+D:\Program\project\f1\f1\obj\Debug\f1.account.frm_currance.resources
+D:\Program\project\f1\f1\obj\Debug\f1.account.frm_statment_test.resources
+D:\Program\project\f1\f1\obj\Debug\f1.account.frm_trial_bal.resources
+D:\Program\project\f1\f1\obj\Debug\f1.account.report_account.frm_rbt_Trial_balance_general.resources
+D:\Program\project\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_report_acc_statment_gl.resources
+D:\Program\project\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_report_acc_statment_vcs.resources
+D:\Program\project\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_Trial_balance_customer.resources
+D:\Program\project\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_Trial_balance_vendor.resources
+D:\Program\project\f1\f1\obj\Debug\f1.account.report_account.report_finance_statment.frm_rpt_balance_sheet.resources
+D:\Program\project\f1\f1\obj\Debug\f1.account.report_account.report_finance_statment.frm_schema_statment.resources
+D:\Program\project\f1\f1\obj\Debug\f1.Form2.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_desgin_report_main.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_permissions.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_picture.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_report.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_send_email.resources
+D:\Program\project\f1\f1\obj\Debug\f1.import_excel.frm_excel_items.resources
+D:\Program\project\f1\f1\obj\Debug\f1.Classes.frm_excel_purchase.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_cogs_adj.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_info_co.resources
+D:\Program\project\f1\f1\obj\Debug\f1.inventory.frm_sale_dis.resources
+D:\Program\project\f1\f1\obj\Debug\f1.inventory.frm_trans_items.resources
+D:\Program\project\f1\f1\obj\Debug\f1.inventory.printer_items.report_items.frm_rbt_trial_item_cost_and_sale_value.resources
+D:\Program\project\f1\f1\obj\Debug\f1.inventory.printer_items.report_items.frm_rep_items_card.resources
+D:\Program\project\f1\f1\obj\Debug\f1.Log_in.frm_login.resources
+D:\Program\project\f1\f1\obj\Debug\f1.Log_in.frm_restore.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_notficaion.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_test_chart.resources
+D:\Program\project\f1\f1\obj\Debug\f1.hr.frm_test_stats.resources
+D:\Program\project\f1\f1\obj\Debug\f1.hr.frm_empwage.resources
+D:\Program\project\f1\f1\obj\Debug\f1.hr.frm_pay_salary.resources
+D:\Program\project\f1\f1\obj\Debug\f1.hr.frm_subempwage.resources
+D:\Program\project\f1\f1\obj\Debug\f1.import_excel.frm_excel_sale.resources
+D:\Program\project\f1\f1\obj\Debug\f1.import_excel.frm_excel_vcs.resources
+D:\Program\project\f1\f1\obj\Debug\f1.inventory.adjustment_qty_exp.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_adjustment_qty.resources
+D:\Program\project\f1\f1\obj\Debug\f1.inventory.frm_limit_maximum_qty.resources
+D:\Program\project\f1\f1\obj\Debug\f1.inventory.frm_wizard_adjustment_qty.resources
+D:\Program\project\f1\f1\obj\Debug\f1.Log_in.frm_change_password.resources
+D:\Program\project\f1\f1\obj\Debug\f1.notification.frm_notif_depit.resources
+D:\Program\project\f1\f1\obj\Debug\f1.notification.frm_notif_recev.resources
+D:\Program\project\f1\f1\obj\Debug\f1.opening_closing.close_db.frm_close_db.resources
+D:\Program\project\f1\f1\obj\Debug\f1.opening_closing.frm_openig_and_close_wizard.resources
+D:\Program\project\f1\f1\obj\Debug\f1.opening_closing.frm_opening_entry.resources
+D:\Program\project\f1\f1\obj\Debug\f1.opening_closing.frm_opening_qty.resources
+D:\Program\project\f1\f1\obj\Debug\f1.opening_closing.frm_opening_vcs.resources
+D:\Program\project\f1\f1\obj\Debug\f1.pos.frm_balance_qty.resources
+D:\Program\project\f1\f1\obj\Debug\f1.pos.frm_barcode.resources
+D:\Program\project\f1\f1\obj\Debug\f1.pos.frm_exp_list.resources
+D:\Program\project\f1\f1\obj\Debug\f1.pos.frm_items_card.resources
+D:\Program\project\f1\f1\obj\Debug\f1.pos.frm_matrex_search.resources
+D:\Program\project\f1\f1\obj\Debug\f1.pos.frm_note.resources
+D:\Program\project\f1\f1\obj\Debug\f1.pos.frm_offer.resources
+D:\Program\project\f1\f1\obj\Debug\f1.pos.frm_pos.resources
+D:\Program\project\f1\f1\obj\Debug\f1.pos.frm_pos_permission.resources
+D:\Program\project\f1\f1\obj\Debug\f1.pos.frm_pos_screen_rep.resources
+D:\Program\project\f1\f1\obj\Debug\f1.pos.frm_pos_settings_cash.resources
+D:\Program\project\f1\f1\obj\Debug\f1.pos.frm_settings.resources
+D:\Program\project\f1\f1\obj\Debug\f1.pos.pos_main.resources
+D:\Program\project\f1\f1\obj\Debug\f1.pos.pos_screen_sumer.resources
+D:\Program\project\f1\f1\obj\Debug\f1.pos.pos_shift1.resources
+D:\Program\project\f1\f1\obj\Debug\f1.pos.rest_frm.resources
+D:\Program\project\f1\f1\obj\Debug\f1.Purchase.frm_rpurchase.resources
+D:\Program\project\f1\f1\obj\Debug\f1.Purchase.frm_search_adv.resources
+D:\Program\project\f1\f1\obj\Debug\f1.Purchase.report_purchase.frm_purchase_invoice_report.resources
+D:\Program\project\f1\f1\obj\Debug\f1.sales.frm_rsale.resources
+D:\Program\project\f1\f1\obj\Debug\f1.sales.sales_report.frm_max_min_items.resources
+D:\Program\project\f1\f1\obj\Debug\f1.sales.sales_report.sale_forms.frm_rbt_sales_invoice_profit.resources
+D:\Program\project\f1\f1\obj\Debug\f1.sales.test_sale.resources
+D:\Program\project\f1\f1\obj\Debug\f1.ship_jop.frm_consolidated_invoice.resources
+D:\Program\project\f1\f1\obj\Debug\f1.ship_jop.frm_grag.resources
+D:\Program\project\f1\f1\obj\Debug\f1.ship_jop.frm_jop_number.resources
+D:\Program\project\f1\f1\obj\Debug\f1.ship_jop.frm_station.resources
+D:\Program\project\f1\f1\obj\Debug\f1.ship_jop.frm_storehouse.resources
+D:\Program\project\f1\f1\obj\Debug\f1.ship_jop.frm_truck.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_book.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_customer.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_emp.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_emp_salary.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_entry.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_item.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_main.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_test_report_purchase.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_payable.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_purchase.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_recevable.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_sale.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_sub_ledger_wares.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_taxes.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_tree.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_type.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_vendor.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_wares.resources
+D:\Program\project\f1\f1\obj\Debug\f1.Log_in.frm_connection_db.resources
+D:\Program\project\f1\f1\obj\Debug\f1.open.resources
+D:\Program\project\f1\f1\obj\Debug\f1.Properties.Resources.resources
+D:\Program\project\f1\f1\obj\Debug\f1.frm_main.ar.resources
+D:\Program\project\f1\f1\obj\Debug\f1.csproj.GenerateResource.cache
+D:\Program\project\f1\f1\obj\Debug\f1.exe.licenses
+D:\Program\project\f1\f1\obj\Debug\f1.csproj.CoreCompileInputs.cache
+D:\Program\project\f1\f1\obj\Debug\ar\f1.resources.dll
+D:\Program\project\f1\f1\obj\Debug\f1.TrustInfo.xml
+D:\Program\project\f1\f1\obj\Debug\f1.exe
+D:\Program\project\f1\f1\obj\Debug\f1.pdb
+D:\Project-Csharp\f1\f1\bin\Debug\f1.exe.config
+D:\Project-Csharp\f1\f1\bin\Debug\f1.exe.manifest
+D:\Project-Csharp\f1\f1\bin\Debug\f1.application
+D:\Project-Csharp\f1\f1\bin\Debug\f1.exe
+D:\Project-Csharp\f1\f1\bin\Debug\f1.pdb
+D:\Project-Csharp\f1\f1\bin\Debug\ar\f1.resources.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.BonusSkins.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Charts.v22.2.Core.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.CodeParser.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Dashboard.v22.2.Core.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Data.Desktop.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Data.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.DataAccess.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.DataAccess.v22.2.UI.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.DataVisualization.v22.2.Core.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Diagram.v22.2.Core.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Drawing.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Images.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Office.v22.2.Core.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.PivotGrid.v22.2.Core.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Printing.v22.2.Core.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.RichEdit.v22.2.Core.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.RichEdit.v22.2.Export.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Sparkline.v22.2.Core.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.SpellChecker.v22.2.Core.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Spreadsheet.v22.2.Core.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.TreeMap.v22.2.Core.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Utils.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Utils.v22.2.UI.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Xpo.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraBars.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraCharts.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraCharts.v22.2.Extensions.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraCharts.v22.2.UI.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraCharts.v22.2.Wizard.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraDiagram.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraEditors.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraGauges.v22.2.Core.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraGrid.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraLayout.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraNavBar.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraPdfViewer.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraPivotGrid.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraPrinting.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraReports.v22.2.CodeCompletion.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraReports.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraReports.v22.2.Extensions.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraRichEdit.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraScheduler.v22.2.Core.Desktop.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraScheduler.v22.2.Core.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraScheduler.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraScheduler.v22.2.Extensions.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraSpellChecker.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraSpreadsheet.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraTreeList.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraTreeMap.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraTreeMap.v22.2.UI.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraVerticalGrid.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraWizard.v22.2.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DotNetZip.dll
+D:\Project-Csharp\f1\f1\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+D:\Project-Csharp\f1\f1\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+D:\Project-Csharp\f1\f1\bin\Debug\Microsoft.SqlServer.Smo.dll
+D:\Project-Csharp\f1\f1\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Map.v22.2.Core.dll
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Charts.v22.2.Core.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.DataAccess.v22.2.UI.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Diagram.v22.2.Core.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.TreeMap.v22.2.Core.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Xpo.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraDiagram.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraPivotGrid.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraReports.v22.2.CodeCompletion.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraTreeMap.v22.2.UI.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraTreeMap.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Dashboard.v22.2.Core.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Data.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.DataAccess.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Office.v22.2.Core.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.PivotGrid.v22.2.Core.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Printing.v22.2.Core.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.RichEdit.v22.2.Core.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Sparkline.v22.2.Core.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.SpellChecker.v22.2.Core.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Spreadsheet.v22.2.Core.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Utils.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Utils.v22.2.UI.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraBars.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraCharts.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraCharts.v22.2.UI.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraCharts.v22.2.Wizard.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraEditors.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraGauges.v22.2.Core.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraGrid.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraLayout.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraNavBar.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraPdfViewer.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraPrinting.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraReports.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraReports.v22.2.Extensions.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraRichEdit.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraScheduler.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraScheduler.v22.2.Core.Desktop.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraScheduler.v22.2.Core.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraScheduler.v22.2.Extensions.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraSpellChecker.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraSpreadsheet.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraTreeList.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraVerticalGrid.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.XtraWizard.v22.2.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DotNetZip.pdb
+D:\Project-Csharp\f1\f1\bin\Debug\DotNetZip.xml
+D:\Project-Csharp\f1\f1\bin\Debug\DevExpress.Map.v22.2.Core.xml
+D:\Project-Csharp\f1\f1\obj\Debug\f1.csproj.AssemblyReference.cache
+D:\Project-Csharp\f1\f1\obj\Debug\f1.csproj.ResolveComReference.cache
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.frm_costcenter.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.frm_currance.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.frm_statment_test.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.frm_trial_bal.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.report_account.frm_rbt_Trial_balance_general.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_costcenter_statment.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_report_acc_statment_gl.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_report_acc_statment_vcs.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_Trial_balance_customer.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_Trial_balance_vendor.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.report_account.report_finance_statment.frm_rpt_balance_sheet.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.report_account.report_finance_statment.frm_schema_statment.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_general_entry.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_payable.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_recever.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_statment_gl.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_trial_long.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_trial_main.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_trial_short.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_trial_with_costCenter.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.Form2.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_desgin_report_main.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_permissions.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_picture.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_report.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_search.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_send_email.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.import_excel.frm_excel_items.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.Classes.frm_excel_purchase.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_cogs_adj.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_info_co.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.inventory.frm_issuer.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.inventory.frm_recever.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.inventory.frm_sale_dis.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.inventory.frm_trans_items.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.inventory.printer_items.report_items.frm_rbt_trial_item_cost_and_sale_value.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.inventory.printer_items.report_items.frm_rep_items_card.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.Log_in.frm_login.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.Log_in.frm_restore.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_notficaion.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_test_chart.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.hr.frm_test_stats.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.hr.frm_empwage.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.hr.frm_pay_salary.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.hr.frm_subempwage.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.import_excel.frm_excel_sale.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.import_excel.frm_excel_vcs.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.inventory.adjustment_qty_exp.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_adjustment_qty.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.inventory.frm_limit_maximum_qty.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.inventory.frm_wizard_adjustment_qty.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.Log_in.frm_change_password.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.notification.frm_notif_depit.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.notification.frm_notif_recev.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.opening_closing.close_db.frm_close_db.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.opening_closing.frm_openig_and_close_wizard.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.opening_closing.frm_opening_entry.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.opening_closing.frm_opening_qty.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.opening_closing.frm_opening_vcs.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.pos.frm_balance_qty.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.pos.frm_barcode.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.pos.frm_exp_list.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.pos.frm_items_card.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.pos.frm_matrex_search.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.pos.frm_note.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.pos.frm_offer.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.pos.frm_pos.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.pos.frm_pos_permission.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.pos.frm_pos_screen_rep.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.pos.frm_pos_settings_cash.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.pos.frm_settings.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.pos.pos_main.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.pos.pos_screen_sumer.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.pos.pos_shift1.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.pos.rest_frm.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.Purchase.frm_rpurchase.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.Purchase.frm_search_adv.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.Purchase.report_purchase.frm_purchase_invoice_report.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.sales.frm_rsale.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.sales.sales_report.frm_max_min_items.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.sales.sales_report.sale_forms.frm_rbt_sales_invoice_profit.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.sales.test_sale.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.ship_jop.frm_consolidated_invoice.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.ship_jop.frm_grag.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.ship_jop.frm_jop_number.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.ship_jop.frm_station.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.ship_jop.frm_storehouse.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.ship_jop.frm_truck.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_book.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_customer.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_emp.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_emp_salary.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_entry.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_item.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_main.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_test_report_purchase.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_payable.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_purchase.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_recevable.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_sale.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_sub_ledger_wares.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_taxes.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_tree.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_type.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_vendor.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_wares.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.Log_in.frm_connection_db.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.open.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.Properties.Resources.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_main.ar.resources
+D:\Project-Csharp\f1\f1\obj\Debug\f1.csproj.GenerateResource.cache
+D:\Project-Csharp\f1\f1\obj\Debug\f1.exe.licenses
+D:\Project-Csharp\f1\f1\obj\Debug\f1.csproj.CoreCompileInputs.cache
+D:\Project-Csharp\f1\f1\obj\Debug\ar\f1.resources.dll
+D:\Project-Csharp\f1\f1\obj\Debug\f1.TrustInfo.xml
+D:\Project-Csharp\f1\f1\obj\Debug\f1.exe.manifest
+D:\Project-Csharp\f1\f1\obj\Debug\f1.application
+D:\Project-Csharp\f1\f1\obj\Debug\f1.csproj.CopyComplete
+D:\Project-Csharp\f1\f1\obj\Debug\f1.exe
+D:\Project-Csharp\f1\f1\obj\Debug\f1.pdb
+D:\Project-Csharp\f1\f1\obj\Debug\f1.frm_imliment_hotel.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\f1.exe.config
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\f1.exe.manifest
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\f1.application
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\f1.exe
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\f1.pdb
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\ar\f1.resources.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.BonusSkins.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Charts.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.CodeParser.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Dashboard.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Data.Desktop.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Data.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.DataAccess.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.DataAccess.v24.1.UI.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.DataVisualization.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Diagram.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Drawing.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Images.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Office.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Pdf.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Pdf.v24.1.Drawing.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.PivotGrid.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Printing.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.RichEdit.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.RichEdit.v24.1.Export.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Sparkline.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.SpellChecker.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Spreadsheet.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.TreeMap.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Utils.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Utils.v24.1.UI.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Xpo.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraBars.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraCharts.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraCharts.v24.1.Extensions.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraCharts.v24.1.UI.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraCharts.v24.1.Wizard.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraDiagram.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraEditors.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraGauges.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraGrid.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraLayout.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraNavBar.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraPdfViewer.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraPivotGrid.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraPrinting.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraReports.v24.1.CodeCompletion.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraReports.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraReports.v24.1.Extensions.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraRichEdit.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraScheduler.v24.1.Core.Desktop.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraScheduler.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraScheduler.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraScheduler.v24.1.Extensions.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraSpellChecker.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraSpreadsheet.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraTreeList.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraTreeMap.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraTreeMap.v24.1.UI.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraVerticalGrid.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraWizard.v24.1.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DotNetZip.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\Microsoft.SqlServer.Smo.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Map.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Charts.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.DataAccess.v24.1.UI.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Diagram.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.TreeMap.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Xpo.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraDiagram.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraPivotGrid.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraReports.v24.1.CodeCompletion.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraTreeMap.v24.1.UI.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraTreeMap.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Dashboard.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Drawing.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Data.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.DataAccess.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Office.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Pdf.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Pdf.v24.1.Drawing.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.PivotGrid.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Printing.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.RichEdit.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Sparkline.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.SpellChecker.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Spreadsheet.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Data.Desktop.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Utils.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Utils.v24.1.UI.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraBars.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraCharts.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraCharts.v24.1.UI.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraCharts.v24.1.Wizard.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraEditors.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraGauges.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraGrid.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraLayout.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraNavBar.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraPdfViewer.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraPrinting.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraReports.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraReports.v24.1.Extensions.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraRichEdit.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraScheduler.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraScheduler.v24.1.Core.Desktop.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraScheduler.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraScheduler.v24.1.Extensions.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraSpellChecker.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraSpreadsheet.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraTreeList.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraVerticalGrid.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.XtraWizard.v24.1.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DotNetZip.pdb
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DotNetZip.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\bin\Debug\DevExpress.Map.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.csproj.AssemblyReference.cache
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.csproj.ResolveComReference.cache
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.frm_costcenter.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.frm_currance.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.frm_statment_test.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.frm_trial_bal.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.report_account.frm_rbt_Trial_balance_general.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_costcenter_statment.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_report_acc_statment_gl.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_report_acc_statment_vcs.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_Trial_balance_customer.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_Trial_balance_vendor.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.report_account.report_finance_statment.frm_rpt_balance_sheet.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.report_account.report_finance_statment.frm_schema_statment.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_general_entry.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_payable.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_recever.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_statment_gl.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_trial_long.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_trial_main.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_trial_short.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_trial_with_costCenter.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.Form2.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_desgin_report_main.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_imliment_hotel.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_permissions.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_picture.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_report.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_search.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_send_email.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.import_excel.frm_excel_items.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.Classes.frm_excel_purchase.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_cogs_adj.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_info_co.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.inventory.frm_issuer.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.inventory.frm_recever.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.inventory.frm_sale_dis.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.inventory.frm_trans_items.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.inventory.printer_items.report_items.frm_rbt_trial_item_cost_and_sale_value.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.inventory.printer_items.report_items.frm_rep_items_card.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.Log_in.frm_login.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.Log_in.frm_restore.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_notficaion.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_test_chart.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.hr.frm_test_stats.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.hr.frm_empwage.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.hr.frm_pay_salary.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.hr.frm_subempwage.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.import_excel.frm_excel_sale.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.import_excel.frm_excel_vcs.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.inventory.adjustment_qty_exp.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_adjustment_qty.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.inventory.frm_limit_maximum_qty.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.inventory.frm_wizard_adjustment_qty.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.Log_in.frm_change_password.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.notification.frm_notif_depit.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.notification.frm_notif_recev.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.opening_closing.close_db.frm_close_db.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.opening_closing.frm_openig_and_close_wizard.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.opening_closing.frm_opening_entry.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.opening_closing.frm_opening_qty.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.opening_closing.frm_opening_vcs.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.pos.frm_balance_qty.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.pos.frm_barcode.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.pos.frm_exp_list.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.pos.frm_items_card.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.pos.frm_matrex_search.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.pos.frm_note.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.pos.frm_offer.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.pos.frm_pos.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.pos.frm_pos_permission.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.pos.frm_pos_screen_rep.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.pos.frm_pos_settings_cash.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.pos.frm_settings.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.pos.pos_main.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.pos.pos_screen_sumer.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.pos.pos_shift1.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.pos.rest_frm.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.Purchase.frm_rpurchase.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.Purchase.frm_search_adv.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.Purchase.report_purchase.frm_purchase_invoice_report.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.sales.frm_rsale.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.sales.sales_report.frm_max_min_items.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.sales.sales_report.sale_forms.frm_rbt_sales_invoice_profit.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.sales.test_sale.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.ship_jop.frm_consolidated_invoice.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.ship_jop.frm_grag.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.ship_jop.frm_jop_number.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.ship_jop.frm_station.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.ship_jop.frm_storehouse.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.ship_jop.frm_truck.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_book.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_customer.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_emp.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_emp_salary.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_entry.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_item.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_main.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_test_report_purchase.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_payable.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_purchase.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_recevable.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_sale.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_sub_ledger_wares.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_taxes.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_tree.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_type.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_vendor.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_wares.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.Log_in.frm_connection_db.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.open.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.Properties.Resources.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.frm_main.ar.resources
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.csproj.GenerateResource.cache
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.exe.licenses
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.csproj.CoreCompileInputs.cache
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\ar\f1.resources.dll
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.TrustInfo.xml
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.exe.manifest
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.application
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.csproj.Up2Date
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.exe
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.pdb
+D:\c sharp\Project-Csharp\f1-24-02-2024\f1\f1\obj\Debug\f1.screen_rep_main.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\f1.exe.config
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\f1.exe.manifest
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\f1.application
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\f1.exe
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\f1.pdb
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\ar\f1.resources.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.BonusSkins.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Charts.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.CodeParser.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Dashboard.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Data.Desktop.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Data.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.DataAccess.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.DataAccess.v24.1.UI.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.DataVisualization.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Diagram.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Drawing.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Images.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Office.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Pdf.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Pdf.v24.1.Drawing.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.PivotGrid.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Printing.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.RichEdit.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.RichEdit.v24.1.Export.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Sparkline.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.SpellChecker.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Spreadsheet.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.TreeMap.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Utils.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Utils.v24.1.UI.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Xpo.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraBars.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraCharts.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraCharts.v24.1.Extensions.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraCharts.v24.1.UI.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraCharts.v24.1.Wizard.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraDiagram.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraEditors.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraGauges.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraGrid.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraLayout.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraNavBar.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraPdfViewer.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraPivotGrid.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraPrinting.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraReports.v24.1.CodeCompletion.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraReports.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraReports.v24.1.Extensions.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraRichEdit.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraScheduler.v24.1.Core.Desktop.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraScheduler.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraScheduler.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraScheduler.v24.1.Extensions.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraSpellChecker.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraSpreadsheet.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraTreeList.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraTreeMap.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraTreeMap.v24.1.UI.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraVerticalGrid.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraWizard.v24.1.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DotNetZip.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\Microsoft.SqlServer.Smo.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Map.v24.1.Core.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Charts.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.DataAccess.v24.1.UI.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Diagram.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.TreeMap.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Xpo.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraDiagram.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraPivotGrid.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraReports.v24.1.CodeCompletion.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraTreeMap.v24.1.UI.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraTreeMap.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Dashboard.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Drawing.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Data.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.DataAccess.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Office.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Pdf.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Pdf.v24.1.Drawing.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.PivotGrid.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Printing.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.RichEdit.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Sparkline.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.SpellChecker.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Spreadsheet.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Data.Desktop.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Utils.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Utils.v24.1.UI.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraBars.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraCharts.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraCharts.v24.1.UI.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraCharts.v24.1.Wizard.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraEditors.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraGauges.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraGrid.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraLayout.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraNavBar.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraPdfViewer.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraPrinting.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraReports.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraReports.v24.1.Extensions.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraRichEdit.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraScheduler.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraScheduler.v24.1.Core.Desktop.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraScheduler.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraScheduler.v24.1.Extensions.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraSpellChecker.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraSpreadsheet.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraTreeList.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraVerticalGrid.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.XtraWizard.v24.1.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DotNetZip.pdb
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DotNetZip.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\bin\Debug\DevExpress.Map.v24.1.Core.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.csproj.AssemblyReference.cache
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.csproj.ResolveComReference.cache
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.frm_costcenter.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.frm_currance.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.frm_statment_test.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.frm_trial_bal.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.report_account.frm_rbt_Trial_balance_general.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_costcenter_statment.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_report_acc_statment_gl.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_report_acc_statment_vcs.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_Trial_balance_customer.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.report_account.frm_rpt_Trial_balance_vendor.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.report_account.report_finance_statment.frm_rpt_balance_sheet.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.report_account.report_finance_statment.frm_schema_statment.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_general_entry.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_payable.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_recever.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_statment_gl.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_trial_long.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_trial_main.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_trial_short.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.account.report_account.report_screen.sc_trial_with_costCenter.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.Form2.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_desgin_report_main.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_imliment_hotel.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_permissions.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_picture.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_report.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_search.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_send_email.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.import_excel.frm_excel_items.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.Classes.frm_excel_purchase.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_cogs_adj.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_info_co.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.inventory.frm_issuer.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.inventory.frm_recever.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.inventory.frm_sale_dis.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.inventory.frm_trans_items.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.inventory.printer_items.report_items.frm_rbt_trial_item_cost_and_sale_value.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.inventory.printer_items.report_items.frm_rep_items_card.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.Log_in.frm_login.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.Log_in.frm_restore.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_notficaion.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_test_chart.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.hr.frm_test_stats.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.hr.frm_empwage.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.hr.frm_pay_salary.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.hr.frm_subempwage.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.import_excel.frm_excel_sale.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.import_excel.frm_excel_vcs.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.inventory.adjustment_qty_exp.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_adjustment_qty.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.inventory.frm_limit_maximum_qty.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.inventory.frm_wizard_adjustment_qty.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.Log_in.frm_change_password.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.notification.frm_notif_depit.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.notification.frm_notif_recev.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.opening_closing.close_db.frm_close_db.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.opening_closing.frm_openig_and_close_wizard.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.opening_closing.frm_opening_entry.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.opening_closing.frm_opening_qty.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.opening_closing.frm_opening_vcs.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.pos.frm_balance_qty.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.pos.frm_barcode.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.pos.frm_exp_list.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.pos.frm_items_card.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.pos.frm_matrex_search.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.pos.frm_note.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.pos.frm_offer.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.pos.frm_pos.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.pos.frm_pos_permission.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.pos.frm_pos_screen_rep.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.pos.frm_pos_settings_cash.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.pos.frm_settings.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.pos.pos_main.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.pos.pos_screen_sumer.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.pos.pos_shift1.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.pos.rest_frm.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.Purchase.frm_rpurchase.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.Purchase.frm_search_adv.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.Purchase.report_purchase.frm_purchase_invoice_report.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.sales.frm_rsale.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.sales.sales_report.frm_max_min_items.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.sales.sales_report.sale_forms.frm_rbt_sales_invoice_profit.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.sales.test_sale.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.screen_rep_main.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.ship_jop.frm_consolidated_invoice.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.ship_jop.frm_grag.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.ship_jop.frm_jop_number.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.ship_jop.frm_station.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.ship_jop.frm_storehouse.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.ship_jop.frm_truck.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_book.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_customer.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_emp.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_emp_salary.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_entry.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_item.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_main.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_test_report_purchase.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_payable.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_purchase.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_recevable.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_sale.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_sub_ledger_wares.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_taxes.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_tree.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_type.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_vendor.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_wares.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.Log_in.frm_connection_db.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.open.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.Properties.Resources.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.frm_main.ar.resources
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.csproj.GenerateResource.cache
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.exe.licenses
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.csproj.CoreCompileInputs.cache
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\ar\f1.resources.dll
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.TrustInfo.xml
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.exe.manifest
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.application
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.csproj.Up2Date
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.exe
+D:\c sharp\Project-Csharp\f1\f1\f1\obj\Debug\f1.pdb

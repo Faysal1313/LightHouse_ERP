@@ -1,0 +1,6 @@
+delete from jn_jopnumber
+delete from jn_truck
+delete from jn_station
+delete from jn_storehouse
+
+delete from entry where code_entry <>'-11'

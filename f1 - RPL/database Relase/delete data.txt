@@ -1,0 +1,17 @@
+delete from entry
+delete from entry_hd
+delete from purchase_dt
+delete from purchase_hd
+delete from sale_dt
+delete from sale_hd
+delete from items_trans
+delete from book
+delete from term
+delete from opening_qty
+
+
+dgv_close.CurrentRow.Cells["shift_no_c"].Value.ToString()
+
+dgv_close.CurrentRow.Cells["date_open_no_c"].Value.ToString()
+
+dgv_close.CurrentRow.Cells["date_open_no_c"].Value).ToString("yyyy-MM-dd")

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="20.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Report1" Landscape="true" Margins="100, 100, 519, 123" PaperKind="A4" PageWidth="1169" PageHeight="827" Version="20.2" DataMember="sale_size" DataSource="#Ref-0" Font="Arial, 9.75pt">
+  <Bands>
+    <Item1 Ref="2" ControlType="TopMarginBand" Name="TopMargin" HeightF="519.4961">
+      <Controls>
+        <Item1 Ref="3" ControlType="XRLabel" Name="label2" Multiline="true" Text="المبيعات الاصناف خلال سنه ماليه" TextAlignment="TopCenter" SizeF="341.6667,41.74999" LocationFloat="617.3334,253.292389" Font="Arabic Typesetting, 28pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="4" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="5" ControlType="XRChart" Name="chart2" DataSource="#Ref-0" SizeF="969,183.023865" LocationFloat="0,304.06488" BorderColor="Black" Borders="None">
+          <Chart Ref="6" AppearanceNameSerializable="Light" PaletteBaseColorNumber="4" PaletteName="Concourse">
+            <DataContainer Ref="7" ValidateDataMembers="true">
+              <SeriesSerializable>
+                <Item1 Ref="8" ArgumentDataMember="sale_size_time.name_items" ValueDataMembersSerializable="sale_size_time.month" />
+              </SeriesSerializable>
+            </DataContainer>
+            <Diagram Ref="9" TypeNameSerializable="XYDiagram">
+              <AxisX Ref="10" VisibleInPanesSerializable="-1" />
+              <AxisY Ref="11" VisibleInPanesSerializable="-1" />
+              <DefaultPane Ref="12" EnableAxisXScrolling="False" EnableAxisYScrolling="False" EnableAxisXZooming="False" EnableAxisYZooming="False">
+                <StackedBarTotalLabel Ref="13">
+                  <ConnectorLineStyle Ref="14" />
+                </StackedBarTotalLabel>
+              </DefaultPane>
+            </Diagram>
+            <Legend Ref="15" Visibility="False" Name="Default Legend" />
+            <OptionsPrint Ref="16" ImageFormat="Metafile" />
+          </Chart>
+        </Item2>
+        <Item3 Ref="17" ControlType="XRChart" Name="chart1" DataSource="#Ref-0" SizeF="969,183.023865" LocationFloat="0,70.26857" BorderColor="Black" Borders="None">
+          <Chart Ref="18" PaletteBaseColorNumber="1" PaletteName="Aspect">
+            <DataContainer Ref="19" ValidateDataMembers="true">
+              <SeriesSerializable>
+                <Item1 Ref="20" Name="الايرادات" ArgumentDataMember="sale_size.name_items" ValueDataMembersSerializable="sale_size.Column2" LabelsVisibility="True" ShowInLegend="false">
+                  <View Ref="21" TypeNameSerializable="SideBySideBarSeriesView">
+                    <Border Ref="22" Color="255,195,214,155" />
+                  </View>
+                </Item1>
+              </SeriesSerializable>
+            </DataContainer>
+            <Diagram Ref="23" TypeNameSerializable="XYDiagram">
+              <AxisX Ref="24" VisibleInPanesSerializable="-1" />
+              <AxisY Ref="25" VisibleInPanesSerializable="-1" />
+              <DefaultPane Ref="26" EnableAxisXScrolling="False" EnableAxisYScrolling="False" EnableAxisXZooming="False" EnableAxisYZooming="False">
+                <StackedBarTotalLabel Ref="27">
+                  <ConnectorLineStyle Ref="28" />
+                </StackedBarTotalLabel>
+              </DefaultPane>
+            </Diagram>
+            <Legend Ref="29" Visibility="False" Name="Default Legend" />
+            <OptionsPrint Ref="30" ImageFormat="Metafile" />
+          </Chart>
+        </Item3>
+        <Item4 Ref="31" ControlType="XRLabel" Name="label1" Multiline="true" Text="المبيعات الاصناف بسعر البيع" TextAlignment="TopCenter" SizeF="341.6667,41.74999" LocationFloat="627.3333,10" Font="Arabic Typesetting, 28pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="32" UseFont="false" UseTextAlignment="false" />
+        </Item4>
+      </Controls>
+    </Item1>
+    <Item2 Ref="33" ControlType="DetailBand" Name="Detail" FillEmptySpace="true" HeightF="0" />
+    <Item3 Ref="34" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="122.702995" />
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v20.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImNuIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJTdG9yZWRQcm9jUXVlcnkiIE5hbWU9InNhbGVfc2l6ZSI+PFByb2NOYW1lPnNhbGVfc2l6ZTwvUHJvY05hbWU+PC9RdWVyeT48UXVlcnkgVHlwZT0iU3RvcmVkUHJvY1F1ZXJ5IiBOYW1lPSJzYWxlX3NpemVfdGltZSI+PFByb2NOYW1lPnNhbGVfc2l6ZV90aW1lPC9Qcm9jTmFtZT48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9InNhbGVfc2l6ZSI+PEZpZWxkIE5hbWU9Im5hbWVfaXRlbXMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29sdW1uMiIgVHlwZT0iRGVjaW1hbCIgLz48L1ZpZXc+PFZpZXcgTmFtZT0ic2FsZV9zaXplX3RpbWUiPjxGaWVsZCBOYW1lPSJuYW1lX2l0ZW1zIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImRhdGVfUCIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9Im1vbnRoIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0PjwvUmVzdWx0U2NoZW1hPjxDb25uZWN0aW9uT3B0aW9ucyBDbG9zZUNvbm5lY3Rpb249InRydWUiIC8+PC9TcWxEYXRhU291cmNlPg==" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>

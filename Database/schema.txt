@@ -1,0 +1,3860 @@
+USE [f5]
+GO
+/****** Object:  Table [dbo].[recever_hd]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[recever_hd](
+	[recever_hd_id] [nvarchar](50) NOT NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[recever_dt_id] [int] NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[term] [nvarchar](50) NULL,
+	[serial_P] [nvarchar](50) NULL,
+	[date_P] [date] NULL,
+	[due_date] [date] NULL,
+	[tot_befor] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [nvarchar](50) NULL,
+	[code_entry] [int] NULL,
+	[book_name_entry] [nvarchar](50) NULL,
+	[code_book_entry] [nvarchar](50) NULL,
+	[note_txt] [nvarchar](100) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[lock] [nvarchar](5) NULL,
+	[currance] [nvarchar](10) NULL,
+	[f_currance] [decimal](10, 2) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[inv_no_manual] [nvarchar](50) NULL,
+	[num_book] [int] NULL,
+ CONSTRAINT [PK_recever_hd] PRIMARY KEY CLUSTERED 
+(
+	[recever_hd_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[recever_dt]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[recever_dt](
+	[no] [int] NULL,
+	[recever_hd_id] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[recever_dt_id] [int] IDENTITY(1,1) NOT NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](200) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[f_unite] [nvarchar](50) NULL,
+	[item_price] [decimal](10, 2) NULL,
+	[tot_bef] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[name_wars] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[exp] [bit] NULL,
+	[exp_date] [date] NULL,
+	[type] [int] NULL,
+	[serial_P] [int] NULL,
+	[cost_exp_edit] [decimal](10, 2) NULL,
+	[user] [nvarchar](50) NULL,
+	[tot_after_dis_forex] [decimal](10, 2) NULL,
+	[lock] [bit] NULL,
+	[no_invoice] [nvarchar](20) NULL,
+ CONSTRAINT [PK_recever_dt] PRIMARY KEY CLUSTERED 
+(
+	[recever_dt_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[recev_hd]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[recev_hd](
+	[recev_hd_id] [nvarchar](50) NOT NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[type] [nvarchar](50) NULL,
+	[vcs] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[acc] [nvarchar](50) NULL,
+	[acc_name] [nvarchar](50) NULL,
+	[amount] [decimal](10, 2) NULL,
+	[depit] [decimal](10, 2) NULL,
+	[crdit] [decimal](10, 2) NULL,
+	[date_] [date] NULL,
+	[user_name] [nvarchar](50) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[txt_mony] [nvarchar](50) NULL,
+	[premiums] [nvarchar](1) NULL,
+	[attach] [nvarchar](50) NULL,
+	[num_book] [int] NULL,
+	[note] [nvarchar](100) NULL,
+ CONSTRAINT [PK_recev_hd] PRIMARY KEY CLUSTERED 
+(
+	[recev_hd_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[recev_dt]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[recev_dt](
+	[code_entry] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[acc_num] [nvarchar](50) NULL,
+	[acc_name] [nvarchar](50) NULL,
+	[depit] [decimal](10, 2) NULL,
+	[credit] [decimal](10, 2) NULL,
+	[opening_bal] [decimal](10, 2) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[dates] [date] NULL,
+	[rootlevel] [nvarchar](50) NULL,
+	[rootlevel_name] [nvarchar](50) NULL,
+	[type_acc] [nvarchar](10) NULL,
+	[sort] [nvarchar](10) NULL,
+	[type_rows] [nvarchar](50) NULL,
+	[attachno] [nvarchar](50) NULL,
+	[attachbook] [nvarchar](50) NULL,
+	[attachnamebook] [nvarchar](50) NULL,
+	[attachtext] [nvarchar](100) NULL,
+	[attachno2] [nvarchar](50) NULL,
+	[costcenter_id] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[rec]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[rec](
+	[num] [nvarchar](50) NULL,
+	[type] [nvarchar](50) NULL,
+	[vcs] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[acc] [nvarchar](50) NULL,
+	[acc_name] [nvarchar](50) NULL,
+	[amount] [decimal](10, 2) NULL,
+	[depit] [decimal](10, 2) NULL,
+	[crdit] [decimal](10, 2) NULL,
+	[date_] [date] NULL
+) ON [PRIMARY]
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'yyyymmdd' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'rec', @level2type=N'COLUMN',@level2name=N'date_'
+GO
+/****** Object:  Table [dbo].[qsale_hd]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[qsale_hd](
+	[qsale_hd_id] [nvarchar](50) NOT NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[qsale_dt_id] [int] NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[term] [nvarchar](50) NULL,
+	[serial_P] [int] NULL,
+	[date_P] [date] NULL,
+	[due_date] [date] NULL,
+	[tot_befor] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [nvarchar](50) NULL,
+	[code_entry] [int] NULL,
+	[book_name_entry] [nvarchar](50) NULL,
+	[code_book_entry] [nvarchar](50) NULL,
+	[note_txt] [nvarchar](100) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[lock] [nvarchar](5) NULL,
+	[currance] [nvarchar](10) NULL,
+	[f_currance] [decimal](10, 2) NULL,
+	[vcs_value] [decimal](10, 2) NULL,
+	[txt_mony] [nvarchar](200) NULL,
+	[e_invoice] [bit] NULL,
+	[uuid] [nvarchar](50) NULL,
+	[num_book] [int] NULL,
+ CONSTRAINT [PK_qsale_hd] PRIMARY KEY CLUSTERED 
+(
+	[qsale_hd_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[qsale_dt]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[qsale_dt](
+	[no] [int] NULL,
+	[qsale_hd_id] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[qsale_dt_id] [int] IDENTITY(1,1) NOT NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[f_unite] [nvarchar](50) NULL,
+	[item_price] [decimal](10, 2) NULL,
+	[tot_bef] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[name_wars] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[exp] [bit] NULL,
+	[exp_date] [date] NULL,
+	[type] [int] NULL,
+	[serial_P] [int] NULL,
+	[cost_exp_edit] [decimal](10, 2) NULL,
+	[user] [nvarchar](50) NULL,
+	[tot_after_dis_forex] [decimal](10, 2) NULL,
+ CONSTRAINT [PK_qsale_dt] PRIMARY KEY CLUSTERED 
+(
+	[qsale_dt_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[qpurchase_hd]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[qpurchase_hd](
+	[qpurchase_hd_id] [nvarchar](50) NOT NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[qpurchase_dt_id] [int] NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[term] [nvarchar](50) NULL,
+	[serial_P] [nvarchar](50) NULL,
+	[date_P] [date] NULL,
+	[due_date] [date] NULL,
+	[tot_befor] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [nvarchar](50) NULL,
+	[code_entry] [int] NULL,
+	[book_name_entry] [nvarchar](50) NULL,
+	[code_book_entry] [nvarchar](50) NULL,
+	[note_txt] [nvarchar](100) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[lock] [nvarchar](5) NULL,
+	[currance] [nvarchar](10) NULL,
+	[f_currance] [decimal](10, 2) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[num_book] [int] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[qpurchase_dt]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[qpurchase_dt](
+	[no] [int] NULL,
+	[qpurchase_hd_id] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[qpurchase_dt_id] [int] IDENTITY(1,1) NOT NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[f_unite] [nvarchar](50) NULL,
+	[item_price] [decimal](10, 2) NULL,
+	[tot_bef] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[name_wars] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[exp] [bit] NULL,
+	[exp_date] [date] NULL,
+	[type] [int] NULL,
+	[serial_P] [int] NULL,
+	[cost_exp_edit] [decimal](10, 2) NULL,
+	[user] [nvarchar](50) NULL,
+	[tot_after_dis_forex] [decimal](10, 2) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[meal_hot]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[meal_hot](
+	[id] [int] NULL,
+	[name] [nvarchar](50) NULL,
+	[price] [decimal](10, 2) NULL,
+	[currance] [nvarchar](10) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[m_standard_costs_matrial]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[m_standard_costs_matrial](
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[no_process] [int] NULL,
+	[txt_process] [nvarchar](50) NULL,
+	[code_resource] [nvarchar](50) NULL,
+	[name_resource] [nvarchar](50) NULL,
+	[rate_cost_resource] [decimal](10, 2) NULL,
+	[time_process] [decimal](10, 2) NULL,
+	[time_resource] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[f_unite] [decimal](10, 2) NULL,
+	[finish_goods_qty] [decimal](10, 2) NULL,
+	[resource_count] [int] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[m_standard_costs_bom]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[m_standard_costs_bom](
+	[code_items_f] [nvarchar](50) NULL,
+	[name_items_f] [nvarchar](50) NULL,
+	[no_process] [int] NULL,
+	[txt_process] [nvarchar](50) NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[f_unite] [decimal](10, 2) NULL,
+	[qty_bom] [decimal](10, 2) NULL,
+	[name_unite_finish] [nvarchar](50) NULL,
+	[f_unite_finish] [decimal](10, 2) NULL,
+	[qty_finish] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[m_row_matrial]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[m_row_matrial](
+	[id] [nvarchar](50) NULL,
+	[m_request_production_hd_id] [nvarchar](50) NULL,
+	[po] [nvarchar](50) NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[qty_to_pr] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[f_unite] [decimal](10, 2) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[cost] [decimal](10, 2) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[m_resource]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[m_resource](
+	[code_resource] [nvarchar](50) NOT NULL,
+	[name_resource] [nvarchar](50) NULL,
+	[note_resource] [nvarchar](50) NULL,
+	[rate_cost_resource] [decimal](10, 2) NULL,
+	[time_resource] [nvarchar](50) NULL,
+ CONSTRAINT [PK_resource_m] PRIMARY KEY CLUSTERED 
+(
+	[code_resource] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[m_request_production_hd]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[m_request_production_hd](
+	[m_request_production_hd_id] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[m_request_production_dt]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[m_request_production_dt](
+	[m_request_production_hd_id] [nvarchar](50) NULL,
+	[m_request_production_dt_id] [nvarchar](50) NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[qty_re_prod] [decimal](10, 2) NULL,
+	[id_ware_finish] [int] NULL,
+	[po] [nvarchar](50) NULL,
+	[qty_no_pr] [decimal](10, 2) NULL,
+	[qty_yas_pr] [decimal](10, 2) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[m_re_row_matrial]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[m_re_row_matrial](
+	[id] [nvarchar](50) NULL,
+	[m_request_production_hd_id] [nvarchar](50) NULL,
+	[po] [nvarchar](50) NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[qty_to_pr] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[f_unite] [decimal](10, 2) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[cost] [decimal](10, 2) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[m_po_hd]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[m_po_hd](
+	[po_id] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[m_po_dt_matrial]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[m_po_dt_matrial](
+	[po_id] [nvarchar](50) NULL,
+	[code_items_m] [nvarchar](50) NULL,
+	[name_items_m] [nvarchar](50) NULL,
+	[no_process] [int] NULL,
+	[txt_process] [nvarchar](50) NULL,
+	[code_resource] [nvarchar](50) NULL,
+	[name_resource] [nvarchar](50) NULL,
+	[rate_cost_resource] [decimal](10, 2) NULL,
+	[time_process] [decimal](10, 2) NULL,
+	[time_resource] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[f_unite] [decimal](10, 2) NULL,
+	[finish_goods_qty] [decimal](10, 2) NULL,
+	[resource_count] [int] NULL,
+	[qty_rq] [decimal](10, 2) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[m_po_dt_bom]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[m_po_dt_bom](
+	[po_id] [nvarchar](50) NULL,
+	[code_items_f] [nvarchar](50) NULL,
+	[name_items_f] [nvarchar](50) NULL,
+	[no_process] [int] NULL,
+	[txt_process] [nvarchar](50) NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[f_unite] [decimal](10, 2) NULL,
+	[qty_bom] [decimal](10, 2) NULL,
+	[name_unite_finish] [nvarchar](50) NULL,
+	[f_unite_finish] [decimal](10, 2) NULL,
+	[qty_finish] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[qty_rq] [decimal](10, 2) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[m_finish_pr]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[m_finish_pr](
+	[id] [nvarchar](50) NULL,
+	[po] [nvarchar](50) NULL,
+	[rp] [nvarchar](50) NULL,
+	[ex] [nvarchar](50) NULL,
+	[qty_finish] [decimal](10, 2) NULL,
+	[cost] [decimal](10, 2) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[m_exe]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[m_exe](
+	[id] [nvarchar](50) NULL,
+	[po] [nvarchar](50) NULL,
+	[rp] [nvarchar](50) NULL,
+	[qty_finish] [decimal](10, 2) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[pos_permission]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[pos_permission](
+	[user_code] [nvarchar](50) NULL,
+	[unite] [nvarchar](50) NULL,
+	[torf] [bit] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[pos_pending]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[pos_pending](
+	[no] [int] NULL,
+	[pos_inv_no] [nvarchar](50) NULL,
+	[shift_no] [nvarchar](50) NULL,
+	[pos_dt_id] [int] IDENTITY(1,1) NOT NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](200) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[f_unite] [nvarchar](50) NULL,
+	[item_price] [decimal](10, 2) NULL,
+	[tot_bef] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[name_wars] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[exp] [bit] NULL,
+	[exp_date] [date] NULL,
+	[type] [int] NULL,
+	[serial_P] [int] NULL,
+	[cost_exp_edit] [decimal](10, 2) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[time_h] [time](7) NULL,
+	[date_d] [date] NULL,
+	[cash_bal] [decimal](10, 2) NULL,
+	[visa_bal] [decimal](10, 2) NULL,
+	[opening_bal] [decimal](10, 2) NULL,
+	[phone_vcs] [nvarchar](50) NULL,
+	[delivery_code] [nvarchar](50) NULL,
+	[delivery_name] [nvarchar](50) NULL,
+	[discount_all] [decimal](10, 2) NULL,
+	[table_pos] [nvarchar](10) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[pos_list_expensses]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[pos_list_expensses](
+	[acc_code] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[pos_dt_re]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[pos_dt_re](
+	[no] [int] NULL,
+	[pos_inv_no] [nvarchar](50) NULL,
+	[shift_no] [nvarchar](50) NULL,
+	[pos_dt_id] [int] IDENTITY(1,1) NOT NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](200) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[f_unite] [nvarchar](50) NULL,
+	[item_price] [decimal](10, 2) NULL,
+	[tot_bef] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[name_wars] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[exp] [bit] NULL,
+	[exp_date] [date] NULL,
+	[type] [int] NULL,
+	[serial_P] [int] NULL,
+	[cost_exp_edit] [decimal](10, 2) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[time_h] [time](7) NULL,
+	[date_d] [date] NULL,
+	[cash_bal] [decimal](10, 2) NULL,
+	[visa_bal] [decimal](10, 2) NULL,
+	[opening_bal] [decimal](10, 2) NULL,
+	[phone_vcs] [nvarchar](50) NULL,
+	[delivery_code] [nvarchar](50) NULL,
+	[delivery_name] [nvarchar](50) NULL,
+	[state] [nvarchar](5) NULL,
+	[re_pos_inv_no] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[pos_dt]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[pos_dt](
+	[no] [int] NULL,
+	[pos_inv_no] [nvarchar](50) NULL,
+	[shift_no] [nvarchar](50) NULL,
+	[pos_dt_id] [int] IDENTITY(1,1) NOT NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](200) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[f_unite] [nvarchar](50) NULL,
+	[item_price] [decimal](10, 2) NULL,
+	[tot_bef] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[name_wars] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[exp] [bit] NULL,
+	[type] [int] NULL,
+	[serial_P] [int] NULL,
+	[cost_exp_edit] [decimal](10, 2) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[time_h] [time](7) NULL,
+	[date_d] [date] NULL,
+	[cash_bal] [decimal](10, 2) NULL,
+	[visa_bal] [decimal](10, 2) NULL,
+	[opening_bal] [decimal](10, 2) NULL,
+	[phone_vcs] [nvarchar](50) NULL,
+	[delivery_code] [nvarchar](50) NULL,
+	[delivery_name] [nvarchar](50) NULL,
+	[state] [nvarchar](5) NULL,
+	[re_pos_inv_no] [nvarchar](50) NULL,
+	[exp_date] [date] NULL,
+	[discount_all] [decimal](10, 2) NULL,
+	[onRoll] [int] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[pos_cash_account]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[pos_cash_account](
+	[user_code] [nvarchar](50) NULL,
+	[cash_main] [nvarchar](50) NULL,
+	[sales_acc] [nvarchar](50) NULL,
+	[re_sales_acc] [nvarchar](50) NULL,
+	[disocount] [nvarchar](50) NULL,
+	[wares] [nvarchar](50) NULL,
+	[code_book] [nvarchar](3) NULL,
+	[cogs] [nvarchar](50) NULL,
+	[def_or_inc] [nvarchar](50) NULL,
+	[medil] [nvarchar](50) NULL,
+	[cash1_account] [nvarchar](50) NULL,
+	[cash2_account] [nvarchar](50) NULL,
+	[cash3_account] [nvarchar](50) NULL,
+	[cash4_account] [nvarchar](50) NULL,
+	[cash5_account] [nvarchar](50) NULL,
+	[cash6_account] [nvarchar](50) NULL,
+	[cash7_account] [nvarchar](50) NULL,
+	[cash8_account] [nvarchar](50) NULL,
+	[cash9_account] [nvarchar](50) NULL,
+	[cash10_account] [nvarchar](50) NULL,
+	[cash1_name] [nvarchar](50) NULL,
+	[cash2_name] [nvarchar](50) NULL,
+	[cash3_name] [nvarchar](50) NULL,
+	[cash4_name] [nvarchar](50) NULL,
+	[cash5_name] [nvarchar](50) NULL,
+	[cash6_name] [nvarchar](50) NULL,
+	[cash7_name] [nvarchar](50) NULL,
+	[cash8_name] [nvarchar](50) NULL,
+	[cash9_name] [nvarchar](50) NULL,
+	[cash10_name] [nvarchar](50) NULL,
+	[cash1_type] [nchar](10) NULL,
+	[cash2_type] [nchar](10) NULL,
+	[cash3_type] [nchar](10) NULL,
+	[cash4_type] [nchar](10) NULL,
+	[cash5_type] [nchar](10) NULL,
+	[cash6_type] [nchar](10) NULL,
+	[cash7_type] [nchar](10) NULL,
+	[cash8_type] [nchar](10) NULL,
+	[cash9_type] [nchar](10) NULL,
+	[cash10_type] [nchar](10) NULL,
+	[cash1_currency] [nchar](10) NULL,
+	[cash2_currency] [nchar](10) NULL,
+	[cash3_currency] [nchar](10) NULL,
+	[cash4_currency] [nchar](10) NULL,
+	[cash5_currency] [nchar](10) NULL,
+	[cash6_currency] [nchar](10) NULL,
+	[cash7_currency] [nchar](10) NULL,
+	[cash8_currency] [nchar](10) NULL,
+	[cash9_currency] [nchar](10) NULL,
+	[cash10_currency] [nchar](10) NULL,
+	[costcenter_id] [nvarchar](50) NULL,
+	[gift] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[pos_cash]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[pos_cash](
+	[code_cash] [int] NULL,
+	[name_cash] [nvarchar](50) NULL,
+	[shift_no] [int] NULL,
+	[user_code] [nvarchar](50) NULL,
+	[balance] [decimal](10, 2) NULL,
+	[cash_account_user] [nvarchar](50) NULL,
+	[type] [nvarchar](10) NULL,
+	[currency_name] [nvarchar](10) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[popurchase_hd]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[popurchase_hd](
+	[popurchase_hd_id] [nvarchar](50) NOT NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[popurchase_dt_id] [int] NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[term] [nvarchar](50) NULL,
+	[serial_P] [nvarchar](50) NULL,
+	[date_P] [date] NULL,
+	[due_date] [date] NULL,
+	[tot_befor] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [nvarchar](50) NULL,
+	[code_entry] [int] NULL,
+	[book_name_entry] [nvarchar](50) NULL,
+	[code_book_entry] [nvarchar](50) NULL,
+	[note_txt] [nvarchar](100) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[lock] [nvarchar](5) NULL,
+	[currance] [nvarchar](10) NULL,
+	[f_currance] [decimal](10, 2) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[num_book] [int] NULL,
+ CONSTRAINT [PK_popurchase_hd_1] PRIMARY KEY CLUSTERED 
+(
+	[popurchase_hd_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[popurchase_dt]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[popurchase_dt](
+	[no] [int] NULL,
+	[popurchase_hd_id] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[popurchase_dt_id] [int] IDENTITY(1,1) NOT NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[f_unite] [nvarchar](50) NULL,
+	[item_price] [decimal](10, 2) NULL,
+	[tot_bef] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[name_wars] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[exp] [bit] NULL,
+	[exp_date] [date] NULL,
+	[type] [int] NULL,
+	[serial_P] [int] NULL,
+	[cost_exp_edit] [decimal](10, 2) NULL,
+	[user] [nvarchar](50) NULL,
+	[tot_after_dis_forex] [decimal](10, 2) NULL,
+ CONSTRAINT [PK_popurchase_dt_1] PRIMARY KEY CLUSTERED 
+(
+	[popurchase_dt_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[permission_sub_screen]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[permission_sub_screen](
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[name_frm] [nvarchar](50) NULL,
+	[visible] [bit] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[permission_sub]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[permission_sub](
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[name_frm] [nvarchar](50) NULL,
+	[save] [bit] NULL,
+	[delete] [bit] NULL,
+	[edit_only] [bit] NULL,
+	[add_only] [bit] NULL,
+	[print] [bit] NULL,
+	[save_form] [bit] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[permission_price_discount]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[permission_price_discount](
+	[user_code] [nvarchar](50) NULL,
+	[contral_sale_price] [bit] NULL,
+	[controal_sale_discount] [bit] NULL,
+	[controal_all_discount] [bit] NULL,
+	[blow_cost_price] [bit] NULL,
+	[blow_cost_discount] [bit] NULL,
+	[blow_cost_all] [bit] NULL,
+	[show_perfect_cost] [bit] NULL,
+	[show_low_price] [bit] NULL,
+	[show_hight_price] [bit] NULL,
+	[show_avg_cost] [bit] NULL,
+	[show_qty] [bit] NULL,
+	[show_acc] [bit] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[permission_hotel_screen]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[permission_hotel_screen](
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[name_frm] [nvarchar](50) NULL,
+	[visible] [bit] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[permission]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[permission](
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[name_frm] [nvarchar](50) NULL,
+	[visible] [bit] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[jn_consolidated_invoice_d]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[jn_consolidated_invoice_d](
+	[id] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[date_dute] [date] NULL,
+	[date_p] [date] NULL,
+	[no_jop] [nvarchar](50) NULL,
+	[d_vale] [nvarchar](50) NULL,
+	[d_price] [nvarchar](50) NULL,
+	[d_qty] [nvarchar](50) NULL,
+	[d_code_stations] [nvarchar](50) NULL,
+	[d_name_stations] [nvarchar](50) NULL,
+	[d_code_stroehouse] [nvarchar](50) NULL,
+	[d_name_stroehouse] [nvarchar](50) NULL,
+	[d_novocher_dlv] [nvarchar](50) NULL,
+	[d_code_truck] [nvarchar](50) NULL,
+	[date_pp] [date] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[jn_consolidated_invoice]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[jn_consolidated_invoice](
+	[code_book] [nvarchar](50) NULL,
+	[id] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[date_dute] [date] NULL,
+	[date_p] [date] NULL,
+	[c_value] [nvarchar](50) NULL,
+	[c_qty] [nvarchar](50) NULL,
+	[c_code_stations] [nvarchar](50) NULL,
+	[c_name_stations] [nvarchar](50) NULL,
+	[c_number_cargo] [nvarchar](50) NULL,
+	[c_qty_cargo] [nvarchar](50) NULL,
+	[num_book] [int] NULL,
+	[number_of_cargo_num] [decimal](10, 2) NULL,
+	[cargo_qty_delevery] [decimal](10, 2) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[items_trans]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[items_trans](
+	[code_items] [nvarchar](50) NOT NULL,
+	[name_items] [nvarchar](200) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[opening_qty] [decimal](10, 2) NULL,
+	[old_cost] [decimal](10, 2) NULL,
+	[dates] [date] NULL,
+	[exp_date] [date] NULL,
+	[id_ware] [int] NULL,
+	[attachno] [nvarchar](50) NULL,
+	[attachbook] [nvarchar](50) NULL,
+	[attachnamebook] [nvarchar](50) NULL,
+	[attachtext] [nvarchar](100) NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[user] [nvarchar](50) NULL,
+	[id] [int] NULL,
+	[f_unite] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[f_unit] [decimal](10, 2) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[list_company_hot]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[list_company_hot](
+	[id] [int] NULL,
+	[typeCompany] [nvarchar](50) NULL,
+	[name] [nvarchar](50) NULL,
+	[addreess] [nvarchar](200) NULL,
+	[account] [nvarchar](50) NULL,
+	[country] [nvarchar](50) NULL,
+	[governate] [nvarchar](50) NULL,
+	[regionCity] [nvarchar](50) NULL,
+	[idVat] [nvarchar](50) NULL,
+	[noVat] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[layer_hot]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[layer_hot](
+	[id] [nvarchar](50) NULL,
+	[buidID] [nvarchar](50) NULL,
+	[name] [nvarchar](50) NULL,
+	[note] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[jn_truck]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[jn_truck](
+	[id] [int] NULL,
+	[name] [nvarchar](50) NULL,
+	[model] [nvarchar](50) NULL,
+	[tank] [decimal](10, 2) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[jn_temp]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[jn_temp](
+	[pin] [nvarchar](50) NOT NULL,
+	[station_code] [nvarchar](200) NULL,
+	[code_items] [nvarchar](50) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[f_unite] [nvarchar](10) NULL,
+	[name_unite] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[jn_storehouse]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[jn_storehouse](
+	[id] [nvarchar](50) NOT NULL,
+	[name] [nvarchar](50) NULL,
+	[address] [nvarchar](50) NULL,
+	[mode] [nvarchar](50) NULL,
+	[account] [nvarchar](50) NULL,
+	[code_tree] [nvarchar](50) NULL,
+	[name_tree] [nvarchar](50) NULL,
+	[rootlevel] [nvarchar](50) NULL,
+	[rootlevel_name] [nvarchar](50) NULL,
+	[type_acc] [nvarchar](50) NULL,
+	[sort] [nvarchar](50) NULL,
+ CONSTRAINT [PK_jn_storehouse] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[jn_station]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[jn_station](
+	[id] [nvarchar](50) NOT NULL,
+	[name] [nvarchar](50) NULL,
+	[address] [nvarchar](50) NULL,
+	[mode] [nvarchar](50) NULL,
+	[account] [nvarchar](50) NULL,
+	[code_tree] [nvarchar](50) NULL,
+	[name_tree] [nvarchar](50) NULL,
+	[rootlevel] [nvarchar](50) NULL,
+	[rootlevel_name] [nvarchar](50) NULL,
+	[type_acc] [nvarchar](50) NULL,
+	[sort] [nvarchar](20) NULL,
+	[price] [decimal](10, 2) NULL,
+	[kilometers] [decimal](10, 2) NULL,
+ CONSTRAINT [PK_jn_station] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[jn_jopnumber]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[jn_jopnumber](
+	[code_book] [nvarchar](50) NULL,
+	[id] [nvarchar](50) NULL,
+	[id_truk] [int] NULL,
+	[name_truck] [nvarchar](50) NULL,
+	[date_from] [date] NULL,
+	[date_to] [date] NULL,
+	[time_to] [nvarchar](50) NULL,
+	[time_from] [nvarchar](50) NULL,
+	[trip_counter_befor] [nvarchar](50) NULL,
+	[trip_counter_after] [nvarchar](50) NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[qty] [int] NULL,
+	[strohouse_name] [nvarchar](50) NULL,
+	[strohouse_code] [nvarchar](50) NULL,
+	[station_name] [nvarchar](50) NULL,
+	[station_code] [nvarchar](50) NULL,
+	[price_stations] [decimal](10, 2) NULL,
+	[no_voucher] [nvarchar](50) NULL,
+	[Loaded_distance] [nvarchar](50) NULL,
+	[unLoaded_distance] [nvarchar](50) NULL,
+	[fess1] [decimal](10, 2) NULL,
+	[fess2] [decimal](10, 2) NULL,
+	[fess3] [decimal](10, 2) NULL,
+	[date_d] [date] NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[name_driver] [nvarchar](50) NULL,
+	[code_driver] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[pin] [nvarchar](50) NULL,
+	[pin2] [nvarchar](50) NULL,
+	[destance] [nvarchar](200) NULL,
+	[num_book] [int] NULL,
+	[fess4] [decimal](10, 2) NULL,
+	[fess5] [decimal](10, 2) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[items_image]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[items_image](
+	[code_items] [nvarchar](50) NULL,
+	[image] [image] NULL,
+	[id_image] [int] IDENTITY(1,1) NOT NULL,
+ CONSTRAINT [PK_items_image] PRIMARY KEY CLUSTERED 
+(
+	[id_image] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[items_cat]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[items_cat](
+	[id] [int] NULL,
+	[cat1] [nvarchar](50) NULL,
+	[cat2] [nvarchar](50) NULL,
+	[cat3] [nvarchar](50) NULL,
+	[cat4] [nvarchar](50) NULL,
+	[c1] [nvarchar](15) NULL,
+	[c2] [nvarchar](15) NULL,
+	[c3] [nvarchar](15) NULL,
+	[c4] [nvarchar](15) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[items]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[items](
+	[code_items] [nvarchar](50) NOT NULL,
+	[name_items] [nvarchar](200) NULL,
+	[name_items2] [nvarchar](200) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[unit1] [int] NULL,
+	[price_buy] [decimal](10, 2) NULL,
+	[price_sale] [decimal](10, 2) NULL,
+	[discount_buy] [decimal](10, 2) NULL,
+	[discount_sale] [decimal](10, 2) NULL,
+	[taxes] [nvarchar](10) NULL,
+	[exp] [bit] NULL,
+	[type] [int] NULL,
+	[serial] [int] IDENTITY(1,1) NOT NULL,
+	[couta_type] [nvarchar](1) NULL,
+	[couta_date] [int] NULL,
+	[couta_qty] [decimal](10, 2) NULL,
+	[main_code] [nvarchar](50) NULL,
+	[cat1] [nvarchar](50) NULL,
+	[cat2] [nvarchar](50) NULL,
+	[cat3] [nvarchar](50) NULL,
+	[cat4] [nvarchar](50) NULL,
+	[desc] [nvarchar](max) NULL,
+	[menu] [int] NULL,
+	[menu_name] [nvarchar](10) NULL,
+	[offer] [nvarchar](5) NULL,
+	[itemType] [nvarchar](10) NULL,
+	[itemCode] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[issuer_inv_hd]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[issuer_inv_hd](
+	[issuer_inv_hd_id] [nvarchar](50) NOT NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[issuer_inv_id] [int] NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[term] [nvarchar](50) NULL,
+	[serial_P] [nvarchar](50) NULL,
+	[date_P] [date] NULL,
+	[due_date] [date] NULL,
+	[tot_befor] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [nvarchar](50) NULL,
+	[id_ware2] [int] NULL,
+	[code_entry] [int] NULL,
+	[book_name_entry] [nvarchar](50) NULL,
+	[code_book_entry] [nvarchar](50) NULL,
+	[note_txt] [nvarchar](100) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[lock] [nvarchar](5) NULL,
+	[currance] [nvarchar](10) NULL,
+	[f_currance] [decimal](10, 2) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[num_book] [int] NULL,
+ CONSTRAINT [PK_issuer_inv_hd] PRIMARY KEY CLUSTERED 
+(
+	[issuer_inv_hd_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[issuer_inv_dt]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[issuer_inv_dt](
+	[no] [int] NULL,
+	[issuer_inv_hd_id] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[issuer_inv_dt_id] [int] IDENTITY(1,1) NOT NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[f_unite] [nvarchar](50) NULL,
+	[item_price] [decimal](10, 2) NULL,
+	[tot_bef] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[id_ware2] [int] NULL,
+	[name_wars] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[exp] [bit] NULL,
+	[exp_date] [date] NULL,
+	[type] [int] NULL,
+	[serial_P] [int] NULL,
+	[cost_exp_edit] [decimal](10, 2) NULL,
+	[user] [nvarchar](50) NULL,
+	[tot_after_dis_forex] [decimal](10, 2) NULL,
+ CONSTRAINT [PK_issuer_inv_dt] PRIMARY KEY CLUSTERED 
+(
+	[issuer_inv_dt_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[adj_qty_hd]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[adj_qty_hd](
+	[adj_qty_hd_id] [nvarchar](50) NOT NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[adj_qty_dt_id] [int] NULL,
+	[term] [nvarchar](10) NULL,
+	[date_P] [date] NULL,
+	[id_ware] [nvarchar](50) NULL,
+	[code_entry] [nvarchar](50) NULL,
+	[book_name_entry] [nvarchar](50) NULL,
+	[code_book_entry] [nvarchar](50) NULL,
+	[note_txt] [nvarchar](100) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+ CONSTRAINT [PK_adj_qty_hd] PRIMARY KEY CLUSTERED 
+(
+	[adj_qty_hd_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[action]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[action](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[emp_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[action] [nvarchar](max) NULL,
+	[state] [nvarchar](10) NULL,
+	[date] [date] NULL,
+	[time] [time](7) NULL,
+	[number_record] [nvarchar](50) NULL,
+ CONSTRAINT [PK_action] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[implemint_entry_hot]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[implemint_entry_hot](
+	[res_credit] [nvarchar](50) NULL,
+	[rest_revenu] [nvarchar](50) NULL,
+	[servies_cash_reception] [nvarchar](50) NULL,
+	[servies_visa_reception] [nvarchar](50) NULL,
+	[servies_revenu] [nvarchar](50) NULL,
+	[servies_credit] [nvarchar](50) NULL,
+	[servies_revenu2] [nvarchar](50) NULL,
+	[exit_cash] [nvarchar](50) NULL,
+	[exit_visa] [nvarchar](50) NULL,
+	[exit_credit] [nvarchar](50) NULL,
+	[res_credit2] [nvarchar](50) NULL,
+	[res_credit3] [nvarchar](50) NULL,
+	[hotel_revenu] [nvarchar](50) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[vat] [nvarchar](50) NULL,
+	[vat_discount] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[guest_records_hot]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[guest_records_hot](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[id_guest] [int] NULL,
+	[id_comapny] [int] NULL,
+	[id_room] [int] NULL,
+	[id_item] [nvarchar](200) NULL,
+	[name_item] [nvarchar](200) NULL,
+	[price] [decimal](10, 2) NULL,
+	[tot] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[tot_after_disc] [decimal](10, 2) NULL,
+	[date_in] [date] NULL,
+	[date_out] [date] NULL,
+	[date_issue] [date] NULL,
+	[InvoiceNO] [nvarchar](200) NULL,
+	[idkey] [int] NULL,
+	[note] [nvarchar](200) NULL,
+	[type] [nvarchar](5) NULL,
+	[currancy] [nvarchar](50) NULL,
+	[rate] [decimal](10, 2) NULL,
+	[balance] [decimal](10, 2) NULL,
+	[date_dt] [date] NULL,
+	[tot_befor] [decimal](10, 2) NULL,
+	[vat] [decimal](10, 2) NULL,
+	[vat_discount] [decimal](10, 2) NULL,
+	[tot_vat] [decimal](10, 2) NULL,
+	[due_to_pay] [decimal](10, 2) NULL,
+	[credit] [nvarchar](5) NULL,
+ CONSTRAINT [PK_guest_records] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[guest_hot]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[guest_hot](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[name] [nvarchar](50) NULL,
+	[idCard] [nvarchar](50) NULL,
+	[phone] [nvarchar](50) NULL,
+	[address] [nvarchar](50) NULL,
+	[country] [nvarchar](50) NULL,
+	[city] [nvarchar](50) NULL,
+	[list_company_id] [nvarchar](50) NULL,
+	[list_company] [nvarchar](50) NULL,
+	[number_person] [int] NULL,
+	[number_kids] [int] NULL,
+	[text1] [nvarchar](200) NULL,
+	[text2] [nvarchar](200) NULL,
+	[gender] [nvarchar](3) NULL,
+ CONSTRAINT [PK_guest] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[exp_date]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[exp_date](
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[exp_date] [date] NULL,
+	[qty] [decimal](10, 2) NULL,
+	[cost] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[id_rows] [int] IDENTITY(1,1) NOT NULL,
+	[code] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[entry_trash]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[entry_trash](
+	[code_entry] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[acc_num] [nvarchar](50) NULL,
+	[acc_name] [nvarchar](50) NULL,
+	[depit] [decimal](10, 2) NULL,
+	[credit] [decimal](10, 2) NULL,
+	[opening_bal] [decimal](10, 2) NULL,
+	[depit_cur] [decimal](10, 2) NULL,
+	[credit_cur] [decimal](10, 2) NULL,
+	[currance] [nvarchar](50) NULL,
+	[f_currance] [decimal](10, 2) NULL,
+	[id] [int] NULL,
+	[dates] [date] NULL,
+	[rootlevel] [nvarchar](50) NULL,
+	[rootlevel_name] [nvarchar](50) NULL,
+	[type_acc] [nvarchar](10) NULL,
+	[sort] [nvarchar](10) NULL,
+	[attachno] [nvarchar](50) NULL,
+	[attachbook] [nvarchar](50) NULL,
+	[attachnamebook] [nvarchar](50) NULL,
+	[attachtext] [nvarchar](100) NULL,
+	[attachno2] [nvarchar](50) NULL,
+	[costcenter_code] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[entry_opening_new_years]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[entry_opening_new_years](
+	[code_entry] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[acc_num] [nvarchar](50) NULL,
+	[acc_name] [nvarchar](50) NULL,
+	[depit] [decimal](10, 2) NULL,
+	[credit] [decimal](10, 2) NULL,
+	[opening_bal] [decimal](10, 2) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[dates] [date] NULL,
+	[rootlevel] [nvarchar](50) NULL,
+	[rootlevel_name] [nvarchar](50) NULL,
+	[type_acc] [nvarchar](10) NULL,
+	[sort] [nvarchar](10) NULL,
+	[attachno] [nvarchar](50) NULL,
+	[attachbook] [nvarchar](50) NULL,
+	[attachnamebook] [nvarchar](50) NULL,
+	[attachtext] [nvarchar](100) NULL,
+	[attachno2] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[entry_hd]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[entry_hd](
+	[code_entry] [nvarchar](50) NOT NULL,
+	[code_book] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[entry]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[entry](
+	[code_entry] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[num_book] [int] NULL,
+	[name_book] [nvarchar](50) NULL,
+	[acc_num] [nvarchar](50) NULL,
+	[acc_name] [nvarchar](50) NULL,
+	[depit] [decimal](10, 2) NULL,
+	[credit] [decimal](10, 2) NULL,
+	[opening_bal] [decimal](10, 2) NULL,
+	[depit_cur] [decimal](10, 2) NULL,
+	[credit_cur] [decimal](10, 2) NULL,
+	[currance] [nvarchar](50) NULL,
+	[f_currance] [decimal](10, 2) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[dates] [date] NULL,
+	[rootlevel] [nvarchar](50) NULL,
+	[rootlevel_name] [nvarchar](50) NULL,
+	[type_acc] [nvarchar](10) NULL,
+	[sort] [nvarchar](10) NULL,
+	[attachno] [nvarchar](50) NULL,
+	[attachbook] [nvarchar](50) NULL,
+	[attachnamebook] [nvarchar](50) NULL,
+	[attachtext] [nvarchar](100) NULL,
+	[attachno2] [nvarchar](50) NULL,
+	[costcenter_code] [nvarchar](50) NULL,
+	[txt_desc] [nvarchar](150) NULL,
+ CONSTRAINT [PK_entry] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'dd/MM/yyyy' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'entry', @level2type=N'COLUMN',@level2name=N'dates'
+GO
+/****** Object:  Table [dbo].[end_day_hot]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[end_day_hot](
+	[idkey] [nvarchar](50) NULL,
+	[id_room] [nvarchar](50) NULL,
+	[lock] [nvarchar](10) NULL,
+	[date] [date] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[EmpWage]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[EmpWage](
+	[EmpCode] [nvarchar](50) NULL,
+	[Empname] [nvarchar](50) NULL,
+	[WCode] [nvarchar](20) NULL,
+	[Wname] [nvarchar](50) NULL,
+	[fValue] [decimal](10, 2) NULL,
+	[DebitAcc] [nvarchar](50) NULL,
+	[CreditAcc] [nvarchar](50) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[period_salary] [int] NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+ CONSTRAINT [PK_EmpWage] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[emps_image]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[emps_image](
+	[emp_no] [nvarchar](50) NULL,
+	[image] [image] NULL,
+	[id_image] [int] IDENTITY(1,1) NOT NULL,
+ CONSTRAINT [PK_emps_image] PRIMARY KEY CLUSTERED 
+(
+	[id_image] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[emps]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[emps](
+	[emp_no] [nvarchar](50) NOT NULL,
+	[emp_name] [nvarchar](50) NULL,
+	[user] [bit] NULL,
+	[user_name] [nvarchar](50) NULL,
+	[password] [nvarchar](50) NULL,
+	[account] [decimal](10, 2) NULL,
+	[reprsent] [bit] NULL,
+	[user_pos] [bit] NULL,
+ CONSTRAINT [PK_emp] PRIMARY KEY CLUSTERED 
+(
+	[emp_no] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[doc_image]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[doc_image](
+	[id_doc] [nvarchar](50) NULL,
+	[image] [image] NULL,
+	[id_image] [int] NOT NULL,
+ CONSTRAINT [PK_image_doc] PRIMARY KEY CLUSTERED 
+(
+	[id_image] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[currance]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[currance](
+	[currance] [nvarchar](50) NOT NULL,
+	[f_currance] [decimal](10, 2) NULL,
+	[main] [int] NULL,
+	[name_currance] [nvarchar](50) NULL,
+	[name_f_currance] [nvarchar](50) NULL,
+ CONSTRAINT [PK_currance] PRIMARY KEY CLUSTERED 
+(
+	[currance] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[couta]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[couta](
+	[vcs_code] [nvarchar](50) NULL,
+	[code_items] [nvarchar](50) NULL,
+	[couta_date_select] [int] NULL,
+	[couta_qty] [decimal](10, 2) NULL,
+	[couta_bal] [decimal](10, 2) NULL,
+	[last_date] [date] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[costcenter]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[costcenter](
+	[costcenter_id] [nvarchar](50) NOT NULL,
+	[costcenter_name] [nvarchar](100) NULL,
+ CONSTRAINT [PK_costcenter] PRIMARY KEY CLUSTERED 
+(
+	[costcenter_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[close_entry]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[close_entry](
+	[code_entry] [int] NULL,
+	[acc_num] [nvarchar](50) NULL,
+	[acc_name] [nvarchar](50) NULL,
+	[depit] [decimal](10, 2) NULL,
+	[credit] [decimal](10, 2) NULL,
+	[depit_tot] [decimal](10, 2) NULL,
+	[credit_tot] [decimal](10, 2) NULL,
+	[book_name] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[type] [nvarchar](50) NULL,
+	[date_p] [nvarchar](50) NULL,
+	[rootlevel] [nvarchar](50) NULL,
+	[sort] [nvarchar](10) NULL,
+	[type_acc] [nvarchar](10) NULL,
+	[open_bal] [decimal](10, 2) NULL,
+	[Checked] [int] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[center]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[center](
+	[code_items] [nvarchar](50) NULL,
+	[date] [date] NULL,
+	[note] [nvarchar](50) NULL,
+	[wares] [int] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[build_hot]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[build_hot](
+	[id] [nvarchar](50) NULL,
+	[name] [nvarchar](50) NULL,
+	[note] [nvarchar](150) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[book]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[book](
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[cat_book] [nvarchar](50) NULL,
+	[start] [int] NULL,
+	[end] [int] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[barcode_temp]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[barcode_temp](
+	[code] [nvarchar](100) NULL,
+	[id] [nvarchar](150) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[representative_hot]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[representative_hot](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[id_comapny] [int] NULL,
+	[name] [nvarchar](50) NULL,
+	[phone] [nvarchar](50) NULL,
+	[address] [nvarchar](50) NULL,
+ CONSTRAINT [PK_representative] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[premiums_Arc]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[premiums_Arc](
+	[invoice_no] [nvarchar](50) NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[id_vcs] [nvarchar](50) NULL,
+	[datee] [date] NULL,
+	[amount_of_invoice] [decimal](10, 2) NULL,
+	[prepaid] [decimal](10, 2) NULL,
+	[fix_intrest] [decimal](10, 2) NULL,
+	[no_premiume_fixed] [int] NULL,
+	[no_premiume_vriable] [int] NULL,
+	[value_of_intrest_monthly] [decimal](10, 2) NULL,
+	[value_of_premiume] [decimal](10, 2) NULL,
+	[tot_value_premiume] [decimal](10, 2) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[premiums]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[premiums](
+	[invoice_no] [nvarchar](50) NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[id_vcs] [nvarchar](50) NULL,
+	[datee] [date] NULL,
+	[amount_of_invoice] [decimal](10, 2) NULL,
+	[prepaid] [decimal](10, 2) NULL,
+	[fix_intrest] [decimal](10, 2) NULL,
+	[no_premiume_fixed] [int] NULL,
+	[no_premiume_vriable] [int] NULL,
+	[value_of_intrest_monthly] [decimal](10, 2) NULL,
+	[value_of_premiume] [decimal](10, 2) NULL,
+	[tot_value_premiume] [decimal](10, 2) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[pos_shift]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[pos_shift](
+	[shift_no] [int] NULL,
+	[emp_code] [nvarchar](50) NULL,
+	[emp_name] [nvarchar](50) NULL,
+	[date_open_shift] [datetime] NULL,
+	[date_cloes_shift] [datetime] NULL,
+	[data_def] [int] NULL,
+	[bal_open] [decimal](10, 2) NULL,
+	[bal_cloes] [decimal](10, 2) NULL,
+	[bal_account] [decimal](10, 2) NULL,
+	[bal_drawer] [decimal](10, 2) NULL,
+	[bal_actual] [decimal](10, 2) NULL,
+	[def_bal] [decimal](10, 2) NULL,
+	[cash] [decimal](10, 2) NULL,
+	[visa] [decimal](10, 2) NULL,
+	[credit] [decimal](10, 2) NULL,
+	[tot] [decimal](10, 2) NULL,
+	[lock] [int] NOT NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[pay_dt]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[pay_dt](
+	[code_entry] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[acc_num] [nvarchar](50) NULL,
+	[acc_name] [nvarchar](50) NULL,
+	[depit] [decimal](10, 2) NULL,
+	[credit] [decimal](10, 2) NULL,
+	[opening_bal] [decimal](10, 2) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[dates] [date] NULL,
+	[rootlevel] [nvarchar](50) NULL,
+	[rootlevel_name] [nvarchar](50) NULL,
+	[type_acc] [nvarchar](10) NULL,
+	[sort] [nvarchar](10) NULL,
+	[type_rows] [nvarchar](50) NULL,
+	[attachno] [nvarchar](50) NULL,
+	[attachbook] [nvarchar](50) NULL,
+	[attachnamebook] [nvarchar](50) NULL,
+	[attachtext] [nvarchar](100) NULL,
+	[attachno2] [nvarchar](50) NULL,
+	[costcenter_id] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[opening_qty]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[opening_qty](
+	[acc_wares] [nvarchar](50) NULL,
+	[name_wares] [nvarchar](50) NULL,
+	[id_ware] [int] NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[cost] [decimal](10, 2) NULL,
+	[tot] [decimal](10, 2) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[offer]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[offer](
+	[main_code] [nvarchar](50) NULL,
+	[sub_code] [nvarchar](50) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[dt1] [date] NULL,
+	[dt2] [date] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[barcode]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[barcode](
+	[barcode] [nvarchar](50) NULL,
+	[id] [int] NULL,
+	[code_items] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[info_co]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[info_co](
+	[period] [int] NULL,
+	[name_of_company] [nvarchar](50) NULL,
+	[tel1] [nvarchar](50) NULL,
+	[tel2] [nvarchar](50) NULL,
+	[mob1] [nvarchar](50) NULL,
+	[mob2] [nvarchar](50) NULL,
+	[fax] [nvarchar](50) NULL,
+	[email] [nvarchar](50) NULL,
+	[facebook] [nvarchar](50) NULL,
+	[wepsite] [nvarchar](50) NULL,
+	[address1] [nvarchar](50) NULL,
+	[address2] [nvarchar](50) NULL,
+	[taxes_no] [nvarchar](50) NULL,
+	[taxes_num] [nvarchar](50) NULL,
+	[note] [nvarchar](50) NULL,
+	[logo] [image] NULL,
+	[stop_qty_move] [bit] NULL,
+	[stop_entry] [bit] NULL,
+	[open_qty] [bit] NULL,
+	[open_vcs] [bit] NULL,
+	[entry_error] [bit] NULL,
+	[expiry] [bit] NULL,
+	[representative] [bit] NULL,
+	[barcode] [bit] NULL,
+	[currancey] [bit] NULL,
+	[discount] [bit] NULL,
+	[taxes] [bit] NULL,
+	[invoice_taxes] [bit] NULL,
+	[type] [nvarchar](50) NULL,
+	[id] [nvarchar](50) NULL,
+	[name] [nvarchar](50) NULL,
+	[address] [nvarchar](50) NULL,
+	[branchId] [nvarchar](50) NULL,
+	[country] [nvarchar](50) NULL,
+	[governate] [nvarchar](50) NULL,
+	[regionCity] [nvarchar](50) NULL,
+	[street] [nvarchar](50) NULL,
+	[buildingNumber] [nvarchar](50) NULL,
+	[postalCode] [nvarchar](50) NULL,
+	[floor] [nvarchar](50) NULL,
+	[id_e] [nvarchar](50) NULL,
+	[secret_e] [nvarchar](50) NULL,
+	[itemType] [nvarchar](3) NULL,
+	[taxpayerActivityCode] [nvarchar](50) NULL,
+	[over_draft] [nvarchar](50) NULL,
+	[t1] [int] NULL,
+	[t] [int] NULL,
+	[def_taxes] [nvarchar](10) NULL,
+	[def_name_unite] [nvarchar](10) NULL,
+	[period_time_rsal_pos] [int] NULL,
+	[cat_items1] [nvarchar](30) NULL,
+	[cat_items2] [nvarchar](30) NULL,
+	[cat_items3] [nvarchar](30) NULL,
+	[cat_items4] [nvarchar](30) NULL,
+	[qty_max_search] [int] NULL,
+	[dbv] [int] NULL,
+	[year_card] [int] NULL,
+	[bonace] [float] NULL,
+	[costCenter_mund] [bit] NULL,
+	[isLive] [bit] NULL,
+	[pinToken] [nvarchar](20) NULL,
+	[Round] [int] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[trans_dt]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[trans_dt](
+	[no] [int] NULL,
+	[trans_hd_id] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[trans_dt_id] [int] IDENTITY(1,1) NOT NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[f_unite] [nvarchar](50) NULL,
+	[item_price] [decimal](10, 2) NULL,
+	[tot_bef] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[id_ware2] [int] NULL,
+	[name_wars] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[exp] [bit] NULL,
+	[exp_date] [date] NULL,
+	[type] [int] NULL,
+	[serial_P] [int] NULL,
+	[cost_exp_edit] [decimal](10, 2) NULL,
+	[user] [nvarchar](50) NULL,
+	[tot_after_dis_forex] [decimal](10, 2) NULL,
+ CONSTRAINT [PK_trans_dt] PRIMARY KEY CLUSTERED 
+(
+	[trans_dt_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[test]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[test](
+	[no1] [nvarchar](200) NULL,
+	[no2] [nvarchar](200) NULL,
+	[no3] [nvarchar](200) NULL,
+	[no4] [nvarchar](200) NULL,
+	[no5] [nvarchar](200) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[term]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[term](
+	[cat_book] [nvarchar](50) NULL,
+	[term_id] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[rootid] [nvarchar](150) NULL,
+	[rootname] [nvarchar](150) NULL,
+	[depit] [nvarchar](150) NULL,
+	[credit] [nvarchar](150) NULL,
+	[value] [nvarchar](50) NULL,
+	[code_entry] [nvarchar](50) NULL,
+	[bookname_entry] [nvarchar](50) NULL,
+	[taxes] [bit] NULL,
+	[vat_add] [bit] NULL,
+	[vat_rate] [int] NULL,
+	[costcenter_id] [nvarchar](50) NULL,
+	[term_type] [int] NULL,
+	[taxType] [nvarchar](10) NULL,
+	[subType] [nvarchar](10) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[temp]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[temp](
+	[pinid] [nvarchar](50) NULL,
+	[col1] [nvarchar](50) NULL,
+	[col2] [nvarchar](50) NULL,
+	[col3] [nvarchar](50) NULL,
+	[col4] [nvarchar](50) NULL,
+	[col5] [nvarchar](50) NULL,
+	[col6] [nvarchar](50) NULL,
+	[col7] [nvarchar](50) NULL,
+	[col8] [nvarchar](50) NULL,
+	[col9] [nvarchar](50) NULL,
+	[col10] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[taxes]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[taxes](
+	[no] [int] NULL,
+	[taxType] [nvarchar](50) NULL,
+	[taxes_name] [nvarchar](50) NULL,
+	[taxes] [nvarchar](50) NULL,
+	[name_subType] [nvarchar](50) NULL,
+	[subType] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[unite]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[unite](
+	[name_unite] [nvarchar](50) NULL,
+	[unite] [decimal](10, 2) NULL,
+	[id] [int] NULL,
+	[code_items] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[type_room_price_hot]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[type_room_price_hot](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[codeCompany] [nvarchar](50) NULL,
+	[nameComany] [nvarchar](200) NULL,
+	[cat_mex_type] [nvarchar](max) NULL,
+	[price] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[final_price] [decimal](10, 2) NULL,
+	[cat1] [nvarchar](50) NULL,
+	[cat2] [nvarchar](50) NULL,
+	[cat3] [nvarchar](50) NULL,
+	[cat4] [nvarchar](50) NULL,
+	[cat5] [nvarchar](50) NULL,
+	[currance] [nvarchar](10) NULL,
+ CONSTRAINT [PK_type_room_price] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[type_room_hot]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[type_room_hot](
+	[cat1] [nvarchar](50) NULL,
+	[cat2] [nvarchar](50) NULL,
+	[cat3] [nvarchar](50) NULL,
+	[cat4] [nvarchar](50) NULL,
+	[cat5] [nvarchar](50) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+ CONSTRAINT [PK_type_room] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[statment]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[statment](
+	[no] [int] NULL,
+	[name_acc] [nvarchar](50) NULL,
+	[s1] [nvarchar](50) NULL,
+	[s2] [nvarchar](50) NULL,
+	[p1] [nvarchar](50) NULL,
+	[p2] [nvarchar](50) NULL,
+	[id] [nvarchar](50) NULL,
+	[name_statmen] [nvarchar](50) NULL,
+	[s_tot] [money] NULL,
+	[p_tot] [money] NULL,
+	[plues] [nvarchar](50) NULL,
+	[mins] [nvarchar](50) NULL,
+	[level] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[sosale_hd]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[sosale_hd](
+	[sosale_hd_id] [nvarchar](50) NOT NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[sosale_dt_id] [int] NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[term] [nvarchar](50) NULL,
+	[serial_P] [int] NULL,
+	[date_P] [date] NULL,
+	[due_date] [date] NULL,
+	[tot_befor] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [nvarchar](50) NULL,
+	[code_entry] [int] NULL,
+	[book_name_entry] [nvarchar](50) NULL,
+	[code_book_entry] [nvarchar](50) NULL,
+	[note_txt] [nvarchar](100) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[lock] [nvarchar](5) NULL,
+	[currance] [nvarchar](10) NULL,
+	[f_currance] [decimal](10, 2) NULL,
+	[vcs_value] [decimal](10, 2) NULL,
+	[txt_mony] [nvarchar](200) NULL,
+	[e_invoice] [bit] NULL,
+	[uuid] [nvarchar](50) NULL,
+	[num_book] [int] NULL,
+ CONSTRAINT [PK_sosale_hd] PRIMARY KEY CLUSTERED 
+(
+	[sosale_hd_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[sosale_dt]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[sosale_dt](
+	[no] [int] NULL,
+	[sosale_hd_id] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[sosale_dt_id] [int] IDENTITY(1,1) NOT NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[f_unite] [nvarchar](50) NULL,
+	[item_price] [decimal](10, 2) NULL,
+	[tot_bef] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[name_wars] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[exp] [bit] NULL,
+	[exp_date] [date] NULL,
+	[type] [int] NULL,
+	[serial_P] [int] NULL,
+	[cost_exp_edit] [decimal](10, 2) NULL,
+	[user] [nvarchar](50) NULL,
+	[tot_after_dis_forex] [decimal](10, 2) NULL,
+ CONSTRAINT [PK_sosale_dt] PRIMARY KEY CLUSTERED 
+(
+	[sosale_dt_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[servies_records_hot]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[servies_records_hot](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[idkey] [int] NULL,
+	[id_guest] [int] NULL,
+	[id_comapny] [int] NULL,
+	[id_room] [int] NULL,
+	[id_item] [int] NULL,
+	[name_item] [nvarchar](50) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[price] [decimal](10, 2) NULL,
+	[tot] [decimal](10, 2) NULL,
+	[date_in] [date] NULL,
+	[date_out] [date] NULL,
+	[date_issue] [date] NULL,
+	[credit] [int] NULL,
+	[idDocument] [nvarchar](200) NULL,
+	[type_food_beverage] [int] NULL,
+	[type_food] [nvarchar](5) NULL,
+	[invoiceNo] [nvarchar](200) NULL,
+	[currance] [nvarchar](10) NULL,
+ CONSTRAINT [PK_servies_records] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[servies_hot]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[servies_hot](
+	[id] [nvarchar](50) NULL,
+	[name] [nvarchar](200) NULL,
+	[price] [decimal](10, 2) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[salary]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[salary](
+	[period_salary] [int] NULL,
+	[empcode] [nvarchar](50) NULL,
+	[namename] [nvarchar](50) NULL,
+	[wcode] [nvarchar](50) NULL,
+	[wname] [nvarchar](50) NULL,
+	[fvalue] [decimal](10, 2) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[rsale_hd]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[rsale_hd](
+	[rsale_hd_id] [nvarchar](50) NOT NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[rsale_dt_id] [int] NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[term] [nvarchar](50) NULL,
+	[serial_P] [int] NULL,
+	[date_P] [date] NULL,
+	[due_date] [date] NULL,
+	[tot_befor] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [nvarchar](50) NULL,
+	[code_entry] [int] NULL,
+	[book_name_entry] [nvarchar](50) NULL,
+	[code_book_entry] [nvarchar](50) NULL,
+	[note_txt] [nvarchar](100) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[lock] [nvarchar](5) NULL,
+	[currance] [nvarchar](10) NULL,
+	[f_currance] [decimal](10, 2) NULL,
+	[vcs_value] [decimal](10, 2) NULL,
+	[txt_mony] [nvarchar](200) NULL,
+	[e_invoice] [bit] NULL,
+	[uuid] [nvarchar](50) NULL,
+	[attach_no] [nvarchar](50) NULL,
+	[num_book] [int] NULL,
+	[vat_add] [decimal](10, 2) NULL,
+	[state_e] [char](10) NULL,
+	[message] [nvarchar](max) NULL,
+ CONSTRAINT [PK_rsale_hd] PRIMARY KEY CLUSTERED 
+(
+	[rsale_hd_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[rsale_dt]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[rsale_dt](
+	[no] [int] NULL,
+	[rsale_hd_id] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[rsale_dt_id] [int] IDENTITY(1,1) NOT NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](200) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[f_unite] [nvarchar](50) NULL,
+	[item_price] [decimal](10, 2) NULL,
+	[tot_bef] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[name_wars] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[exp] [bit] NULL,
+	[exp_date] [date] NULL,
+	[type] [int] NULL,
+	[serial_P] [int] NULL,
+	[cost_exp_edit] [decimal](10, 2) NULL,
+	[user] [nvarchar](50) NULL,
+	[tot_after_dis_forex] [decimal](10, 2) NULL,
+ CONSTRAINT [PK_rsale_dt] PRIMARY KEY CLUSTERED 
+(
+	[rsale_dt_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[rpurchase_hd]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[rpurchase_hd](
+	[rpurchase_hd_id] [nvarchar](50) NOT NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[rpurchase_dt_id] [int] NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[term] [nvarchar](50) NULL,
+	[serial_P] [nvarchar](50) NULL,
+	[date_P] [date] NULL,
+	[due_date] [date] NULL,
+	[tot_befor] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [nvarchar](50) NULL,
+	[code_entry] [int] NULL,
+	[book_name_entry] [nvarchar](50) NULL,
+	[code_book_entry] [nvarchar](50) NULL,
+	[note_txt] [nvarchar](100) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[lock] [nvarchar](5) NULL,
+	[currance] [nvarchar](10) NULL,
+	[f_currance] [decimal](10, 2) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[uuid] [nvarchar](50) NULL,
+	[vcs_value] [decimal](10, 2) NULL,
+	[txt_mony] [nvarchar](max) NULL,
+	[e_invoice] [bit] NULL,
+	[attach_no] [nvarchar](50) NULL,
+	[num_book] [int] NULL,
+	[vat_add] [decimal](10, 2) NULL,
+ CONSTRAINT [PK_rpurchase_hd] PRIMARY KEY CLUSTERED 
+(
+	[rpurchase_hd_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[rpurchase_dt]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[rpurchase_dt](
+	[no] [int] NULL,
+	[rpurchase_hd_id] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[rpurchase_dt_id] [int] IDENTITY(1,1) NOT NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[f_unite] [nvarchar](50) NULL,
+	[item_price] [decimal](10, 2) NULL,
+	[tot_bef] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[name_wars] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[exp] [bit] NULL,
+	[exp_date] [date] NULL,
+	[type] [int] NULL,
+	[serial_P] [int] NULL,
+	[cost_exp_edit] [decimal](10, 2) NULL,
+	[user] [nvarchar](50) NULL,
+	[tot_after_dis_forex] [decimal](10, 2) NULL,
+ CONSTRAINT [PK_rpurchase_dt] PRIMARY KEY CLUSTERED 
+(
+	[rpurchase_dt_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[room_operation_hot]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[room_operation_hot](
+	[buildID] [nvarchar](50) NULL,
+	[layerID] [nvarchar](50) NULL,
+	[id] [nvarchar](50) NULL,
+	[state] [nvarchar](50) NULL,
+	[type] [bit] NULL,
+	[cat1] [nvarchar](50) NULL,
+	[cat2] [nvarchar](50) NULL,
+	[cat3] [nvarchar](50) NULL,
+	[cat4] [nvarchar](50) NULL,
+	[cat5] [nvarchar](50) NULL,
+	[bedcat1] [nvarchar](50) NULL,
+	[meal] [nvarchar](50) NULL,
+	[note] [nvarchar](300) NULL,
+	[idkey] [int] IDENTITY(1,1) NOT NULL,
+	[dateIn] [date] NULL,
+	[dateOut] [date] NULL,
+	[timeIn] [nvarchar](50) NULL,
+	[timeOut] [nvarchar](50) NULL,
+	[id_guest] [int] NULL,
+	[name] [nvarchar](200) NULL,
+	[idComapny] [nvarchar](50) NULL,
+	[id_representative] [nvarchar](50) NULL,
+	[typeCompany] [nvarchar](50) NULL,
+	[opening] [nvarchar](50) NULL,
+	[InOut] [nvarchar](5) NULL,
+	[clean] [nvarchar](50) NULL,
+	[oneDay] [nvarchar](50) NULL,
+	[lockEdit] [nvarchar](1) NULL,
+	[currance] [nvarchar](5) NULL,
+	[txt2] [nvarchar](10) NULL,
+	[txt3] [nvarchar](10) NULL,
+	[type_pay] [nchar](50) NULL,
+	[mode] [nchar](10) NULL,
+	[groupby] [bit] NULL,
+	[isCredit] [nvarchar](10) NULL,
+ CONSTRAINT [PK_room_operation] PRIMARY KEY CLUSTERED 
+(
+	[idkey] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[room_hot]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[room_hot](
+	[buildID] [nvarchar](50) NULL,
+	[layerID] [nvarchar](50) NULL,
+	[id] [nvarchar](50) NULL,
+	[state] [nvarchar](50) NULL,
+	[type] [bit] NULL,
+	[cat1] [nvarchar](50) NULL,
+	[cat2] [nvarchar](50) NULL,
+	[cat3] [nvarchar](50) NULL,
+	[cat4] [nvarchar](50) NULL,
+	[cat5] [nvarchar](50) NULL,
+	[note] [nvarchar](50) NULL,
+	[idkey] [int] IDENTITY(1,1) NOT NULL,
+	[dateIn] [date] NULL,
+	[dateOut] [date] NULL,
+ CONSTRAINT [PK_room] PRIMARY KEY CLUSTERED 
+(
+	[idkey] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[room_history_hot]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[room_history_hot](
+	[buildID] [nvarchar](50) NULL,
+	[layerID] [nvarchar](50) NULL,
+	[id] [nvarchar](50) NULL,
+	[state] [nvarchar](50) NULL,
+	[type] [bit] NULL,
+	[cat1] [nvarchar](50) NULL,
+	[cat2] [nvarchar](50) NULL,
+	[cat3] [nvarchar](50) NULL,
+	[cat4] [nvarchar](50) NULL,
+	[cat5] [nvarchar](50) NULL,
+	[bedcat1] [nvarchar](50) NULL,
+	[meal] [nvarchar](50) NULL,
+	[note] [nvarchar](300) NULL,
+	[idkey] [int] NULL,
+	[dateIn] [date] NULL,
+	[dateOut] [date] NULL,
+	[timeIn] [nvarchar](50) NULL,
+	[timeOut] [nvarchar](50) NULL,
+	[id_guest] [int] NULL,
+	[name] [nvarchar](200) NULL,
+	[idComapny] [nvarchar](50) NULL,
+	[id_representative] [nvarchar](50) NULL,
+	[typeCompany] [nvarchar](50) NULL,
+	[opening] [nvarchar](50) NULL,
+	[InOut] [nvarchar](5) NULL,
+	[clean] [nvarchar](50) NULL,
+	[oneDay] [nvarchar](50) NULL,
+	[cancel] [int] NULL,
+	[type_pay] [nchar](50) NULL,
+	[mode] [nchar](10) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[wares_acc]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[wares_acc](
+	[id_ware] [int] NULL,
+	[rootid] [nvarchar](50) NULL,
+	[rootname] [nvarchar](50) NULL,
+	[acc_name] [nvarchar](50) NULL,
+	[acc_id] [int] NULL,
+	[ware_name] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[wares]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[wares](
+	[id_ware] [int] NOT NULL,
+	[name_ware] [nvarchar](50) NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](200) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[cost] [decimal](10, 2) NULL,
+	[tot] [decimal](10, 2) NULL,
+	[acc] [nvarchar](10) NULL,
+	[demand_limit] [decimal](10, 2) NULL,
+	[demand_maximum] [decimal](10, 2) NULL,
+	[demand_limit_bit] [bit] NULL,
+	[demand_maximum_bit] [bit] NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[vcs]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[vcs](
+	[vcs_code] [nvarchar](50) NOT NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[mode] [nvarchar](10) NULL,
+	[account] [nvarchar](50) NULL,
+	[code_tree] [nvarchar](50) NULL,
+	[name_tree] [nvarchar](50) NULL,
+	[rootlevel] [nvarchar](50) NULL,
+	[rootlevel_name] [nvarchar](50) NULL,
+	[type_acc] [nvarchar](10) NULL,
+	[sort] [nvarchar](20) NULL,
+	[phone] [nvarchar](50) NULL,
+	[address] [nvarchar](50) NULL,
+	[credit] [bit] NULL,
+	[credit_limit] [float] NULL,
+	[type] [nvarchar](50) NULL,
+	[id] [nvarchar](50) NULL,
+	[name] [nvarchar](50) NULL,
+	[country] [nvarchar](50) NULL,
+	[governate] [nvarchar](50) NULL,
+	[regionCity] [nvarchar](50) NULL,
+	[street] [nvarchar](50) NULL,
+	[buildingNumber] [nvarchar](50) NULL,
+	[postalCode] [nvarchar](50) NULL,
+	[floor] [nvarchar](50) NULL,
+ CONSTRAINT [PK_vcs] PRIMARY KEY CLUSTERED 
+(
+	[vcs_code] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[tree]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[tree](
+	[RootID] [nvarchar](50) NOT NULL,
+	[RootName] [nvarchar](50) NULL,
+	[ParentID] [nvarchar](50) NULL,
+	[Parentname] [nvarchar](50) NULL,
+	[RootLevel] [nvarchar](50) NULL,
+	[type_acc] [nvarchar](50) NULL,
+	[sort] [nvarchar](50) NULL,
+	[currance] [nvarchar](50) NULL,
+	[name_long] [nvarchar](250) NULL,
+	[visable] [bit] NULL,
+	[costcenter] [int] NULL,
+ CONSTRAINT [PK_tree] PRIMARY KEY CLUSTERED 
+(
+	[RootID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[trash_adj_exp]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[trash_adj_exp](
+	[code_items] [nvarchar](50) NULL,
+	[plues_wares] [decimal](10, 2) NULL,
+	[plues_exp] [decimal](10, 2) NULL,
+	[mins_wares] [decimal](10, 2) NULL,
+	[mins_exp] [decimal](10, 2) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[wares_overdraft]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[wares_overdraft](
+	[id_ware] [int] NULL,
+	[name_ware] [nvarchar](50) NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[cost] [decimal](10, 2) NULL,
+	[tot] [decimal](10, 2) NULL,
+	[acc] [nvarchar](10) NULL,
+	[demand_limit] [decimal](10, 2) NULL,
+	[demand_maximum] [decimal](10, 2) NULL,
+	[demand_limit_bit] [bit] NULL,
+	[demand_maximum_bit] [bit] NULL,
+	[shift_no] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  StoredProcedure [dbo].[items_normal_card_report]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[items_normal_card_report]@code nvarchar(50),@ware int,@unite int
+as
+select items_trans.code_items,items_trans.name_items,(items_trans.qty /unite.unite) as qty,items_trans.id_ware ,items_trans.dates,items_trans.attachbook,items_trans.attachnamebook ,items_trans.name_unite,items_trans.f_unite,items_trans.vcs_code,items_trans.vcs_name,attachno
+from info_co,items_trans  left join unite on items_trans.code_items=unite.code_items
+ --where items_trans.code_items='1001' and items_trans.id_ware='10' and unite.id='1'
+ where items_trans.code_items=@code and items_trans.id_ware=@ware and unite.id=@unite
+ 
+ order by  items_trans.dates
+GO
+/****** Object:  StoredProcedure [dbo].[wares_adj]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create  procedure [dbo].[wares_adj] (@id int)
+as
+
+select code_items,qty,*,(select top 1 barcode from barcode where code_items=wares.code_items) as barcode from wares 
+where code_items <>'0' and id_ware=@id
+
+update vcs set rootlevel_name='الموردين' ,rootlevel='2212101210101' where mode='vendor'
+update vcs set rootlevel_name='العملاء' ,rootlevel='1111107110701' where mode='customer'
+GO
+/****** Object:  StoredProcedure [dbo].[test_balance]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create procedure [dbo].[test_balance]
+as
+----select  entry.acc_num, entry.acc_name,rootlevel,type_acc,(sum(entry.depit)) as depitbal,sum(entry.credit) as creditbal,sum(opening_bal) as opening_bal from entry 
+----where  entry.type_acc='قائمه دخل' 
+----group by entry.acc_num, entry.acc_name,rootlevel ,type_acc 
+----order by rootlevel
+
+--'2020-01-06' =
+--@id_date date
+select  main_sub.acc_name as sub,main_sub.value as tot_sub ,entry.dates,entry.acc_num, entry.acc_name,entry.rootlevel,entry.type_acc,(sum(entry.depit)) as depitbal,sum(entry.credit) as creditbal,(sum(entry.depit)) -sum(entry.credit) as def,sum(opening_bal) as opening_bal 
+from entry  left join main_sub on entry.acc_num= main_sub.acc_num left join tree on entry.acc_num = tree.rootid
+where  tree.sort='ميزانيه' 
+group by entry.acc_num, entry.acc_name,entry.rootlevel ,entry.type_acc ,main_sub.value,main_sub.acc_name ,entry.dates
+order by entry.rootlevel
+GO
+/****** Object:  StoredProcedure [dbo].[test_bal]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create procedure [dbo].[test_bal]
+as 
+
+select  acc_num,null as main ,acc_name,rootlevel,type_acc,(sum(entry.depit)) as depitbal,sum(entry.credit) as creditbal,sum(opening_bal) as opening_bal from entry 
+where   sort='1'  
+group by entry.acc_num, entry.acc_name,rootlevel ,type_acc 
+union
+select  acc_num,acc_name as main , null as acc_name,rootlevel,type_acc,(sum(entry.depit)) as depitbal,sum(entry.credit) as creditbal,sum(opening_bal) as opening_bal from entry 
+where   sort='g'  
+group by entry.acc_num, entry.acc_name,rootlevel ,type_acc 
+
+ order by entry.rootlevel asc
+
+--select * from entry
+GO
+/****** Object:  Table [dbo].[trans_hd]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[trans_hd](
+	[trans_hd_id] [nvarchar](50) NOT NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[trans_dt_id] [int] NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[term] [nvarchar](50) NULL,
+	[serial_P] [nvarchar](50) NULL,
+	[date_P] [date] NULL,
+	[due_date] [date] NULL,
+	[tot_befor] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [nvarchar](50) NULL,
+	[id_ware2] [int] NULL,
+	[code_entry] [int] NULL,
+	[book_name_entry] [nvarchar](50) NULL,
+	[code_book_entry] [nvarchar](50) NULL,
+	[note_txt] [nvarchar](100) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[lock] [nvarchar](5) NULL,
+	[currance] [nvarchar](10) NULL,
+	[f_currance] [decimal](10, 2) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[num_book] [int] NULL,
+ CONSTRAINT [PK_trans_hd] PRIMARY KEY CLUSTERED 
+(
+	[trans_hd_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  View [dbo].[v_expensses_vs_revenue]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE VIEW [dbo].[v_expensses_vs_revenue]
+AS
+SELECT     depit, credit, dates
+FROM         dbo.entry
+WHERE     (code_entry <> '-11') AND (type_acc = 'قائمه دخل')
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_DiagramPane1', @value=N'[0E232FF0-B466-11cf-A24F-00AA00A3EFFF, 1.00]
+Begin DesignProperties = 
+   Begin PaneConfigurations = 
+      Begin PaneConfiguration = 0
+         NumPanes = 4
+         Configuration = "(H (1[40] 4[20] 2[20] 3) )"
+      End
+      Begin PaneConfiguration = 1
+         NumPanes = 3
+         Configuration = "(H (1 [50] 4 [25] 3))"
+      End
+      Begin PaneConfiguration = 2
+         NumPanes = 3
+         Configuration = "(H (1 [50] 2 [25] 3))"
+      End
+      Begin PaneConfiguration = 3
+         NumPanes = 3
+         Configuration = "(H (4 [30] 2 [40] 3))"
+      End
+      Begin PaneConfiguration = 4
+         NumPanes = 2
+         Configuration = "(H (1 [56] 3))"
+      End
+      Begin PaneConfiguration = 5
+         NumPanes = 2
+         Configuration = "(H (2 [66] 3))"
+      End
+      Begin PaneConfiguration = 6
+         NumPanes = 2
+         Configuration = "(H (4 [50] 3))"
+      End
+      Begin PaneConfiguration = 7
+         NumPanes = 1
+         Configuration = "(V (3))"
+      End
+      Begin PaneConfiguration = 8
+         NumPanes = 3
+         Configuration = "(H (1[56] 4[18] 2) )"
+      End
+      Begin PaneConfiguration = 9
+         NumPanes = 2
+         Configuration = "(H (1 [75] 4))"
+      End
+      Begin PaneConfiguration = 10
+         NumPanes = 2
+         Configuration = "(H (1[66] 2) )"
+      End
+      Begin PaneConfiguration = 11
+         NumPanes = 2
+         Configuration = "(H (4 [60] 2))"
+      End
+      Begin PaneConfiguration = 12
+         NumPanes = 1
+         Configuration = "(H (1) )"
+      End
+      Begin PaneConfiguration = 13
+         NumPanes = 1
+         Configuration = "(V (4))"
+      End
+      Begin PaneConfiguration = 14
+         NumPanes = 1
+         Configuration = "(V (2))"
+      End
+      ActivePaneConfig = 0
+   End
+   Begin DiagramPane = 
+      Begin Origin = 
+         Top = 0
+         Left = 0
+      End
+      Begin Tables = 
+         Begin Table = "entry"
+            Begin Extent = 
+               Top = 6
+               Left = 38
+               Bottom = 125
+               Right = 207
+            End
+            DisplayFlags = 280
+            TopColumn = 0
+         End
+      End
+   End
+   Begin SQLPane = 
+   End
+   Begin DataPane = 
+      Begin ParameterDefaults = ""
+      End
+      Begin ColumnWidths = 9
+         Width = 284
+         Width = 1500
+         Width = 1500
+         Width = 1500
+         Width = 1500
+         Width = 1500
+         Width = 1500
+         Width = 1500
+         Width = 1500
+      End
+   End
+   Begin CriteriaPane = 
+      Begin ColumnWidths = 11
+         Column = 1440
+         Alias = 900
+         Table = 1170
+         Output = 720
+         Append = 1400
+         NewValue = 1170
+         SortType = 1350
+         SortOrder = 1410
+         GroupBy = 1350
+         Filter = 1350
+         Or = 1350
+         Or = 1350
+         Or = 1350
+      End
+   End
+End
+' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'VIEW',@level1name=N'v_expensses_vs_revenue'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_DiagramPaneCount', @value=1 , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'VIEW',@level1name=N'v_expensses_vs_revenue'
+GO
+/****** Object:  StoredProcedure [dbo].[user_action]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create procedure [dbo].[user_action] (@emp nvarchar(50),@d1 date,@d2 date)
+as
+select * from action where emp_code=@emp  and
+ date between @d1 and  @d2  
+  order by date asc
+  
+  --'2020-12-12' and date='2020-12-12'
+GO
+/****** Object:  StoredProcedure [dbo].[revenue]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--select (right(acc_num,LEN(acc_num)-1)),acc_num,acc_name,depit,credit,dates from entry where code_entry <>'-11' and type_acc='قائمه دخل'
+--(right(sale_hd_id,LEN(sale_hd_id)-3)))
+
+--select  acc_name,depit,credit,dates from entry where code_entry <>'-11' and type_acc='قائمه دخل' and SUBSTRING(acc_num,1,1),acc_num='5'
+CREATE procedure [dbo].[revenue]
+as
+select  acc_num,acc_name,sum(credit)as cr,dates,dates,day(dates)as day,month(dates)as month,YEAR(dates)as year from entry where code_entry <>'-11' and type_acc='قائمة دخل' and left(acc_num,1)='4' and credit<>0
+group by acc_num,acc_name,dates
+GO
+/****** Object:  StoredProcedure [dbo].[rev_vs_exp]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[rev_vs_exp]
+	
+AS
+
+select sum(depit) as 'إجمالي المصروفات',sum(credit)as 'إجمالي الايرادات',dates,acc_num,acc_name from entry where type_acc='قائمة دخل' and code_entry<>'-11'
+group by acc_num,acc_name,dates
+GO
+/****** Object:  StoredProcedure [dbo].[trial_item_cost_and_sale_value]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[trial_item_cost_and_sale_value]@ware int,@unite int
+as 
+
+
+select   wares.code_items,wares. name_items, wares.qty, wares.cost,wares.id_ware,items.price_sale,(items.price_sale*(wares.qty)/unite.unite)as value_price_sale ,((wares.qty/unite.unite)*wares.cost)as value_cost,unite.name_unite,unite.unite  from wares left join items on wares.code_items=items.code_items left join unite on wares.code_items=unite.code_items
+-- where wares.id_ware='10'  and unite.id=1
+ where wares.id_ware=@ware  and unite.id=@unite and wares.qty > 0
+GO
+/****** Object:  StoredProcedure [dbo].[Trial_balance_vendor]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE procedure [dbo].[Trial_balance_vendor]@datee date
+as
+
+select acc_num,acc_name,sum(depit) as depit,sum(entry.credit)as credit,sum(opening_bal) as opening_bal,f_currance,currance from entry left join vcs on entry.acc_num=vcs.vcs_code 
+where code_entry<>'-11' and vcs.mode='vendor' and dates <= @datee
+
+group by acc_num,acc_name,f_currance,currance
+GO
+/****** Object:  StoredProcedure [dbo].[Trial_balance_general_short]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE  PROCEDURE [dbo].[Trial_balance_general_short] @datee date, @datee2 date
+as
+select  entry.acc_num, entry.acc_name,rootlevel,type_acc,(sum(entry.depit)) as depitbal,sum(entry.credit) as creditbal,sum(opening_bal) as opening_bal from entry 
+where   sort='1'   and dates between @datee and @datee2
+--'2024-02-09'
+ 
+group by entry.acc_num, entry.acc_name,rootlevel ,type_acc 
+ union 
+ 
+ select  rootlevel as acc_num ,rootlevel_name, rootlevel, type_acc,(sum(entry.depit)) as depitbal,sum(entry.credit) as creditbal,sum(opening_bal) as opening_bal from entry  
+ where   sort='2' and dates between @datee and @datee2
+ -- '2024-02-09'
+ 
+ group by rootlevel ,type_acc ,rootlevel_name
+
+ order by entry.rootlevel asc
+GO
+/****** Object:  StoredProcedure [dbo].[Trial_balance_general]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE  PROCEDURE [dbo].[Trial_balance_general] @datee date, @datee2 date
+as
+select  entry.acc_num, entry.acc_name,rootlevel,type_acc,(sum(entry.depit)) as depitbal,sum(entry.credit) as creditbal,sum(opening_bal) as opening_bal from entry 
+where sort='g' or sort='f' 
+group by entry.acc_num, entry.acc_name,rootlevel ,type_acc 
+
+union
+
+select  entry.acc_num, entry.acc_name,rootlevel,type_acc,(sum(entry.depit)) as depitbal,sum(entry.credit) as creditbal,sum(opening_bal) as opening_bal from entry 
+where   sort='1'  and dates between @datee and @datee2
+group by entry.acc_num, entry.acc_name,rootlevel ,type_acc 
+ union 
+ 
+ select  rootlevel as acc_num ,rootlevel_name, rootlevel, type_acc,(sum(entry.depit)) as depitbal,sum(entry.credit) as creditbal,sum(opening_bal) as opening_bal from entry  
+ where   sort='2' and dates between @datee and @datee2
+ group by rootlevel ,type_acc ,rootlevel_name
+
+ order by entry.rootlevel asc
+GO
+/****** Object:  StoredProcedure [dbo].[Trial_balance_customer]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE procedure [dbo].[Trial_balance_customer]@datee date
+as
+
+select acc_num,acc_name,sum(depit) as depit,sum(entry.credit)as credit,sum(opening_bal) as opening_bal,f_currance,currance from entry left join vcs on entry.acc_num=vcs.vcs_code 
+where code_entry<>'-11' and vcs.mode='customer' and dates <= @datee
+
+group by acc_num,acc_name,f_currance,currance
+GO
+/****** Object:  StoredProcedure [dbo].[sum_credit_by_prams]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE procedure [dbo].[sum_credit_by_prams](@d1 date ,@d2 date,@net_Sale nvarchar(20),@net_reSale nvarchar(20),@Cogs nvarchar(20),@discount_sale nvarchar(20),@expenses_other nvarchar(20))
+as
+select isnull(SUM(credit),0) as net_Sale,
+(select top 1 isnull(SUM(depit),0) as net_reSale  from entry where code_entry<>'-11' and acc_num='410201'and dates between @d1 and @d2) as net_reSale,
+(select top 1  isnull(SUM(depit),0) as Cogs from entry where code_entry<>'-11' and acc_num='510401' and dates between @d1 and @d2)as cogs,
+(select top 1 isnull(SUM(depit),0) as discount_sale from entry where code_entry<>'-11' and acc_num='410301' and dates between @d1 and @d2)as discount_sale,
+(select top 1 SUM(depit)as expenses_other from entry where code_entry<>'-11'  and type_acc = 'قائمة دخل' and acc_num<>'410102' and acc_num<>'410201' and  acc_num<>'510401'  and acc_num<>'410301'and depit>0 and dates between @d1 and @d2)as expenses_other
+ from entry where code_entry<>'-11' and acc_num='410102' and dates between @d1 and @d2
+GO
+/****** Object:  StoredProcedure [dbo].[statment_test]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create PROCEDURE [dbo].[statment_test]@pram nvarchar (50)
+
+as
+select entry.attachno,f_currance,entry.currance,code_entry,name_book,depit,credit,(depit-credit)as def,attachnamebook,acc_num,acc_name,dates,type_acc,rootlevel_name 
+from entry
+ where rootlevel_name = '0' and acc_num=@pram--'1201'
+ order by dates
+GO
+/****** Object:  StoredProcedure [dbo].[top_sales_by_period]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[top_sales_by_period](  @d1 date, @d2 date)
+as
+
+select code_items,name_items,(sum(qty))*-1 as qty from items_trans where qty <0  and
+ dates between @d1 and @d2--'2020-05-15' and '2021-05-16'
+group by code_items,name_items
+order by qty desc
+
+
+
+-- '2021-05-15' and '2021-05-15'
+GO
+/****** Object:  StoredProcedure [dbo].[income_sheet]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create procedure [dbo].[income_sheet]
+as
+----select  entry.acc_num, entry.acc_name,rootlevel,type_acc,(sum(entry.depit)) as depitbal,sum(entry.credit) as creditbal,sum(opening_bal) as opening_bal from entry 
+----where  entry.type_acc='قائمه دخل' 
+----group by entry.acc_num, entry.acc_name,rootlevel ,type_acc 
+----order by rootlevel
+
+--'2020-01-06' =
+--@id_date date
+select  main_sub.value as tot_sub ,entry.acc_num, entry.acc_name,entry.rootlevel,entry.type_acc,(sum(entry.depit)) as depitbal,sum(entry.credit) as creditbal,(sum(entry.depit)) -sum(entry.credit) as def,sum(opening_bal) as opening_bal 
+from entry  left join main_sub on entry.acc_num= main_sub.acc_num left join tree on entry.acc_num = tree.rootid
+where  tree.sort='قائمه دخل' 
+group by entry.acc_num, entry.acc_name,entry.rootlevel ,entry.type_acc ,main_sub.value,main_sub.acc_name 
+order by entry.rootlevel
+GO
+/****** Object:  StoredProcedure [dbo].[balance_sheet]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE procedure [dbo].[balance_sheet]
+as
+
+----select  entry.acc_num, entry.acc_name,rootlevel,type_acc,(sum(entry.depit)) as depitbal,sum(entry.credit) as creditbal,sum(opening_bal) as opening_bal from entry 
+----where  entry.type_acc='قائمه دخل' 
+----group by entry.acc_num, entry.acc_name,rootlevel ,type_acc 
+----order by rootlevel
+
+--'2020-01-06' =
+--@id_date date
+select  main_sub.value as tot_sub ,entry.acc_num, entry.acc_name,entry.rootlevel,entry.type_acc,(sum(entry.depit)) as depitbal,sum(entry.credit) as creditbal,(sum(entry.depit)) -sum(entry.credit) as def,sum(opening_bal) as opening_bal 
+from entry  left join main_sub on entry.acc_num= main_sub.acc_num left join tree on entry.acc_num = tree.rootid
+where  tree.sort='ميزانيه' 
+group by entry.acc_num, entry.acc_name,entry.rootlevel ,entry.type_acc ,main_sub.value,main_sub.acc_name 
+order by entry.rootlevel
+GO
+/****** Object:  StoredProcedure [dbo].[pos_rev_all]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[pos_rev_all](@d1 date ,@d2 date,@pram1 nvarchar(10))
+as
+select * from entry where code_entry <>'-11'  and type_acc='قائمة دخل' and acc_num =@pram1 
+and dates between @d1 and @d2
+GO
+/****** Object:  StoredProcedure [dbo].[pos_recet_all]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE procedure [dbo].[pos_recet_all] @parm1 date ,@parm2 date
+as 
+
+
+--select *,(select top 1 discount_all from pos_dt where pos_inv_no=@parm1)as dis_all from pos_dt where shift_no=@param2 and pos_inv_no=@parm1
+
+
+
+select *,(select top 1 discount_all from pos_dt where pos_inv_no=pos_dt.pos_inv_no)as dis_all from pos_dt where  date_d between @parm1 and @parm2
+GO
+/****** Object:  StoredProcedure [dbo].[pos_recet]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE procedure [dbo].[pos_recet] @parm1 nvarchar(25) 
+as 
+
+select *,(select top 1 discount_all from pos_dt where pos_inv_no=@parm1)as dis_all from pos_dt where  pos_inv_no=@parm1
+GO
+/****** Object:  StoredProcedure [dbo].[report_acc_statment_vcs]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[report_acc_statment_vcs]@datee date ,@acc nvarchar(50)
+
+as
+select entry.attachno,txt_desc,f_currance,entry.currance,code_entry,name_book,depit,credit,(depit-credit)as def,attachnamebook,acc_num,acc_name,dates,type_acc,rootlevel_name from entry
+where rootlevel_name <> '0'  and entry.acc_num=@acc 
+ 
+ and dates <= @datee
+ order by dates
+GO
+/****** Object:  StoredProcedure [dbo].[report_acc_statment_gl]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[report_acc_statment_gl]@datee date,@datee2 date,@acc nvarchar(50)
+as
+select code_entry,attachno as ref,txt_desc,
+(select top 1 acc_num from entry where code_entry=e.code_entry and acc_num<> @acc) as code,
+(select top 1 acc_name from entry where code_entry=e.code_entry and acc_num<> @acc) as name ,
+  opening_bal ,
+  depit,credit, depit-credit as def,dates from entry e 
+  where code_entry<>'-11' and acc_num=@acc and dates between @datee and @datee2 and  code_entry<>'002' and code_entry<>'001'
+GO
+/****** Object:  StoredProcedure [dbo].[record_recev_print]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[record_recev_print]@acc nvarchar(50)
+
+
+as
+
+select txt_mony,recev_hd.recev_hd_id,recev_hd.user_code,recev_hd.user_name,recev_dt.depit,recev_dt.credit,recev_dt.acc_num,recev_dt.acc_name,recev_dt.dates,recev_dt.rootlevel_name 
+from recev_dt left join recev_hd  
+on recev_dt.code_entry=recev_hd.recev_hd_id
+where  recev_dt.depit <> 0 and recev_hd_id=@acc
+GO
+/****** Object:  Table [dbo].[sale_hd]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[sale_hd](
+	[sale_hd_id] [nvarchar](50) NOT NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[sale_dt_id] [int] NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[term] [nvarchar](50) NULL,
+	[serial_P] [int] NULL,
+	[date_P] [date] NULL,
+	[due_date] [date] NULL,
+	[tot_befor] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [nvarchar](50) NULL,
+	[code_entry] [int] NULL,
+	[book_name_entry] [nvarchar](50) NULL,
+	[code_book_entry] [nvarchar](50) NULL,
+	[note_txt] [nvarchar](100) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[lock] [nvarchar](5) NULL,
+	[currance] [nvarchar](10) NULL,
+	[f_currance] [decimal](10, 2) NULL,
+	[vcs_value] [decimal](10, 2) NULL,
+	[txt_mony] [nvarchar](200) NULL,
+	[e_invoice] [bit] NULL,
+	[uuid] [nvarchar](50) NULL,
+	[num_book] [int] NULL,
+	[vat_add] [decimal](10, 2) NULL,
+	[state_e] [char](10) NULL,
+	[message] [nvarchar](max) NULL,
+ CONSTRAINT [PK_sale_hd] PRIMARY KEY CLUSTERED 
+(
+	[sale_hd_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  StoredProcedure [dbo].[barcode_printer]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE  PROCEDURE [dbo].[barcode_printer]@param nvarchar(50)
+as
+select code,name_items,price_sale,discount_sale from barcode_temp left join items on barcode_temp.code=items.code_items
+where id=@param--'20201220113215'
+GO
+/****** Object:  StoredProcedure [dbo].[expenses]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--select (right(acc_num,LEN(acc_num)-1)),acc_num,acc_name,depit,credit,dates from entry where code_entry <>'-11' and type_acc='قائمه دخل'
+--(right(sale_hd_id,LEN(sale_hd_id)-3)))
+
+--select  acc_name,depit,credit,dates from entry where code_entry <>'-11' and type_acc='قائمه دخل' and SUBSTRING(acc_num,1,1),acc_num='5'
+CREATE procedure [dbo].[expenses]
+as
+select  acc_num,acc_name,sum(depit)as cr,dates,dates,day(dates)as day,month(dates)as month,YEAR(dates)as year from entry
+ where code_entry <>'-11' and 
+type_acc='قائمة دخل' and left(acc_num,1)='5' --and depit<>0
+group by acc_num,acc_name,dates
+
+
+--select * from entry where code_entry <>'-11' and type_acc='قائمه دخل' and SUBSTRING(acc_num,1,1)='5'
+GO
+/****** Object:  StoredProcedure [dbo].[exp_vs_rev_report]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--select (right(acc_num,LEN(acc_num)-1)),acc_num,acc_name,depit,credit,dates from entry where code_entry <>'-11' and type_acc='قائمه دخل'
+--(right(sale_hd_id,LEN(sale_hd_id)-3)))
+
+--select  acc_name,depit,credit,dates from entry where code_entry <>'-11' and type_acc='قائمه دخل' and SUBSTRING(acc_num,1,1),acc_num='5'
+--alter procedure expenses
+--as
+CREATE procedure [dbo].[exp_vs_rev_report]
+as
+select  acc_num,acc_name,sum(depit)as dep,SUM(credit) as cr from entry where code_entry <>'-11' and type_acc='قائمة دخل'  
+group by acc_num,acc_name
+
+
+--select * from entry where code_entry <>'-11' and type_acc='قائمه دخل' and SUBSTRING(acc_num,1,1)='5'
+GO
+/****** Object:  StoredProcedure [dbo].[jn_invoice_h]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[jn_invoice_h] (@id nvarchar(50))
+as
+
+select  c_value,
+(select MAX(d_price) FROM [jn_consolidated_invoice_d] where id=jn_consolidated_invoice.id and d_code_stations=jn_consolidated_invoice.c_code_stations) as price,
+(select MAX(d_name_stroehouse) FROM [jn_consolidated_invoice_d] where id=jn_consolidated_invoice.id and d_code_stations=jn_consolidated_invoice.c_code_stations) as store_house,
+
+c_name_stations,number_of_cargo_num ,cargo_qty_delevery from jn_consolidated_invoice where id=@id
+GO
+/****** Object:  StoredProcedure [dbo].[jn_invoice_d]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[jn_invoice_d] (@id nvarchar(50))
+as
+
+ 
+SELECT [d_vale] as value ,[d_price] as price ,[d_qty] as qty ,
+[d_name_stations] as station ,(d_qty/51) as number_of_cargo,[d_name_stroehouse] as ware,(select max(no_voucher) from jn_jopnumber where id=[no_jop])as voucher,(select max(date_d) from jn_jopnumber where id=[no_jop])as date_joporder
+,[date_pp]FROM [jn_consolidated_invoice_d]   where id=@id --id='SIC1'
+GO
+/****** Object:  Table [dbo].[pay_hd]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[pay_hd](
+	[pay_hd_id] [nvarchar](50) NOT NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[type] [nvarchar](50) NULL,
+	[vcs] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[acc] [nvarchar](50) NULL,
+	[acc_name] [nvarchar](50) NULL,
+	[amount] [decimal](10, 2) NULL,
+	[depit] [decimal](10, 2) NULL,
+	[crdit] [decimal](10, 2) NULL,
+	[date_] [date] NULL,
+	[user_name] [nvarchar](50) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[txt_mony] [nvarchar](50) NULL,
+	[attach] [nvarchar](50) NULL,
+	[num_book] [int] NULL,
+	[note] [nvarchar](100) NULL,
+ CONSTRAINT [PK_pay_hd] PRIMARY KEY CLUSTERED 
+(
+	[pay_hd_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  StoredProcedure [dbo].[low_sale_by_period]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE procedure [dbo].[low_sale_by_period](  @d1 date, @d2 date)
+as
+ select code_items,name_items,(sum(qty))*-1 as qty from items_trans where qty <0  and
+ dates between @d1 and @d2--'2021-05-15' and '2021-05-16'
+group by code_items,name_items
+order by qty asc
+GO
+/****** Object:  Table [dbo].[purchase_hd]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[purchase_hd](
+	[purchase_hd_id] [nvarchar](50) NOT NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[purchase_dt_id] [int] NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[term] [nvarchar](50) NULL,
+	[serial_P] [nvarchar](50) NULL,
+	[date_P] [date] NULL,
+	[due_date] [date] NULL,
+	[tot_befor] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [nvarchar](50) NULL,
+	[code_entry] [int] NULL,
+	[book_name_entry] [nvarchar](50) NULL,
+	[code_book_entry] [nvarchar](50) NULL,
+	[note_txt] [nvarchar](100) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[lock] [nvarchar](5) NULL,
+	[currance] [nvarchar](10) NULL,
+	[f_currance] [decimal](10, 2) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[inv_no_manual] [nvarchar](50) NULL,
+	[num_book] [int] NULL,
+	[vat_add] [decimal](10, 2) NULL,
+ CONSTRAINT [PK_purchase_hd] PRIMARY KEY CLUSTERED 
+(
+	[purchase_hd_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[purchase_dt]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[purchase_dt](
+	[no] [int] NULL,
+	[purchase_hd_id] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[purchase_dt_id] [int] IDENTITY(1,1) NOT NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](200) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[f_unite] [nvarchar](50) NULL,
+	[item_price] [decimal](10, 2) NULL,
+	[tot_bef] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[name_wars] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[exp] [bit] NULL,
+	[exp_date] [date] NULL,
+	[type] [int] NULL,
+	[serial_P] [int] NULL,
+	[cost_exp_edit] [decimal](10, 2) NULL,
+	[user] [nvarchar](50) NULL,
+	[tot_after_dis_forex] [decimal](10, 2) NULL,
+ CONSTRAINT [PK_purchase_dt] PRIMARY KEY CLUSTERED 
+(
+	[purchase_dt_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  StoredProcedure [dbo].[pur_vs_sale]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create PROCEDURE [dbo].[pur_vs_sale]
+	
+AS
+select date_P as date_P_sale ,incloud_taxes as incloud_taxes_sale,name_book as name_book_sale,null as date_P_pur,0 as incloud_taxes_pur ,'0' as name_book_pur from sale_hd 
+union 
+select null as date_P_sale,0 as incloud_taxes_sale ,'0' as name_book_sale, date_P as date_P_pur,incloud_taxes as incloud_taxes_pur,name_book as name_book_pur  from purchase_hd
+GO
+/****** Object:  Table [dbo].[sale_dt]    Script Date: 08/31/2025 16:15:21 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[sale_dt](
+	[no] [int] NULL,
+	[sale_hd_id] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[sale_dt_id] [int] IDENTITY(1,1) NOT NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](200) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[f_unite] [nvarchar](50) NULL,
+	[item_price] [decimal](10, 2) NULL,
+	[tot_bef] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[name_wars] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[exp] [bit] NULL,
+	[exp_date] [date] NULL,
+	[type] [int] NULL,
+	[serial_P] [int] NULL,
+	[cost_exp_edit] [decimal](10, 2) NULL,
+	[user] [nvarchar](50) NULL,
+	[tot_after_dis_forex] [decimal](10, 2) NULL,
+ CONSTRAINT [PK_sale_dt] PRIMARY KEY CLUSTERED 
+(
+	[sale_dt_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  StoredProcedure [dbo].[record_pay_print]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[record_pay_print]@acc nvarchar(50)
+
+as
+
+select pay_hd.txt_mony,pay_hd.pay_hd_id,pay_hd.user_code,pay_hd.user_name,pay_dt.depit,pay_dt.credit,pay_dt.acc_num,pay_dt.acc_name,pay_dt.dates,pay_dt.rootlevel_name 
+from pay_dt left join pay_hd  
+on pay_dt.code_entry=pay_hd.pay_hd_id
+--where  pay_dt.depit <> 0 and pay_hd_id='py11'
+where  pay_dt.depit <> 0 and pay_hd_id=@acc
+GO
+/****** Object:  StoredProcedure [dbo].[test_sales]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create procedure  [dbo].[test_sales]
+as
+select 
+
+
+sale_hd.sale_hd_id,sale_hd.code_book,sale_hd.name_book, sale_hd.vcs_code, sale_hd.vcs_name,sale_hd.term,sale_hd.date_P,sale_hd.due_date,sale_hd.tot_befor ,sale_hd.tot_after_dis,sale_hd.discount,sale_hd.incloud_taxes,sale_hd.note_txt,sale_hd.user_name,sale_hd.user_code,sale_hd.currance,sale_hd.f_currance,
+   sale_dt.code_items, sale_dt.name_items, sale_dt.qty,sale_dt.f_unite,sale_dt.name_unite , sale_dt.item_price,sale_dt.tot_bef,  sale_dt.discount as  discount_dt,sale_dt.tot_after_dis,sale_dt.taxes, sale_dt.incloud_taxes as incloud_taxes_dt,sale_dt.taxes_value, sale_dt.id_ware
+FROM  sale_hd LEFT  JOIN sale_dt 
+ON sale_hd.sale_hd_id = sale_dt.sale_hd_id 
+
+--where sale_hd.sale_hd_id='s011'
+GO
+/****** Object:  StoredProcedure [dbo].[statment_item]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE  PROCEDURE [dbo].[statment_item] @datee date, @datee2 date,@c nvarchar(50),@wareID nvarchar(50),@unite nvarchar(10)
+as
+
+select  '' as time, h.name_book as nam_doc,[no],d.purchase_hd_id as no_inv,d.qty*d.f_unite/@unite as qty,(select cost from wares where code_items=@c and id_ware=@wareID) as item_price,code_items,name_items,h.date_P as [date],h.vcs_name,h.vcs_code,name_unite from purchase_dt d left join purchase_hd h on d.purchase_hd_id=h.purchase_hd_id  where d.code_items=@c  and  h.date_P between @datee and @datee2 and h.id_ware=@wareID  
+union all   
+select time_h as time,'POS ' +[state] as nam_doc,'0' as [no], pos_inv_no as no_inv, qty* f_unite/@unite *-1 as qty , item_price, code_items, name_items, date_d as [date], vcs_name, vcs_code, name_unite from pos_dt where code_items = @c and date_d between @datee and @datee2  and id_ware = @wareID    
+union all     
+select   '' as time,attachnamebook as nam_doc,'' as [no], attachno as no_inv, qty* f_unite/@unite, 0 as item_price, code_items, name_items, dates as [date], vcs_name, vcs_code, name_unite from items_trans where code_items = @c and attachbook = 'سند جرد مخزني' and dates between @datee and @datee2  and id_ware = @wareID     
+union all
+select   '' as time,h.name_book as nam_doc ,'' as [no], d.rpurchase_hd_id as no_inv, qty* f_unite-1/@unite as qty, 0 as item_price, code_items, name_items, h.date_P as [date], vcs_name, vcs_code, name_unite from rpurchase_dt d left join rpurchase_hd h on d.rpurchase_hd_id = h.rpurchase_hd_id  where code_items = @c and date_P between @datee and @datee2 and h.id_ware = @wareID       
+union all       
+select  '' as time,h.name_book as nam_doc,'' as [no], d.sale_hd_id as no_inv, qty* f_unite*-1/@unite as qty, 0 as item_price, code_items, name_items, h.date_P as [date], vcs_name, vcs_code, name_unite from sale_dt d left join sale_hd h on d.sale_hd_id = h.sale_hd_id  where code_items = @c and date_P between @datee and @datee2  and h.id_ware = @wareID        
+union all        
+select  '' as time,h.name_book as nam_doc,'' as [no], d.rsale_hd_id as no_inv, qty * f_unite/@unite, 0 as item_price, code_items, name_items, h.date_P as [date], vcs_name, vcs_code, name_unite from rsale_dt d left join rsale_hd h on d.rsale_hd_id = h.rsale_hd_id  where code_items = @c and date_P between @datee and @datee2 and h.id_ware = @wareID        
+union all        
+select  '' as time,h.name_book as nam_doc,'' as [no], d.issuer_inv_hd_id as no_inv, d.qty* d.f_unite * -1 as qty, 0 as item_price, d.code_items, d.name_items, h.date_P as [date], vcs_name, vcs_code, name_unite from issuer_inv_dt d left join issuer_inv_hd h on d.issuer_inv_hd_id = h.issuer_inv_hd_id  where d.code_items = @c and h.date_P between @datee and @datee2 and h.id_ware = @wareID 
+union all 
+select  '' as time,h.name_book as nam_doc,'' as [no], d.trans_hd_id as no_inv, d.qty* d.f_unite * -1 as qty, 0 as item_price, d.code_items, d.name_items, h.date_P as [date], vcs_name, vcs_code, name_unite from trans_dt d left join trans_hd h on d.trans_hd_id = h.trans_hd_id  where d.code_items = @c and h.date_P between @datee and @datee2 and h.id_ware = @wareID  
+union all 
+select  '' as time,h.name_book as nam_doc,'' as [no], d.trans_hd_id as no_inv, d.qty* d.f_unite  as qty, 0 as item_price, d.code_items, d.name_items, h.date_P as [date], vcs_name, vcs_code, name_unite from trans_dt d left join trans_hd h on d.trans_hd_id = h.trans_hd_id  where d.code_items = @c and h.date_P between @datee and @datee2 and h.id_ware2 = @wareID order by date
+GO
+/****** Object:  StoredProcedure [dbo].[sales_invoices_tot_AllItem_specefic]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create procedure [dbo].[sales_invoices_tot_AllItem_specefic]@d1 date,@d2 date,@codeItems nvarchar(50)
+as 
+
+select 
+h.sale_hd_id,h.vcs_name,h.vcs_code,h.date_P,h.due_date,h.incloud_taxes as net_invoice_sale,
+d.code_items,d.name_items,sum(d.qty)as qty,d.item_price,d.discount,d.incloud_taxes,
+(select top 1 cost from wares where code_items=d.code_items)as cost
+ from sale_hd h left join sale_dt d on h.sale_hd_id=d.sale_hd_id
+  where h.date_P between @d1 and @d2 and d.code_items=@codeItems
+group by 
+h.sale_hd_id,h.vcs_name,h.vcs_code,h.date_P,h.due_date,h.incloud_taxes ,
+d.code_items,d.name_items,d.item_price,d.discount,d.incloud_taxes
+GO
+/****** Object:  StoredProcedure [dbo].[sales_invoices_tot_AllItem]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create procedure [dbo].[sales_invoices_tot_AllItem]@d1 date,@d2 date
+as 
+
+select 
+h.sale_hd_id,h.vcs_name,h.vcs_code,h.date_P,h.due_date,h.incloud_taxes as net_invoice_sale,
+d.code_items,d.name_items,sum(d.qty)as qty,d.item_price,d.discount,d.incloud_taxes,
+(select top 1 cost from wares where code_items=d.code_items)as cost
+ from sale_hd h left join sale_dt d on h.sale_hd_id=d.sale_hd_id
+  where h.date_P between @d1 and @d2
+group by 
+h.sale_hd_id,h.vcs_name,h.vcs_code,h.date_P,h.due_date,h.incloud_taxes ,
+d.code_items,d.name_items,d.item_price,d.discount,d.incloud_taxes
+GO
+/****** Object:  StoredProcedure [dbo].[sales_invoices_tot]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE procedure [dbo].[sales_invoices_tot]
+as 
+
+select 
+sale_hd .sale_hd_id,sale_hd .vcs_name,sale_hd .vcs_code,sale_hd .date_P,sale_hd .due_date,sale_hd.incloud_taxes as net_invoice_sale,
+sale_dt.code_items,sale_dt.name_items,sale_dt.qty,sale_dt.item_price,sale_dt.discount,sale_dt.incloud_taxes
+
+ from sale_hd left join sale_dt on sale_hd.sale_hd_id=sale_dt.sale_hd_id
+GO
+/****** Object:  StoredProcedure [dbo].[sales_invoice_profit]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE procedure [dbo].[sales_invoice_profit]@ware int,@datee date,@vcs nvarchar(50)
+
+as
+select sale_hd.vcs_code,sale_hd.vcs_name,sale_hd.date_P,sale_dt .sale_hd_id,sum(sale_dt .incloud_taxes) as net_sale,sum(wares.cost * sale_dt.qty)as net_cost,sum(sale_dt .incloud_taxes) - sum(wares.cost * sale_dt.qty) as profit from 
+sale_dt left join wares on wares.code_items =sale_dt.code_items  left join sale_hd on sale_dt.sale_hd_id=sale_hd.sale_hd_id  
+--where  wares.id_ware='10' and date_p <='2020-12-30' and vcs_code='103'
+where  wares.id_ware=@ware and date_p <=@datee and vcs_code=@vcs
+
+group by sale_hd.date_P,sale_dt .sale_hd_id,sale_hd.date_P,sale_hd.vcs_code,sale_hd.vcs_name
+
+order by sale_hd.date_P
+GO
+/****** Object:  StoredProcedure [dbo].[sale_size_time]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create procedure [dbo].[sale_size_time]
+as
+select name_items,sale_hd.date_P ,month(date_P)as month from sale_dt left join sale_hd on sale_dt.sale_hd_id=sale_hd.sale_hd_id
+
+group by  name_items,sale_hd.date_P
+GO
+/****** Object:  StoredProcedure [dbo].[sale_size]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create procedure [dbo].[sale_size]
+as
+select name_items,sum(incloud_taxes) from sale_dt group by name_items
+GO
+/****** Object:  StoredProcedure [dbo].[sale_items_max]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE procedure [dbo].[sale_items_max]
+as
+--select * from sale_dt left join  order by qty asc
+
+select 
+sale_hd.sale_hd_id,sale_hd.code_book,sale_hd.name_book, sale_hd.vcs_code, sale_hd.vcs_name,sale_hd.term,sale_hd.date_P,sale_hd.due_date,sale_hd.tot_befor ,sale_hd.tot_after_dis,sale_hd.discount,sale_hd.incloud_taxes,sale_hd.note_txt,sale_hd.user_name,sale_hd.user_code,sale_hd.currance,sale_hd.f_currance,sale_hd.vcs_value,
+   sale_dt.code_items, sale_dt.name_items, sale_dt.qty,sale_dt.f_unite,sale_dt.name_unite , sale_dt.item_price,sale_dt.tot_bef,  sale_dt.discount as  discount_dt,sale_dt.tot_after_dis,sale_dt.taxes, sale_dt.incloud_taxes as incloud_taxes_dt,sale_dt.taxes_value, sale_dt.id_ware
+FROM  sale_hd LEFT  JOIN sale_dt 
+ON sale_hd.sale_hd_id = sale_dt.sale_hd_id 
+
+order by qty desc
+GO
+/****** Object:  StoredProcedure [dbo].[most_items_sale_max]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--create procedure sale_size_time
+--as
+--month(date_P)as month,sale_hd.date_P
+--select name_items ,sum(sale_dt.qty)as qty from sale_dt left join sale_hd on sale_dt.sale_hd_id=sale_hd.sale_hd_id
+
+--group by  name_items,sale_dt.qty
+--order by sale_dt.qty desc
+create procedure [dbo].[most_items_sale_max]
+as
+select name_items ,sum(sale_dt.qty)as qty,month(date_P)as month,sale_hd.date_P from sale_dt left join sale_hd on sale_dt.sale_hd_id=sale_hd.sale_hd_id
+
+group by  name_items,sale_dt.qty,sale_hd.date_P
+order by sale_dt.qty desc
+GO
+/****** Object:  StoredProcedure [dbo].[most_items_proft_report]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--USE [f1]
+--GO
+--/****** Object:  StoredProcedure [dbo].[items_profit]    Script Date: 01/28/2021 16:17:47 ******/
+--SET ANSI_NULLS ON
+--GO
+--SET QUOTED_IDENTIFIER ON
+--GO
+--ALTER procedure [dbo].[items_profit]@ware int,@code1 nvarchar(50),@code2 nvarchar(50)
+--as 
+CREATE procedure [dbo].[most_items_proft_report]
+as
+select sale_dt.code_items,sale_dt.name_items,sum(sale_dt.incloud_taxes) as net_sale,sum(sale_dt.qty)  as qty_for_sale ,sum(wares.cost)as cost,sum(sale_dt.qty)* SUM(wares.cost) AS net_cost,(sum(sale_dt.qty)- SUM(wares.cost))as proft from sale_dt left join wares on sale_dt.code_items=wares.code_items
+ where wares.id_ware='10' 
+ --where wares.id_ware=@ware AND sale_dt.code_items between @code1 and @code2
+ 
+
+group by sale_dt.code_items,sale_dt.name_items
+GO
+/****** Object:  StoredProcedure [dbo].[purchase_size_time]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE procedure [dbo].[purchase_size_time]
+as
+select name_items,purchase_hd.date_P ,month(date_P)as month from purchase_dt left join purchase_hd on purchase_dt.purchase_hd_id=purchase_hd.purchase_hd_id
+
+group by  name_items,purchase_hd.date_P
+GO
+/****** Object:  StoredProcedure [dbo].[purchase_size]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create procedure [dbo].[purchase_size]
+as
+select name_items,sum(incloud_taxes) from purchase_dt group by name_items
+
+
+select name_items,purchase_hd.date_P from purchase_dt left join purchase_hd on purchase_dt.purchase_hd_id=purchase_hd.purchase_hd_id
+
+group by  name_items,purchase_hd.date_P
+GO
+/****** Object:  StoredProcedure [dbo].[purchase_invoices_tot_AllItem_specefic  ]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create procedure [dbo].[purchase_invoices_tot_AllItem_specefic  ]@d1 date,@d2 date,@codeItems nvarchar(50)
+as 
+
+select 
+h.purchase_hd_id,h .vcs_name,h.vcs_code,h.date_P,h.due_date,h.incloud_taxes as net_invoice_purchase,
+d.code_items,d.name_items,sum(d.qty)as qty,d.item_price,d.discount,d.incloud_taxes,
+(select top 1 cost from wares where code_items=d.code_items)as cost
+ from purchase_hd h left join purchase_dt d on h.purchase_hd_id=d.purchase_hd_id
+ where h.date_P between @d1 and @d2 and d.code_items= @codeItems
+group by 
+h.purchase_hd_id,h .vcs_name,h.vcs_code,h.date_P,h.due_date,h.incloud_taxes ,
+d.code_items,d.name_items,d.item_price,d.discount,d.incloud_taxes
+order by h.date_P desc
+GO
+/****** Object:  StoredProcedure [dbo].[purchase_invoices_tot_AllItem]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create procedure [dbo].[purchase_invoices_tot_AllItem]@d1 date,@d2 date
+as 
+
+select 
+h.purchase_hd_id,h .vcs_name,h.vcs_code,h.date_P,h.due_date,h.incloud_taxes as net_invoice_purchase,
+d.code_items,d.name_items,sum(d.qty)as qty,d.item_price,d.discount,d.incloud_taxes,
+(select top 1 cost from wares where code_items=d.code_items)as cost
+ from purchase_hd h left join purchase_dt d on h.purchase_hd_id=d.purchase_hd_id
+ where h.date_P between @d1 and @d2 
+ 
+group by 
+h.purchase_hd_id,h .vcs_name,h.vcs_code,h.date_P,h.due_date,h.incloud_taxes ,
+d.code_items,d.name_items,d.item_price,d.discount,d.incloud_taxes
+order by h.date_P desc
+GO
+/****** Object:  StoredProcedure [dbo].[purchase_invoices_tot]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create procedure [dbo].[purchase_invoices_tot]
+as 
+
+select 
+purchase_hd .purchase_hd_id,purchase_hd .vcs_name,purchase_hd .vcs_code,purchase_hd .date_P,purchase_hd .due_date,purchase_hd.incloud_taxes as net_invoice_purchase,
+purchase_dt.code_items,purchase_dt.name_items,purchase_dt.qty,purchase_dt.item_price,purchase_dt.discount,purchase_dt.incloud_taxes
+
+ from purchase_hd left join purchase_dt on purchase_hd.purchase_hd_id=purchase_dt.purchase_hd_id
+GO
+/****** Object:  StoredProcedure [dbo].[items_profit]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE procedure [dbo].[items_profit]@ware int,@code1 nvarchar(50),@code2 nvarchar(50)
+as 
+
+select sale_dt.code_items,sale_dt.name_items,sum(sale_dt.incloud_taxes) as net_sale,sum(sale_dt.qty)  as qty_for_sale ,sum(wares.cost)as cost,sum(sale_dt.qty)* SUM(wares.cost) AS net_cost from sale_dt left join wares on sale_dt.code_items=wares.code_items
+ --where wares.id_ware='10' AND sale_dt.code_items between '1001' and '1002'
+ where wares.id_ware=@ware AND sale_dt.code_items between @code1 and @code2
+ 
+
+group by sale_dt.code_items,sale_dt.name_items
+GO
+/****** Object:  StoredProcedure [dbo].[invoice_sale_print]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE  PROCEDURE [dbo].[invoice_sale_print]@pram nvarchar(50)
+as
+select 
+sale_hd.sale_hd_id,sale_hd.code_book,sale_hd.name_book, sale_hd.vcs_code, sale_hd.vcs_name,sale_hd.term,sale_hd.date_P,sale_hd.due_date,sale_hd.tot_befor ,sale_hd.tot_after_dis,sale_hd.discount,sale_hd.incloud_taxes,sale_hd.note_txt,sale_hd.user_name,sale_hd.user_code,sale_hd.currance,sale_hd.f_currance,sale_hd.vcs_value,
+   sale_dt.code_items, sale_dt.name_items, sale_dt.qty,sale_dt.f_unite,sale_dt.name_unite , sale_dt.item_price,sale_dt.tot_bef,  sale_dt.discount as  discount_dt,sale_dt.tot_after_dis,sale_dt.taxes, sale_dt.incloud_taxes as incloud_taxes_dt,sale_dt.taxes_value, sale_dt.id_ware
+FROM  sale_hd LEFT  JOIN sale_dt 
+ON sale_hd.sale_hd_id = sale_dt.sale_hd_id 
+where sale_hd.sale_hd_id=@pram
+GO
+/****** Object:  StoredProcedure [dbo].[invoice_purchase_print]    Script Date: 08/31/2025 16:15:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE procedure [dbo].[invoice_purchase_print] @pram nvarchar(50)
+as
+select 
+
+purchase_hd.purchase_hd_id,purchase_hd.code_book,purchase_hd.name_book, purchase_hd.vcs_code, purchase_hd.vcs_name,purchase_hd.term,purchase_hd.date_P,purchase_hd.due_date,purchase_hd.tot_befor ,purchase_hd.tot_after_dis,purchase_hd.discount,purchase_hd.incloud_taxes,purchase_hd.note_txt,purchase_hd.user_name,purchase_hd.user_code,purchase_hd.currance,purchase_hd.f_currance,
+   purchase_dt.code_items, purchase_dt.name_items, purchase_dt.qty,purchase_dt.f_unite,purchase_dt.name_unite , purchase_dt.item_price,purchase_dt.tot_bef,  purchase_dt.discount as  discount_dt,purchase_dt.tot_after_dis,purchase_dt.taxes, purchase_dt.incloud_taxes as incloud_taxes_dt,purchase_dt.taxes_value, purchase_dt.id_ware
+FROM purchase_hd LEFT  JOIN purchase_dt 
+ON purchase_hd.purchase_hd_id = purchase_dt.purchase_hd_id where purchase_hd.purchase_hd_id=@pram
+GO
+/****** Object:  Default [DF_pos_shift_bal_drawer]    Script Date: 08/31/2025 16:15:21 ******/
+ALTER TABLE [dbo].[pos_shift] ADD  CONSTRAINT [DF_pos_shift_bal_drawer]  DEFAULT ((0)) FOR [bal_drawer]
+GO

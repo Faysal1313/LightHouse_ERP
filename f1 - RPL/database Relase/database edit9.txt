@@ -1,0 +1,61 @@
+ update info_co set dbv='9'
+
+  Alter table items
+  ADD itemType nvarchar(10)
+  
+
+  Alter table items
+  ADD itemCode nvarchar(50)
+
+	-----  "itemType":"GS1",  
+ 	------  "itemCode":"10006410",  
+
+
+  Alter table term
+  ADD taxType nvarchar(10)
+  
+
+  Alter table term
+  ADD subType  nvarchar(10)
+
+update term set taxType ='T4'
+update term set subType='W004'
+
+--------------------------------------------------------------------------------
+ Alter table sale_hd
+  ADD vat_add  decimal(10, 2)
+
+ Alter table purchase_hd
+  ADD vat_add  decimal(10, 2)
+  
+  
+   Alter table rsale_hd
+  ADD vat_add  decimal(10, 2)
+  
+   Alter table rpurchase_hd
+  ADD vat_add  decimal(10, 2)
+---------------------------------------------------------------------------------------------
+ Alter table info_co 
+  ADD isLive bit
+  
+  update info_co set isLive=0
+     Alter table info_co 
+  ADD pinToken nvarchar(20)
+    update info_co set pinToken='123456'
+
+ Alter table info_co 
+ADD [Round] int
+    update info_co set [Round]='2'
+ Alter table sale_hd 
+ADD state_e char(10)
+
+ Alter table rsale_hd 
+ADD state_e char(10)
+    
+---------------------------------------------------------------------------
+ Alter table sale_hd 
+ADD message nvarchar(max)
+
+ Alter table rsale_hd 
+ADD message nvarchar(max)
+

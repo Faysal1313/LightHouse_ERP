@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="20.2.3.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Report2" RollPaper="true" Margins="100, 100, 344, 100" PaperKind="Custom" PageWidth="827" PageHeight="1169" Version="20.2" Font="Arial, 9.75pt">
+  <Bands>
+    <Item1 Ref="1" ControlType="TopMarginBand" Name="TopMargin" HeightF="343.75">
+      <Controls>
+        <Item1 Ref="2" ControlType="XRLabel" Name="label12" Multiline="true" Text="البصمة" TextAlignment="TopRight" SizeF="83.33331,23" LocationFloat="305.1251,310.75" Font="Arabic Typesetting, 16pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="3" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="4" ControlType="XRLabel" Name="label11" Multiline="true" Text="المقر بما فيه" TextAlignment="TopRight" SizeF="83.33331,23" LocationFloat="543.6667,310.75" Font="Arabic Typesetting, 16pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="5" UseFont="false" UseTextAlignment="false" />
+        </Item2>
+        <Item3 Ref="6" ControlType="XRLabel" Name="label10" Multiline="true" Text="وإذا لم اقم بتسليم هذا المبلغ أعتبر خائنا لأمانة وأعاقب قانونيا" TextAlignment="TopRight" SizeF="321.874939,23" LocationFloat="305.125031,268.125" Font="Arabic Typesetting, 16pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="7" UseFont="false" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="8" ControlType="XRLabel" Name="label9" Multiline="true" Text="وذالك بصفة امانة لتســـــــليمها الي الســـيد" TextAlignment="TopRight" SizeF="242.708282,23" LocationFloat="384.2917,245.125" Font="Arabic Typesetting, 16pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="9" UseFont="false" UseTextAlignment="false" />
+        </Item4>
+        <Item5 Ref="10" ControlType="XRLabel" Name="label8" Multiline="true" Text="المبلغ" TextAlignment="TopRight" SizeF="65.62494,23.00003" LocationFloat="561.375061,196.5833" Font="Arabic Typesetting, 16pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="11" UseFont="false" UseTextAlignment="false" />
+        </Item5>
+        <Item6 Ref="12" ControlType="XRLabel" Name="label7" Multiline="true" Text="مبلغ و قدره" TextAlignment="TopRight" SizeF="126.041656,24.0416718" LocationFloat="262.416748,195.541656" Font="Arabic Typesetting, 16pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="13" UseFont="false" UseTextAlignment="false" />
+        </Item6>
+        <Item7 Ref="14" ControlType="XRLabel" Name="label6" Multiline="true" Text="تاريخ صدورها" TextAlignment="TopRight" SizeF="138.541656,23" LocationFloat="119.375008,132.416687" Font="Arabic Typesetting, 16pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="15" UseFont="false" UseTextAlignment="false" />
+        </Item7>
+        <Item8 Ref="16" ControlType="XRLabel" Name="label5" Multiline="true" Text="من السيــــد" TextAlignment="TopRight" SizeF="138.541656,23" LocationFloat="488.458344,155.4167" Font="Arabic Typesetting, 16pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="17" UseFont="false" UseTextAlignment="false" />
+        </Item8>
+        <Item9 Ref="18" ControlType="XRLabel" Name="label4" Multiline="true" Text="بطاقه رقم قومي" TextAlignment="TopRight" SizeF="138.541656,23" LocationFloat="488.458282,132.416687" Font="Arabic Typesetting, 16pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="19" UseFont="false" UseTextAlignment="false" />
+        </Item9>
+        <Item10 Ref="20" ControlType="XRLabel" Name="label3" Multiline="true" Text="المقيم" TextAlignment="TopRight" SizeF="138.541656,23" LocationFloat="488.458282,109.416672" Font="Arabic Typesetting, 16pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="21" UseFont="false" UseTextAlignment="false" />
+        </Item10>
+        <Item11 Ref="22" ControlType="XRLabel" Name="label2" Multiline="true" Text="استلمت انا الموقع اداناه&#xD;&#xA;" TextAlignment="TopRight" SizeF="138.541656,23" LocationFloat="488.458282,86.41669" Font="Arabic Typesetting, 16pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="23" UseFont="false" UseTextAlignment="false" />
+        </Item11>
+        <Item12 Ref="24" ControlType="XRLabel" Name="label1" Multiline="true" Text="إصــــــال أمـــــانه" TextAlignment="TopCenter" SizeF="217.708328,64.24999" LocationFloat="238.541672,0" StyleName="Style1" Font="Arabic Typesetting, 36pt, style=Bold">
+          <StylePriority Ref="25" UseFont="false" UseTextAlignment="false" />
+        </Item12>
+      </Controls>
+    </Item1>
+    <Item2 Ref="26" ControlType="DetailBand" Name="Detail" HeightF="0" />
+    <Item3 Ref="27" ControlType="BottomMarginBand" Name="BottomMargin" />
+  </Bands>
+  <StyleSheet>
+    <Item1 Ref="28" Name="Style1" BorderStyle="Inset" Padding="2,2,0,0,100" Font="Arial, 9.75pt" Sides="All" StringFormat="Near;Near;FitBlackBox, LineLimit, NoClip;None;Character;GenericTypographic" BorderWidthSerializable="2" />
+  </StyleSheet>
+</XtraReportsLayoutSerializer>

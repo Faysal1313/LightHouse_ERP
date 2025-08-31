@@ -1,0 +1,5 @@
+delete from pos_cash
+delete from pos_dt
+delete from pos_shift
+
+delete from entry where name_book='POS'

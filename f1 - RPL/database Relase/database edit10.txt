@@ -1,0 +1,440 @@
+
+--update database version 9 
+ update info_co set dbv='9'
+ 
+ 
+ 
+  Alter table pos_dt
+  ADD onRoll  int
+  update pos_dt set onRoll='0'
+
+
+
+/****** Object:  Table [dbo].[build_hot]    Script Date: 10/14/2023 19:46:55 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[build_hot](
+	[id] [nvarchar](50) NULL,
+	[name] [nvarchar](50) NULL,
+	[note] [nvarchar](150) NULL
+) ON [PRIMARY]
+
+GO
+
+
+
+/****** Object:  Table [dbo].[guest_hot]    Script Date: 10/14/2023 19:47:05 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[guest_hot](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[name] [nvarchar](50) NULL,
+	[idCard] [nvarchar](50) NULL,
+	[phone] [nvarchar](50) NULL,
+	[address] [nvarchar](50) NULL,
+	[country] [nvarchar](50) NULL,
+	[city] [nvarchar](50) NULL,
+	[list_company_id] [nvarchar](50) NULL,
+	[list_company] [nvarchar](50) NULL,
+	[number_person] [int] NULL,
+	[number_kids] [int] NULL,
+	[text1] [nvarchar](200) NULL,
+	[text2] [nvarchar](200) NULL,
+
+ CONSTRAINT [PK_guest] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+
+/****** Object:  Table [dbo].[guest_records_hot]    Script Date: 10/14/2023 19:51:22 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[guest_records_hot](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[id_guest] [int] NULL,
+	[InvoiceNO] [nvarchar](200) NULL,
+	[id_comapny] [int] NULL,
+	[id_room] [int] NULL,
+	[idkey] [int] NULL,
+	[id_item] [nvarchar](200) NULL,
+	[name_item] [nvarchar](200) NULL,
+	[price] [decimal](10, 2) NULL,
+	[tot] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[tot_after_disc] [decimal](10, 2) NULL,
+	[tot_befor][decimal](10, 2) NULL,
+	[vat][decimal](10, 2) NULL,
+	[vat_discount][decimal](10, 2) NULL,
+	[tot_vat][decimal](10, 2) NULL,
+	[due_to_pay][decimal](10, 2) NULL,
+	[date_in] [date] NULL,
+	[date_out] [date] NULL,
+	[date_issue] [date] NULL,
+	[note] [nvarchar](300) NULL,
+	[type] [nvarchar](5) NULL,
+	[date_dt] [date] NULL,
+	[balance] [decimal](10, 2) NULL,
+	[currancy][nvarchar](200) NULL,
+ 	[rate] [decimal](10, 2) NULL,
+
+   
+ CONSTRAINT [PK_guest_records] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+/****** Object:  Table [dbo].[layer_hot]    Script Date: 10/14/2023 19:51:26 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[layer_hot](
+	[id] [nvarchar](50) NULL,
+	[buidID] [nvarchar](50) NULL,
+	[name] [nvarchar](50) NULL,
+	[note] [nvarchar](50) NULL
+) ON [PRIMARY]
+
+GO
+
+
+
+/****** Object:  Table [dbo].[list_company_hot]    Script Date: 10/14/2023 19:51:30 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[list_company_hot](
+	[id] [int] NULL,
+	[typeCompany] [nvarchar](50) NULL,
+	[name] [nvarchar](50) NULL,
+	[addreess] [nvarchar](200) NULL,
+	[account] [nvarchar](50) NULL,
+	[country] [nvarchar](50) NULL,
+	[governate] [nvarchar](50) NULL,
+	[regionCity] [nvarchar](50) NULL,
+	[idVat] [nvarchar](50) NULL,
+	[noVat] [nvarchar](50) NULL,
+) ON [PRIMARY]
+
+GO
+
+
+
+/****** Object:  Table [dbo].[meal_hot]    Script Date: 10/14/2023 19:51:35 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[meal_hot](
+	[id] [int] NULL,
+	[name] [nvarchar](50) NULL,
+	[price] [decimal](10, 2) NULL
+	[price1] [decimal](10, 2) NULL
+	[price2] [decimal](10, 2) NULL
+	[price3] [decimal](10, 2) NULL
+	[price4] [decimal](10, 2) NULL
+	[price5] [decimal](10, 2) NULL
+) ON [PRIMARY]
+
+GO
+
+
+
+/****** Object:  Table [dbo].[representative_hot]    Script Date: 10/14/2023 19:51:39 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[representative_hot](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[id_comapny] [int] NULL,
+	[name] [nvarchar](50) NULL,
+	[phone] [nvarchar](50) NULL,
+	[address] [nvarchar](50) NULL,
+ CONSTRAINT [PK_representative] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+
+
+/****** Object:  Table [dbo].[room_hot]    Script Date: 10/14/2023 19:51:43 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[room_hot](
+	[buildID] [nvarchar](50) NULL,
+	[layerID] [nvarchar](50) NULL,
+	[id] [nvarchar](50) NULL,
+	[state] [nvarchar](50) NULL,
+	[type] [bit] NULL,
+	[cat1] [nvarchar](50) NULL,
+	[cat2] [nvarchar](50) NULL,
+	[cat3] [nvarchar](50) NULL,
+	[cat4] [nvarchar](50) NULL,
+	[cat5] [nvarchar](50) NULL,
+	[note] [nvarchar](50) NULL,
+	[idkey] [int] IDENTITY(1,1) NOT NULL,
+	[dateIn] [date] NULL,
+	[dateOut] [date] NULL,
+ CONSTRAINT [PK_room] PRIMARY KEY CLUSTERED 
+(
+	[idkey] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+
+/****** Object:  Table [dbo].[room_operation_hot]    Script Date: 10/14/2023 19:51:47 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[room_operation_hot](
+	[buildID] [nvarchar](50) NULL,
+	[layerID] [nvarchar](50) NULL,
+	[id] [nvarchar](50) NULL,
+	[state] [nvarchar](50) NULL,
+	[type] [bit] NULL,
+	[cat1] [nvarchar](50) NULL,
+	[cat2] [nvarchar](50) NULL,
+	[cat3] [nvarchar](50) NULL,
+	[cat4] [nvarchar](50) NULL,
+	[cat5] [nvarchar](50) NULL,
+	[bedcat1] [nvarchar](50) NULL,
+	[meal] [nvarchar](50) NULL,
+	[note] [nvarchar](300) NULL,
+	[idkey] [int] IDENTITY(1,1) NOT NULL,
+	[dateIn] [date] NULL,
+	[dateOut] [date] NULL,
+	[timeIn] [nvarchar](10) NULL,
+	[timeOut] [nvarchar](10) NULL,
+	[id_guest] [int] NULL,
+	[name] [nvarchar](200) NULL,
+	[idComapny] [nvarchar](50) NULL,
+	[id_representative] [nvarchar](50) NULL,
+	[typeCompany] [nvarchar](50) NULL,
+	[opening] [nvarchar](50) NULL,
+	[InOut] [nvarchar](5) NULL,
+	[clean] [nvarchar](50) NULL,
+	[oneDay] [nvarchar](50) NULL,
+	[lockEdit] [nvarchar](1) NULL,
+	[currance] [nvarchar](5) NULL,
+ CONSTRAINT [PK_room_operation] PRIMARY KEY CLUSTERED 
+(
+	[idkey] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+
+
+/****** Object:  Table [dbo].[servies_hot]    Script Date: 10/14/2023 19:51:51 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[servies_hot](
+	[id] [nvarchar](50) NULL,
+	[name] [nvarchar](200) NULL,
+	[price] [decimal](10, 2) NULL,
+	
+
+) ON [PRIMARY]
+
+GO
+
+
+/****** Object:  Table [dbo].[servies_records_hot]    Script Date: 10/14/2023 19:51:55 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[servies_records_hot](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[idkey] [int] NULL,
+	[id_guest] [int] NULL,
+	[id_comapny] [int] NULL,
+	[id_room] [int] NULL,
+	[id_item] [int] NULL,
+	[name_item] [nvarchar](50) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[price] [decimal](10, 2) NULL,
+	[tot] [decimal](10, 2) NULL,
+	[date_in] [date] NULL,
+	[date_out] [date] NULL,
+	[date_issue] [date] NULL,
+	[idDocument] [nvarchar](200) NULL,
+	[type_food_beverage] [int] NULL,
+	[type_food] [nvarchar](5) NULL,
+	[invoiceNo] [nvarchar](200) NULL,
+	
+
+ CONSTRAINT [PK_servies_records] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+/****** Object:  Table [dbo].[type_room_hot]    Script Date: 10/14/2023 19:51:59 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[type_room_hot](
+	[cat1] [nvarchar](50) NULL,
+	[cat2] [nvarchar](50) NULL,
+	[cat3] [nvarchar](50) NULL,
+	[cat4] [nvarchar](50) NULL,
+	[cat5] [nvarchar](50) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+ CONSTRAINT [PK_type_room] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+
+/****** Object:  Table [dbo].[type_room_price_hot]    Script Date: 10/14/2023 19:52:03 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[type_room_price_hot](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[codeCompany] [nvarchar](50) NULL,
+	[nameComany] [nvarchar](200) NULL,
+	[cat_mex_type] [nvarchar](max) NULL,
+	[price] [decimal](10, 2) NULL,
+	[price1] [decimal](10, 2) NULL,
+	[price2] [decimal](10, 2) NULL,
+	[price3] [decimal](10, 2) NULL,
+	[price4] [decimal](10, 2) NULL,
+	[price5] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[discount1] [decimal](10, 2) NULL,
+	[discount2] [decimal](10, 2) NULL,
+	[discount3] [decimal](10, 2) NULL,
+	[discount4] [decimal](10, 2) NULL,
+	[discount5] [decimal](10, 2) NULL,
+	[final_price] [decimal](10, 2) NULL,
+	[cat1] [nvarchar](50) NULL,
+	[cat2] [nvarchar](50) NULL,
+	[cat3] [nvarchar](50) NULL,
+	[cat4] [nvarchar](50) NULL,
+	[cat5] [nvarchar](50) NULL,
+ CONSTRAINT [PK_type_room_price] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+CREATE TABLE [dbo].[permission_hotel_screen](
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[name_frm] [nvarchar](50) NULL,
+	[visible] [bit] NULL
+) ON [PRIMARY]
+
+GO
+CREATE TABLE [dbo].[room_history_hot](
+	[buildID] [nvarchar](50) NULL,
+	[layerID] [nvarchar](50) NULL,
+	[id] [nvarchar](50) NULL,
+	[state] [nvarchar](50) NULL,
+	[type] [bit] NULL,
+	[cat1] [nvarchar](50) NULL,
+	[cat2] [nvarchar](50) NULL,
+	[cat3] [nvarchar](50) NULL,
+	[cat4] [nvarchar](50) NULL,
+	[cat5] [nvarchar](50) NULL,
+	[bedcat1] [nvarchar](50) NULL,
+	[meal] [nvarchar](50) NULL,
+	[note] [nvarchar](300) NULL,
+	[idkey] [int] ,
+	[dateIn] [date] NULL,
+	[dateOut] [date] NULL,
+	[timeIn] [nvarchar](50) NULL,
+	[timeOut] [nvarchar](50) NULL,
+	[id_guest] [int] NULL,
+	[name] [nvarchar](200) NULL,
+	[idComapny] [nvarchar](50) NULL,
+	[id_representative] [nvarchar](50) NULL,
+	[typeCompany] [nvarchar](50) NULL,
+	[opening] [nvarchar](50) NULL,
+	[InOut] [nvarchar](5) NULL,
+	[clean] [nvarchar](50) NULL,
+	[oneDay] [nvarchar](50) NULL,
+	[cancel]  [int] NULL,
+     )
+
+CREATE TABLE [dbo].[end_day_hot](
+	[idkey] [nvarchar](50) NULL,
+	[id_room] [nvarchar](50) NULL,
+	[lock] [nvarchar](10) NULL,
+	[date] [date] NULL
+) ON [PRIMARY]
+
+
+
+
+--edit in pos gift
+--alter table pos_cash_account
+--add  gift nvarchar(50)

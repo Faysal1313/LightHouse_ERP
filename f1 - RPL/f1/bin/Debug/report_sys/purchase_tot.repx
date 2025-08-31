@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="21.1.5.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Report1" Landscape="true" PaperKind="A4" PageWidth="1169" PageHeight="827" Version="21.1" FilterString="[purchase_hd_id] In (?pur_id) And [vcs_code] In (?vcs)" DataMember="purchase_invoices_tot" DataSource="#Ref-0" Font="Arial, 9.75pt">
+  <Parameters>
+    <Item1 Ref="4" Description="#رقم الفاتوره" ValueSourceSettings="#Ref-2" MultiValue="true" Name="pur_id" />
+    <Item2 Ref="6" Description="المورد" ValueSourceSettings="#Ref-5" MultiValue="true" Name="vcs" />
+    <Item3 Ref="9" Description="التاريخ" ValueSourceSettings="#Ref-7" MultiValue="true" Name="date_edit" Type="#Ref-8" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="10" ControlType="TopMarginBand" Name="TopMargin">
+      <Controls>
+        <Item1 Ref="11" ControlType="XRLabel" Name="label9" Multiline="true" Text="label6" TextAlignment="MiddleRight" SizeF="198.958344,23" LocationFloat="770.041565,47.58331" Font="Arial, 9.75pt, style=Bold" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="12" EventName="BeforePrint" PropertyName="Text" Expression="[info_co].[tel1]" />
+          </ExpressionBindings>
+          <StylePriority Ref="13" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="14" ControlType="XRLabel" Name="label8" Multiline="true" Text="label6" TextAlignment="MiddleRight" SizeF="198.958344,23.0000038" LocationFloat="770.041565,23.0000019" Font="Arial, 9.75pt, style=Bold" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="15" EventName="BeforePrint" PropertyName="Text" Expression="[info_co].[address1]" />
+          </ExpressionBindings>
+          <StylePriority Ref="16" UseFont="false" UseTextAlignment="false" />
+        </Item2>
+        <Item3 Ref="17" ControlType="XRLabel" Name="label7" Multiline="true" Text="label6" TextAlignment="MiddleRight" SizeF="198.958344,23" LocationFloat="770.041565,0" Font="Arial, 9.75pt, style=Bold" ForeColor="255,46,116,180" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="18" EventName="BeforePrint" PropertyName="Text" Expression="[info_co].[name_of_company]" />
+          </ExpressionBindings>
+          <StylePriority Ref="19" UseFont="false" UseForeColor="false" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="20" ControlType="XRPictureBox" Name="pictureBox1" Sizing="StretchImage" SizeF="100,100" LocationFloat="0,0">
+          <ExpressionBindings>
+            <Item1 Ref="21" EventName="BeforePrint" PropertyName="ImageSource" Expression="[info_co].[logo]" />
+          </ExpressionBindings>
+        </Item4>
+      </Controls>
+    </Item1>
+    <Item2 Ref="22" ControlType="BottomMarginBand" Name="BottomMargin">
+      <Controls>
+        <Item1 Ref="23" ControlType="XRLabel" Name="label2" Text="WWW.AD4SAS.COM                          " SizeF="112.916725,13.3834839" LocationFloat="10.0000067,33.0000572" StyleName="Title" Font="Arial, 8pt">
+          <StylePriority Ref="24" UseFont="false" />
+        </Item1>
+        <Item2 Ref="25" ControlType="XRLabel" Name="label3" Text="LightHouse ERP sys" SizeF="112.916725,13.3834839" LocationFloat="856.0833,33.0000572" StyleName="Title" Font="Arial, 8pt">
+          <StylePriority Ref="26" UseFont="false" />
+        </Item2>
+        <Item3 Ref="27" ControlType="XRPageInfo" Name="pageInfo1" PageInfo="DateTime" SizeF="472.5,23" LocationFloat="6,6" StyleName="PageInfo" />
+        <Item4 Ref="28" ControlType="XRPageInfo" Name="pageInfo2" TextFormatString="Page {0} of {1}" TextAlignment="TopRight" SizeF="472.5,23" LocationFloat="490,6" StyleName="PageInfo" />
+      </Controls>
+    </Item2>
+    <Item3 Ref="29" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="60">
+      <Controls>
+        <Item1 Ref="30" ControlType="XRLabel" Name="label1" Text="فواتير المشتريات" TextAlignment="TopCenter" SizeF="957,24.194334" LocationFloat="6,6" StyleName="Title" Font="Arial, 14.25pt, style=Bold" ForeColor="255,84,141,212">
+          <StylePriority Ref="31" UseFont="false" UseForeColor="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item3>
+    <Item4 Ref="32" ControlType="DetailBand" Name="Detail" HeightF="0" />
+    <Item5 Ref="33" ControlType="DetailReportBand" Name="DetailReport" Level="0" FilterString="[purchase_hd_id] In (?pur_id) And [vcs_code] In (?vcs) And [date_P] &lt;= ?date_edit" DataMember="purchase_invoices_tot" DataSource="#Ref-0">
+      <Bands>
+        <Item1 Ref="34" ControlType="GroupHeaderBand" Name="GroupHeader1" GroupUnion="WithFirstDetail" HeightF="28">
+          <Controls>
+            <Item1 Ref="35" ControlType="XRTable" Name="table1" SizeF="969,28" LocationFloat="0,0">
+              <Rows>
+                <Item1 Ref="36" ControlType="XRTableRow" Name="tableRow1" Weight="1">
+                  <Cells>
+                    <Item1 Ref="37" ControlType="XRTableCell" Name="tableCell1" Weight="0.09254683016225565" Text="رقم الفاتوره" StyleName="DetailCaption2" Borders="None">
+                      <StylePriority Ref="38" UseBorders="false" />
+                    </Item1>
+                    <Item2 Ref="39" ControlType="XRTableCell" Name="tableCell2" Weight="0.082268729942624449" Text="كود المورد" StyleName="DetailCaption2" />
+                    <Item3 Ref="40" ControlType="XRTableCell" Name="tableCell3" Weight="0.0753459793734449" Text="اسم المورد" StyleName="DetailCaption2" />
+                    <Item4 Ref="41" ControlType="XRTableCell" Name="tableCell4" Weight="0.066949555560404911" Text="تاريخ  التحرير" StyleName="DetailCaption2" />
+                    <Item5 Ref="42" ControlType="XRTableCell" Name="tableCell5" Weight="0.070957951501427058" Text="تاريخ الاستحقاق" StyleName="DetailCaption2" />
+                    <Item6 Ref="43" ControlType="XRTableCell" Name="tableCell6" Weight="0.13129291111776639" Text="صافي الفاتوره" TextAlignment="MiddleRight" StyleName="DetailCaption2">
+                      <StylePriority Ref="44" UseTextAlignment="false" />
+                    </Item6>
+                    <Item7 Ref="45" ControlType="XRTableCell" Name="tableCell7" Weight="0.091110725796011482" Multiline="true" Text="كود الصنف&#xD;&#xA;" StyleName="DetailCaption2" />
+                    <Item8 Ref="46" ControlType="XRTableCell" Name="tableCell8" Weight="0.086208481126575587" Text="اسم الصنف" StyleName="DetailCaption2" />
+                    <Item9 Ref="47" ControlType="XRTableCell" Name="tableCell9" Weight="0.051307891576620378" Text="الكميه" TextAlignment="MiddleRight" StyleName="DetailCaption2" Font="Arial, 7pt, style=Bold">
+                      <StylePriority Ref="48" UseFont="false" UseTextAlignment="false" />
+                    </Item9>
+                    <Item10 Ref="49" ControlType="XRTableCell" Name="tableCell10" Weight="0.079092893807142517" Text="سعر" TextAlignment="MiddleRight" StyleName="DetailCaption2">
+                      <StylePriority Ref="50" UseTextAlignment="false" />
+                    </Item10>
+                    <Item11 Ref="51" ControlType="XRTableCell" Name="tableCell11" Weight="0.071684523386605872" Text="الخصم" TextAlignment="MiddleRight" StyleName="DetailCaption2">
+                      <StylePriority Ref="52" UseTextAlignment="false" />
+                    </Item11>
+                    <Item12 Ref="53" ControlType="XRTableCell" Name="tableCell12" Weight="0.10123357782668989" Text="اجمالي الفاتوره" TextAlignment="MiddleRight" StyleName="DetailCaption2">
+                      <StylePriority Ref="54" UseTextAlignment="false" />
+                    </Item12>
+                  </Cells>
+                </Item1>
+              </Rows>
+            </Item1>
+          </Controls>
+        </Item1>
+        <Item2 Ref="55" ControlType="DetailBand" Name="Detail1" HeightF="25">
+          <Controls>
+            <Item1 Ref="56" ControlType="XRTable" Name="table2" SizeF="969,25" LocationFloat="0,0" OddStyleName="DetailData3_Odd">
+              <Rows>
+                <Item1 Ref="57" ControlType="XRTableRow" Name="tableRow2" Weight="11.5">
+                  <Cells>
+                    <Item1 Ref="58" ControlType="XRTableCell" Name="tableCell13" Weight="0.092546829658652824" StyleName="DetailData2" Font="Arial, 7pt" Borders="None">
+                      <ExpressionBindings>
+                        <Item1 Ref="59" EventName="BeforePrint" PropertyName="Text" Expression="[purchase_hd_id]" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="60" UseFont="false" UseBorders="false" />
+                    </Item1>
+                    <Item2 Ref="61" ControlType="XRTableCell" Name="tableCell14" Weight="0.082268737964216687" StyleName="DetailData2" Font="Arial, 7pt">
+                      <ExpressionBindings>
+                        <Item1 Ref="62" EventName="BeforePrint" PropertyName="Text" Expression="[vcs_code]" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="63" UseFont="false" />
+                    </Item2>
+                    <Item3 Ref="64" ControlType="XRTableCell" Name="tableCell15" Weight="0.075345987306164069" StyleName="DetailData2" Font="Arial, 7pt">
+                      <ExpressionBindings>
+                        <Item1 Ref="65" EventName="BeforePrint" PropertyName="Text" Expression="[vcs_name]" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="66" UseFont="false" />
+                    </Item3>
+                    <Item4 Ref="67" ControlType="XRTableCell" Name="tableCell16" Weight="0.066949528299488054" TextFormatString="{0:dd/MM/yyyy}" TextAlignment="MiddleLeft" StyleName="DetailData2" Font="Arial, 6pt">
+                      <ExpressionBindings>
+                        <Item1 Ref="68" EventName="BeforePrint" PropertyName="Text" Expression="[date_P]" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="69" UseFont="false" UseTextAlignment="false" />
+                    </Item4>
+                    <Item5 Ref="70" ControlType="XRTableCell" Name="tableCell17" Weight="0.070957951501427058" TextFormatString="{0:dd/MM/yyyy}" Text="{0:dd/MM/yyyy}" StyleName="DetailData2" Font="Arial, 6pt">
+                      <ExpressionBindings>
+                        <Item1 Ref="71" EventName="BeforePrint" PropertyName="Text" Expression="[due_date]" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="72" UseFont="false" />
+                    </Item5>
+                    <Item6 Ref="73" ControlType="XRTableCell" Name="tableCell18" Weight="0.13129290277031488" TextFormatString="{0:C2}" TextAlignment="MiddleRight" StyleName="DetailData2">
+                      <ExpressionBindings>
+                        <Item1 Ref="74" EventName="BeforePrint" PropertyName="Text" Expression="[net_invoice_purchase]" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="75" UseTextAlignment="false" />
+                    </Item6>
+                    <Item7 Ref="76" ControlType="XRTableCell" Name="tableCell19" Weight="0.0911107259441307" StyleName="DetailData2">
+                      <ExpressionBindings>
+                        <Item1 Ref="77" EventName="BeforePrint" PropertyName="Text" Expression="[code_items]" />
+                      </ExpressionBindings>
+                    </Item7>
+                    <Item8 Ref="78" ControlType="XRTableCell" Name="tableCell20" Weight="0.086208481037704884" StyleName="DetailData2">
+                      <ExpressionBindings>
+                        <Item1 Ref="79" EventName="BeforePrint" PropertyName="Text" Expression="[name_items]" />
+                      </ExpressionBindings>
+                    </Item8>
+                    <Item9 Ref="80" ControlType="XRTableCell" Name="tableCell21" Weight="0.051307884117879059" TextFormatString="{0:#.00}" TextAlignment="MiddleRight" StyleName="DetailData2" Font="Arial, 7pt">
+                      <ExpressionBindings>
+                        <Item1 Ref="81" EventName="BeforePrint" PropertyName="Text" Expression="[qty]" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="82" UseFont="false" UseTextAlignment="false" />
+                    </Item9>
+                    <Item10 Ref="83" ControlType="XRTableCell" Name="tableCell22" Weight="0.079092885933670337" TextFormatString="{0:C2}" TextAlignment="MiddleRight" StyleName="DetailData2">
+                      <ExpressionBindings>
+                        <Item1 Ref="84" EventName="BeforePrint" PropertyName="Text" Expression="[item_price]" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="85" UseTextAlignment="false" />
+                    </Item10>
+                    <Item11 Ref="86" ControlType="XRTableCell" Name="tableCell23" Weight="0.071684523386605872" TextFormatString="{0:C2}" TextAlignment="MiddleRight" StyleName="DetailData2">
+                      <ExpressionBindings>
+                        <Item1 Ref="87" EventName="BeforePrint" PropertyName="Text" Expression="[discount]" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="88" UseTextAlignment="false" />
+                    </Item11>
+                    <Item12 Ref="89" ControlType="XRTableCell" Name="tableCell24" Weight="0.10123364081446723" TextFormatString="{0:C2}" TextAlignment="MiddleRight" StyleName="DetailData2">
+                      <ExpressionBindings>
+                        <Item1 Ref="90" EventName="BeforePrint" PropertyName="Text" Expression="[incloud_taxes]" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="91" UseTextAlignment="false" />
+                    </Item12>
+                  </Cells>
+                </Item1>
+              </Rows>
+            </Item1>
+          </Controls>
+        </Item2>
+      </Bands>
+    </Item5>
+    <Item6 Ref="92" ControlType="DetailReportBand" Name="DetailReport1" Level="1" DataMember="info_co" DataSource="#Ref-0">
+      <Bands>
+        <Item1 Ref="93" ControlType="DetailBand" Name="Detail2" HeightF="0" />
+      </Bands>
+    </Item6>
+  </Bands>
+  <StyleSheet>
+    <Item1 Ref="94" Name="Title" BorderStyle="Inset" Font="Arial, 14.25pt" ForeColor="255,64,70,80" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+    <Item2 Ref="95" Name="DetailCaption2" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt, style=Bold" ForeColor="White" BackColor="255,37,129,216" BorderColor="White" Sides="Left" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item3 Ref="96" Name="DetailData2" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt" ForeColor="Black" BorderColor="Transparent" Sides="Left" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item4 Ref="97" Name="DetailData3_Odd" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt" ForeColor="Black" BackColor="255,243,245,248" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
+    <Item5 Ref="98" Name="PageInfo" BorderStyle="Inset" Padding="2,2,0,0,100" Font="Arial, 8.25pt, style=Bold" ForeColor="255,64,70,80" StringFormat="Near;Near;0;None;Character;Default" />
+  </StyleSheet>
+  <Watermark Ref="99" ShowBehind="false" Text="Lighthouse ERP sys" ForeColor="LightGray" TextTransparency="182" />
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v21.1" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImNuIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJTdG9yZWRQcm9jUXVlcnkiIE5hbWU9InB1cmNoYXNlX2ludm9pY2VzX3RvdCI+PFByb2NOYW1lPnB1cmNoYXNlX2ludm9pY2VzX3RvdDwvUHJvY05hbWU+PC9RdWVyeT48UXVlcnkgVHlwZT0iU2VsZWN0UXVlcnkiIE5hbWU9ImluZm9fY28iPjxUYWJsZXM+PFRhYmxlIE5hbWU9ImluZm9fY28iIC8+PC9UYWJsZXM+PENvbHVtbnM+PENvbHVtbiBUYWJsZT0iaW5mb19jbyIgTmFtZT0icGVyaW9kIiAvPjxDb2x1bW4gVGFibGU9ImluZm9fY28iIE5hbWU9Im5hbWVfb2ZfY29tcGFueSIgLz48Q29sdW1uIFRhYmxlPSJpbmZvX2NvIiBOYW1lPSJ0ZWwxIiAvPjxDb2x1bW4gVGFibGU9ImluZm9fY28iIE5hbWU9InRlbDIiIC8+PENvbHVtbiBUYWJsZT0iaW5mb19jbyIgTmFtZT0ibW9iMSIgLz48Q29sdW1uIFRhYmxlPSJpbmZvX2NvIiBOYW1lPSJtb2IyIiAvPjxDb2x1bW4gVGFibGU9ImluZm9fY28iIE5hbWU9ImZheCIgLz48Q29sdW1uIFRhYmxlPSJpbmZvX2NvIiBOYW1lPSJlbWFpbCIgLz48Q29sdW1uIFRhYmxlPSJpbmZvX2NvIiBOYW1lPSJmYWNlYm9vayIgLz48Q29sdW1uIFRhYmxlPSJpbmZvX2NvIiBOYW1lPSJ3ZXBzaXRlIiAvPjxDb2x1bW4gVGFibGU9ImluZm9fY28iIE5hbWU9ImFkZHJlc3MxIiAvPjxDb2x1bW4gVGFibGU9ImluZm9fY28iIE5hbWU9ImFkZHJlc3MyIiAvPjxDb2x1bW4gVGFibGU9ImluZm9fY28iIE5hbWU9InRheGVzX25vIiAvPjxDb2x1bW4gVGFibGU9ImluZm9fY28iIE5hbWU9InRheGVzX251bSIgLz48Q29sdW1uIFRhYmxlPSJpbmZvX2NvIiBOYW1lPSJub3RlIiAvPjxDb2x1bW4gVGFibGU9ImluZm9fY28iIE5hbWU9ImxvZ28iIC8+PENvbHVtbiBUYWJsZT0iaW5mb19jbyIgTmFtZT0ic3RvcF9xdHlfbW92ZSIgLz48Q29sdW1uIFRhYmxlPSJpbmZvX2NvIiBOYW1lPSJzdG9wX2VudHJ5IiAvPjxDb2x1bW4gVGFibGU9ImluZm9fY28iIE5hbWU9Im9wZW5fcXR5IiAvPjxDb2x1bW4gVGFibGU9ImluZm9fY28iIE5hbWU9Im9wZW5fdmNzIiAvPjxDb2x1bW4gVGFibGU9ImluZm9fY28iIE5hbWU9ImVudHJ5X2Vycm9yIiAvPjxDb2x1bW4gVGFibGU9ImluZm9fY28iIE5hbWU9ImV4cGlyeSIgLz48Q29sdW1uIFRhYmxlPSJpbmZvX2NvIiBOYW1lPSJyZXByZXNlbnRhdGl2ZSIgLz48Q29sdW1uIFRhYmxlPSJpbmZvX2NvIiBOYW1lPSJiYXJjb2RlIiAvPjxDb2x1bW4gVGFibGU9ImluZm9fY28iIE5hbWU9ImN1cnJhbmNleSIgLz48Q29sdW1uIFRhYmxlPSJpbmZvX2NvIiBOYW1lPSJkaXNjb3VudCIgLz48Q29sdW1uIFRhYmxlPSJpbmZvX2NvIiBOYW1lPSJ0YXhlcyIgLz48L0NvbHVtbnM+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9InNxbERhdGFTb3VyY2UxIj48VmlldyBOYW1lPSJwdXJjaGFzZV9pbnZvaWNlc190b3QiPjxGaWVsZCBOYW1lPSJwdXJjaGFzZV9oZF9pZCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJ2Y3NfbmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJ2Y3NfY29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJkYXRlX1AiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJkdWVfZGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9Im5ldF9pbnZvaWNlX3B1cmNoYXNlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJjb2RlX2l0ZW1zIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Im5hbWVfaXRlbXMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icXR5IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJpdGVtX3ByaWNlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJkaXNjb3VudCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iaW5jbG91ZF90YXhlcyIgVHlwZT0iRGVjaW1hbCIgLz48L1ZpZXc+PFZpZXcgTmFtZT0iaW5mb19jbyI+PEZpZWxkIE5hbWU9InBlcmlvZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Im5hbWVfb2ZfY29tcGFueSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJ0ZWwxIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InRlbDIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0ibW9iMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJtb2IyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImZheCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJlbWFpbCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJmYWNlYm9vayIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJ3ZXBzaXRlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImFkZHJlc3MxIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImFkZHJlc3MyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InRheGVzX25vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InRheGVzX251bSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJub3RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImxvZ28iIFR5cGU9IkJ5dGVBcnJheSIgLz48RmllbGQgTmFtZT0ic3RvcF9xdHlfbW92ZSIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0ic3RvcF9lbnRyeSIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0ib3Blbl9xdHkiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9Im9wZW5fdmNzIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJlbnRyeV9lcnJvciIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iZXhwaXJ5IiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJyZXByZXNlbnRhdGl2ZSIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iYmFyY29kZSIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iY3VycmFuY2V5IiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJkaXNjb3VudCIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0idGF4ZXMiIFR5cGU9IkJvb2xlYW4iIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
+  </ComponentStorage>
+  <ObjectStorage>
+    <Item1 Ref="2" ObjectType="DevExpress.XtraReports.Parameters.DynamicListLookUpSettings, DevExpress.Printing.v21.1.Core" DataSource="#Ref-0" DataMember="purchase_invoices_tot" ValueMember="purchase_hd_id" DisplayMember="purchase_hd_id" />
+    <Item2 Ref="5" ObjectType="DevExpress.XtraReports.Parameters.DynamicListLookUpSettings, DevExpress.Printing.v21.1.Core" DataSource="#Ref-0" DataMember="purchase_invoices_tot" ValueMember="vcs_code" DisplayMember="vcs_name" />
+    <Item3 Ref="7" ObjectType="DevExpress.XtraReports.Parameters.DynamicListLookUpSettings, DevExpress.Printing.v21.1.Core" DataSource="#Ref-0" DataMember="purchase_invoices_tot" ValueMember="date_P" DisplayMember="date_P" />
+    <Item4 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v21.1" Ref="8" Content="System.DateTime" Type="System.Type" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

@@ -1,0 +1,128 @@
+update items_trans set dates='2021-06-05'
+
+--1-items 
+
+
+
+offer nvarchar 5
+
+
+--2-creat table offer
+CREATE TABLE [dbo].[offer](
+	[main_code] [nvarchar](50) NULL,
+	[sub_code] [nvarchar](50) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[dt1] [date] NULL,
+	[dt2] [date] NULL
+) 
+
+--trigar purchase 
+USE [f1]
+GO
+/****** Object:  Trigger [dbo].[insert_items_trans_tr]    Script Date: 07/21/2021 00:44:04 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER TRIGGER [dbo].[insert_items_trans_tr]
+ON [dbo].[purchase_dt]
+FOR INSERT  
+AS
+BEGIN
+  declare @purchase_dt_id int
+  Declare @code_items nvarchar (50)
+  declare @name_items nvarchar (200)
+  declare @qty decimal (10,2)
+ declare @f_unite nvarchar (50)
+  declare @name_unite nvarchar (50)
+ 
+  declare @exp_date date
+  declare @id_ware int 
+    declare @attachno nvarchar(50)
+ declare @attachbook nvarchar(50)
+  declare @attachnamebook nvarchar(50)
+ declare @vcs_code nvarchar (50)
+ declare @vcs_name nvarchar (50)
+ 
+select 
+   @purchase_dt_id =purchase_dt_id,
+   @code_items =code_items ,
+   @name_items =name_items ,
+   @qty =qty,
+   @f_unite =f_unite,
+   @name_unite =name_unite,
+   @exp_date =exp_date,
+   @id_ware = id_ware,
+   @attachno=purchase_hd_id, 
+   @attachbook=code_book,
+   @attachnamebook=name_book,
+   @vcs_code=(select vcs_code from purchase_hd where purchase_hd_id=@attachno  ),
+   @vcs_name=(select vcs_name from purchase_hd where purchase_hd_id=@attachno  )
+
+  from inserted
+   
+  insert into items_trans (id,code_items,name_items,qty,f_unite,name_unite,exp_date,id_ware,attachno,attachbook,attachnamebook,vcs_code,vcs_name,[dates]) values (
+  
+                  @purchase_dt_id,@code_items,@name_items,@qty,@f_unite,@name_unite,@exp_date,@id_ware,@attachno,@attachbook,@attachnamebook,(select vcs_code from purchase_hd where purchase_hd_id=@attachno  ),(select vcs_name from purchase_hd where purchase_hd_id=@attachno  ),(select date_P from purchase_hd where purchase_hd_id=@attachno  ))
+  
+  
+ end
+
+
+****************----------------------
+
+
+
+--trigra sale invoice
+
+USE [f1]
+GO
+/****** Object:  Trigger [dbo].[insert_items_trans_tr_sale]    Script Date: 07/21/2021 01:20:39 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER TRIGGER [dbo].[insert_items_trans_tr_sale]
+ON [dbo].[sale_dt]
+FOR INSERT  
+AS
+BEGIN
+  declare @sale_dt_id int
+  Declare @code_items nvarchar (200)
+  declare @name_items nvarchar (200)
+  declare @qty decimal (10,2)
+ declare @f_unite nvarchar (50)
+  declare @name_unite nvarchar (50)
+ 
+  declare @exp_date date
+  declare @id_ware int 
+    declare @attachno nvarchar(50)
+ declare @attachbook nvarchar(50)
+  declare @attachnamebook nvarchar(50)
+ declare @vcs_code nvarchar (50)
+ declare @vcs_name nvarchar (50)
+ 
+select 
+   @sale_dt_id =sale_dt_id,
+   @code_items =code_items ,
+   @name_items =name_items ,
+   @qty =qty,
+   @f_unite =f_unite,
+   @name_unite =name_unite,
+   @exp_date =exp_date,
+   @id_ware = id_ware,
+   @attachno=sale_hd_id, 
+   @attachbook=code_book,
+   @attachnamebook=name_book,
+   @vcs_code=(select vcs_code from sale_hd where sale_hd_id=@attachno  ),
+   @vcs_name=(select vcs_name from sale_hd where sale_hd_id=@attachno  )
+   
+  from inserted
+   
+  insert into items_trans (id,code_items,name_items,qty,f_unite,name_unite,exp_date,id_ware,attachno,attachbook,attachnamebook,vcs_code,vcs_name,dates) values (
+  
+                  @sale_dt_id,@code_items,@name_items,@qty*-1,@f_unite,@name_unite,@exp_date,@id_ware,@attachno,@attachbook,@attachnamebook,(select vcs_code from sale_hd where sale_hd_id=@attachno  ),(select vcs_name from sale_hd where sale_hd_id=@attachno  ),(select date_P from sale_hd where sale_hd_id=@attachno  ))
+  
+  
+ end
+--select * from items_trans

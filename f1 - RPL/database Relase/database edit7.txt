@@ -1,0 +1,432 @@
+ update info_co set dbv='8'
+
+
+Alter table pay_dt
+  ADD costcenter_id nvarchar(50)
+  Alter table recev_dt
+  ADD costcenter_id nvarchar(50)
+
+
+
+--costcenter in pos
+  Alter table pos_cash_account
+  ADD costcenter_id nvarchar(50)
+
+--costcenter in term
+  Alter table term
+  ADD costcenter_id nvarchar(50)
+
+
+--add table [issuer_inv_dt] you have to add key by hand in sql 
+
+CREATE TABLE [dbo].[issuer_inv_dt](
+	[no] [int] NULL,
+	[issuer_inv_hd_id] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[issuer_inv_dt_id] [int] IDENTITY(1,1) NOT NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](50) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[f_unite] [nvarchar](50) NULL,
+	[item_price] [decimal](10, 2) NULL,
+	[tot_bef] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[id_ware2] [int] NULL,
+	[name_wars] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[exp] [bit] NULL,
+	[exp_date] [date] NULL,
+	[type] [int] NULL,
+	[serial_P] [int] NULL,
+	[cost_exp_edit] [decimal](10, 2) NULL,
+	[user] [nvarchar](50) NULL,
+	[tot_after_dis_forex] [decimal](10, 2) NULL,
+ CONSTRAINT [PK_issuer_inv_dt] PRIMARY KEY CLUSTERED 
+(
+	[issuer_inv_dt_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+CREATE TABLE [dbo].[issuer_inv_hd](
+	[issuer_inv_hd_id] [nvarchar](50) NOT NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[issuer_inv_id] [int] NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[term] [nvarchar](50) NULL,
+	[serial_P] [nvarchar](50) NULL,
+	[date_P] [date] NULL,
+	[due_date] [date] NULL,
+	[tot_befor] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [nvarchar](50) NULL,
+	[id_ware2] [int] NULL,
+	[code_entry] [int] NULL,
+	[book_name_entry] [nvarchar](50) NULL,
+	[code_book_entry] [nvarchar](50) NULL,
+	[note_txt] [nvarchar](100) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[lock] [nvarchar](5) NULL,
+	[currance] [nvarchar](10) NULL,
+	[f_currance] [decimal](10, 2) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+ CONSTRAINT [PK_issuer_inv_hd] PRIMARY KEY CLUSTERED 
+(
+	[issuer_inv_hd_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+CREATE  PROCEDURE [dbo].[Trial_balance_general_short] @datee date
+as
+select  entry.acc_num, entry.acc_name,rootlevel,type_acc,(sum(entry.depit)) as depitbal,sum(entry.credit) as creditbal,sum(opening_bal) as opening_bal from entry 
+where   sort='1'   and dates <= @datee --'2024-02-09'
+ 
+group by entry.acc_num, entry.acc_name,rootlevel ,type_acc 
+ union 
+ 
+ select  rootlevel as acc_num ,rootlevel_name, rootlevel, type_acc,(sum(entry.depit)) as depitbal,sum(entry.credit) as creditbal,sum(opening_bal) as opening_bal from entry  
+ where   sort='2' and dates <= @datee-- '2024-02-09'
+ 
+ group by rootlevel ,type_acc ,rootlevel_name
+
+ order by entry.rootlevel asc
+
+
+
+
+GO
+
+
+
+--------/****** Object:  StoredProcedure [dbo].[report_acc_statment_gl]    Script Date: 02/17/2023 12:09:32 ******/
+
+ALTER PROCEDURE [dbo].[report_acc_statment_gl]@datee date,@acc nvarchar(50)
+
+as
+select 
+(select top 1 acc_name from entry where code_entry=e.code_entry  and credit <> '0' )as accother_name_de,
+
+(select top 1 acc_name from entry where code_entry=e.code_entry  and depit <> '0' )as accother_name_cr,
+
+
+attachno,txt_desc,f_currance,currance,code_entry,name_book,depit,credit,(depit-credit)as def,attachnamebook,acc_num,acc_name,dates,type_acc,rootlevel_name ,attachtext
+from entry e
+ where  acc_num=@acc and dates <= @datee --rootlevel_name = '0' and
+ order by dates
+
+Alter table  info_co
+  ADD costCenter_mund bit
+
+
+Alter table  pos_pending
+  ADD table_pos nvarchar (10)
+
+--الخصم المسوح بة و المكتسب
+select * from term where term_id='مشتريات بدون ضريبة'
+
+--مشتريات
+--مشتريات شامل ضريه14
+insert into [term]    (cat_book,name_book,rootid,rootname,depit,credit,value,code_entry,bookname_entry,taxes,vat_add,vat_rate,term_id) values('سند فاتوره مشتريات','دفتر فاوره مشتريات 1','select rootid from wares_acc where acc_id=6 and id_ware=','select rootname from wares_acc where acc_id=6 and id_ware=','discount','0','خصم مكتسب','sj1','سند قيد فرع 1','0','0','0','مشتريات شامل ضريه14')
+insert into [term]    (cat_book,name_book,rootid,rootname,depit,credit,value,code_entry,bookname_entry,taxes,vat_add,vat_rate,term_id) values('سند فاتوره مشتريات','دفتر فاوره مشتريات 1','select vcs_code from vcs where vcs_code=','select vcs_name from vcs where vcs_code=','0','discount','ذمم','sj1','سند قيد فرع 1','0','0','0','مشتريات شامل ضريه14')
+--مشتريات14+1ضريبه
+insert into [term]    (cat_book,name_book,rootid,rootname,depit,credit,value,code_entry,bookname_entry,taxes,vat_add,vat_rate,term_id) values('سند فاتوره مشتريات','دفتر فاوره مشتريات 1','select rootid from wares_acc where acc_id=6 and id_ware=','select rootname from wares_acc where acc_id=6 and id_ware=','discount','0','خصم مكتسب','sj1','سند قيد فرع 1','0','0','0','مشتريات14+1ضريبه')
+insert into [term]    (cat_book,name_book,rootid,rootname,depit,credit,value,code_entry,bookname_entry,taxes,vat_add,vat_rate,term_id) values('سند فاتوره مشتريات','دفتر فاوره مشتريات 1','select vcs_code from vcs where vcs_code=','select vcs_name from vcs where vcs_code=','0','discount','ذمم','sj1','سند قيد فرع 1','0','0','0','مشتريات14+1ضريبه')
+--'مشتريات بدون ضريبة'
+insert into [term]    (cat_book,name_book,rootid,rootname,depit,credit,value,code_entry,bookname_entry,taxes,vat_add,vat_rate,term_id) values('سند فاتوره مشتريات','دفتر فاوره مشتريات 1','select rootid from wares_acc where acc_id=6 and id_ware=','select rootname from wares_acc where acc_id=6 and id_ware=','discount','0','خصم مكتسب','sj1','سند قيد فرع 1','0','0','0','مشتريات بدون ضريبة')
+insert into [term]    (cat_book,name_book,rootid,rootname,depit,credit,value,code_entry,bookname_entry,taxes,vat_add,vat_rate,term_id) values('سند فاتوره مشتريات','دفتر فاوره مشتريات 1','select vcs_code from vcs where vcs_code=','select vcs_name from vcs where vcs_code=','0','discount','ذمم','sj1','سند قيد فرع 1','0','0','0','مشتريات بدون ضريبة')
+------------------------------------------------------------------------------------
+--مردودات مشتريات 
+--مشتريات شامل ضريه14
+insert into [term]    (cat_book,name_book,rootid,rootname,depit,credit,value,code_entry,bookname_entry,taxes,vat_add,vat_rate,term_id) values('سند مردودات مشتريات','دفتر فاوره مشتريات 1','select rootid from wares_acc where acc_id=6 and id_ware=','select rootname from wares_acc where acc_id=6 and id_ware=','discount','0','خصم مكتسب','sj1','سند قيد فرع 1','0','0','0','مردودات شامل14')
+insert into [term]    (cat_book,name_book,rootid,rootname,depit,credit,value,code_entry,bookname_entry,taxes,vat_add,vat_rate,term_id) values('سند مردودات مشتريات','دفتر فاوره مشتريات 1','select vcs_code from vcs where vcs_code=','select vcs_name from vcs where vcs_code=','0','discount','ذمم','sj1','سند قيد فرع 1','0','0','0','مردودات شامل14')
+--مشتريات14+1ضريبه
+insert into [term]    (cat_book,name_book,rootid,rootname,depit,credit,value,code_entry,bookname_entry,taxes,vat_add,vat_rate,term_id) values('سند مردودات مشتريات','دفتر فاوره مشتريات 1','select rootid from wares_acc where acc_id=6 and id_ware=','select rootname from wares_acc where acc_id=6 and id_ware=','discount','0','خصم مكتسب','sj1','سند قيد فرع 1','0','0','0','مردودات14+1')
+insert into [term]    (cat_book,name_book,rootid,rootname,depit,credit,value,code_entry,bookname_entry,taxes,vat_add,vat_rate,term_id) values('سسند مردودات مشتريات','دفتر فاوره مشتريات 1','select vcs_code from vcs where vcs_code=','select vcs_name from vcs where vcs_code=','0','discount','ذمم','sj1','سند قيد فرع 1','0','0','0','مردودات14+1')
+--'مشتريات بدون ضريبة'
+insert into [term]    (cat_book,name_book,rootid,rootname,depit,credit,value,code_entry,bookname_entry,taxes,vat_add,vat_rate,term_id) values('سند مردودات مشتريات','دفتر فاوره مشتريات 1','select rootid from wares_acc where acc_id=6 and id_ware=','select rootname from wares_acc where acc_id=6 and id_ware=','discount','0','خصم مكتسب','sj1','سند قيد فرع 1','0','0','0','مردودات بدون ضريبة')
+insert into [term]    (cat_book,name_book,rootid,rootname,depit,credit,value,code_entry,bookname_entry,taxes,vat_add,vat_rate,term_id) values('سند مردودات مشتريات','دفتر فاوره مشتريات 1','select vcs_code from vcs where vcs_code=','select vcs_name from vcs where vcs_code=','0','discount','ذمم','sj1','سند قيد فرع 1','0','0','0','مردودات بدون ضريبة')
+
+
+--مبيعات
+--مبيعات شامل14
+
+insert into [term]    (cat_book,name_book,rootid,rootname,depit,credit,value,code_entry,bookname_entry,taxes,vat_add,vat_rate,term_id,costcenter_id) values('سند فاتوره مبيعات','دفتر مبيعات فرع 1','select rootid from wares_acc where acc_id=7 and id_ware=','select rootname from wares_acc where acc_id=7 and id_ware=','discount','0','خصم مسموح بة','sj1','سند قيد فرع 1','0','0','0','مبيعات شامل14','001')
+insert into [term]    (cat_book,name_book,rootid,rootname,depit,credit,value,code_entry,bookname_entry,taxes,vat_add,vat_rate,term_id,costcenter_id) values('سند فاتوره مبيعات','دفتر مبيعات فرع 1','select rootid from wares_acc where acc_id=3 and id_ware=','select rootname from wares_acc where acc_id=3 and id_ware=','0','discount','إجمالى المبيعات','sj1','سند قيد فرع 1','0','0','0','مبيعات شامل14','001')
+
+--مبيعات شامل14+1ضريبه
+insert into [term]    (cat_book,name_book,rootid,rootname,depit,credit,value,code_entry,bookname_entry,taxes,vat_add,vat_rate,term_id,costcenter_id) values('سند فاتوره مبيعات','دفتر مبيعات فرع 1','select rootid from wares_acc where acc_id=7 and id_ware=','select rootname from wares_acc where acc_id=7 and id_ware=','discount','0','خصم مسموح بة','sj1','سند قيد فرع 1','0','0','0','مبيعات شامل14+1ضريبه','001')
+insert into [term]    (cat_book,name_book,rootid,rootname,depit,credit,value,code_entry,bookname_entry,taxes,vat_add,vat_rate,term_id,costcenter_id) values('سند فاتوره مبيعات','دفتر مبيعات فرع 1','select rootid from wares_acc where acc_id=3 and id_ware=','select rootname from wares_acc where acc_id=3 and id_ware=','0','discount','إجمالى المبيعات','sj1','سند قيد فرع 1','0','0','0','مبيعات شامل14+1ضريبه','001')
+
+--'مبيعات بدون ضريبه'
+insert into [term]    (cat_book,name_book,rootid,rootname,depit,credit,value,code_entry,bookname_entry,taxes,vat_add,vat_rate,term_id,costcenter_id) values('سند فاتوره مبيعات','دفتر مبيعات فرع 1','select rootid from wares_acc where acc_id=7 and id_ware=','select rootname from wares_acc where acc_id=7 and id_ware=','discount','0','خصم مسموح بة','sj1','سند قيد فرع 1','0','0','0','مبيعات بدون ضريبه','001')
+insert into [term]    (cat_book,name_book,rootid,rootname,depit,credit,value,code_entry,bookname_entry,taxes,vat_add,vat_rate,term_id,costcenter_id) values('سند فاتوره مبيعات','دفتر مبيعات فرع 1','select rootid from wares_acc where acc_id=3 and id_ware=','select rootname from wares_acc where acc_id=3 and id_ware=','0','discount','إجمالى المبيعات','sj1','سند قيد فرع 1','0','0','0','مبيعات بدون ضريبه','001')
+----------------------------------------------------------------------------------------
+
+
+update term set term_type='1'where value<>'ذمم'
+update term set term_type='2' where value='ذمم'
+
+----------------------------------------------------------------
+--add purchase
+
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[recever_dt](
+	[no] [int] NULL,
+	[recever_hd_id] [nvarchar](50) NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[recever_dt_id] [int] IDENTITY(1,1) NOT NULL,
+	[code_items] [nvarchar](50) NULL,
+	[name_items] [nvarchar](200) NULL,
+	[qty] [decimal](10, 2) NULL,
+	[f_unite] [nvarchar](50) NULL,
+	[item_price] [decimal](10, 2) NULL,
+	[tot_bef] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [int] NULL,
+	[name_wars] [nvarchar](50) NULL,
+	[name_unite] [nvarchar](50) NULL,
+	[exp] [bit] NULL,
+	[exp_date] [date] NULL,
+	[type] [int] NULL,
+	[serial_P] [int] NULL,
+	[cost_exp_edit] [decimal](10, 2) NULL,
+	[user] [nvarchar](50) NULL,
+	[tot_after_dis_forex] [decimal](10, 2) NULL,
+        [lock] [bit] NULL,
+        [no_invoice] [nvarchar](20) NULL,
+ 
+ CONSTRAINT [PK_recever_dt] PRIMARY KEY CLUSTERED 
+(
+	[recever_dt_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+SET QUOTED_IDENTIFIER ON
+GO
+--------------------------------------------
+
+/****** Object:  StoredProcedure [dbo].[pos_rev_all]    Script Date: 02/21/2023 22:07:17 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[pos_rev_all](@d1 date ,@d2 date,@pram1 nvarchar(10))
+as
+select * from entry where code_entry <>'-11'  and type_acc='قائمة دخل' and acc_num =@pram1 
+and dates between @d1 and @d2
+union all
+select * from entry where code_entry <>'-11'  and type_acc='قائمة دخل' and acc_num =@pram1 
+and dates between  @d1 and @d2
+union all 
+select * from entry where code_entry <>'-11'  and type_acc='قائمة دخل' and acc_num =@pram1
+and dates between  @d1 and @d2
+
+CREATE TABLE [dbo].[recever_hd](
+	[recever_hd_id] [nvarchar](50) NOT NULL,
+	[code_book] [nvarchar](50) NULL,
+	[name_book] [nvarchar](50) NULL,
+	[recever_dt_id] [int] NULL,
+	[vcs_code] [nvarchar](50) NULL,
+	[vcs_name] [nvarchar](50) NULL,
+	[term] [nvarchar](50) NULL,
+	[serial_P] [nvarchar](50) NULL,
+	[date_P] [date] NULL,
+	[due_date] [date] NULL,
+	[tot_befor] [decimal](10, 2) NULL,
+	[tot_after_dis] [decimal](10, 2) NULL,
+	[discount] [decimal](10, 2) NULL,
+	[incloud_taxes] [decimal](10, 2) NULL,
+	[taxes] [decimal](10, 2) NULL,
+	[taxes_value] [decimal](10, 2) NULL,
+	[id_ware] [nvarchar](50) NULL,
+	[code_entry] [int] NULL,
+	[book_name_entry] [nvarchar](50) NULL,
+	[code_book_entry] [nvarchar](50) NULL,
+	[note_txt] [nvarchar](100) NULL,
+	[user_code] [nvarchar](50) NULL,
+	[user_name] [nvarchar](50) NULL,
+	[lock] [nvarchar](5) NULL,
+	[currance] [nvarchar](10) NULL,
+	[f_currance] [decimal](10, 2) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[inv_no_manual] [nvarchar](50) NULL,
+        [code_book] [nvarchar](50) NULL,
+ CONSTRAINT [PK_recever_hd] PRIMARY KEY CLUSTERED 
+(
+	[recever_hd_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+
+-----------------------------------------------------------------
+
+
+--cost center term table term 
+Alter table term 
+  ADD costcenter_id nvarchar(50)
+Alter table term 
+  ADD term_type int
+--------------------------------------------
+
+
+Alter table jn_temp
+  ADD code_items nvarchar(50)
+  Alter table jn_temp
+  ADD qty decimal(10, 2)
+   Alter table jn_temp
+ ADD f_unite nvarchar(10)
+  Alter table jn_temp
+ADD name_unite nvarchar(50)
+-----------------------------------
+Alter table tree
+ADD visable bit
+update tree set visable='0'
+---------------------------------
+--error book 
+Alter table entry
+ADD num_book int
+
+Alter table issuer_inv_hd
+ADD num_book int
+
+Alter table jn_consolidated_invoice
+ADD num_book int
+Alter table jn_jopnumber
+ADD num_book int
+Alter table pay_hd
+ADD num_book int
+
+Alter table popurchase_hd
+ADD num_book int
+Alter table purchase_hd
+ADD num_book int
+Alter table qpurchase_hd
+ADD num_book int
+
+Alter table qsale_hd
+ADD num_book int
+Alter table qpurchase_hd
+ADD num_book int
+
+Alter table recever_hd
+ADD num_book int
+Alter table recev_hd
+ADD num_book int
+Alter table rpurchase_hd
+ADD num_book int
+Alter table rsale_hd
+ADD num_book int
+Alter table sale_hd
+ADD num_book int
+Alter table sosale_hd
+ADD num_book int
+Alter table trans_hd
+ADD num_book int
+Alter table trans_hd
+ADD num_book int
+
+Alter table jn_jopnumber
+ADD num_book int
+--------------------------------------------------------
+Alter table recev_hd
+ADD note nvarchar(100)
+
+Alter table pay_hd
+ADD note nvarchar(100)
+-------------------------------------------------
+--add cost center in tree
+Alter table tree
+ADD costcenter int
+update tree set  costcenter='0'
+-------------------------------------------------
+
+
+
+ALTER  PROCEDURE [dbo].[Trial_balance_general_short] @datee date, @datee2 date
+as
+select  entry.acc_num, entry.acc_name,rootlevel,type_acc,(sum(entry.depit)) as depitbal,sum(entry.credit) as creditbal,sum(opening_bal) as opening_bal from entry 
+where   sort='1'   and dates between @datee and @datee2
+--'2024-02-09'
+ 
+group by entry.acc_num, entry.acc_name,rootlevel ,type_acc 
+ union 
+ 
+ select  rootlevel as acc_num ,rootlevel_name, rootlevel, type_acc,(sum(entry.depit)) as depitbal,sum(entry.credit) as creditbal,sum(opening_bal) as opening_bal from entry  
+ where   sort='2' and dates between @datee and @datee2
+ -- '2024-02-09'
+ 
+ group by rootlevel ,type_acc ,rootlevel_name
+
+ order by entry.rootlevel asc
+
+----------------------------------------------------------------------------------------------
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[report_acc_statment_gl]@datee date,@datee2 date,@acc nvarchar(50)
+as
+select code_entry,attachno as ref,txt_desc,
+(select top 1 acc_num from entry where code_entry=e.code_entry and acc_num<> @acc) as code,
+(select top 1 acc_name from entry where code_entry=e.code_entry and acc_num<> @acc) as name ,
+  opening_bal ,
+  depit,credit, depit-credit as def,dates from entry e 
+  where code_entry<>'-11' and acc_num=@acc and dates between @datee and @datee2 and  code_entry<>'002' and code_entry<>'001'
+
+----------------------------------------------------------------------------------------------
+
+
+create  PROCEDURE [dbo].[statment_item] @datee date, @datee2 date,@c nvarchar(50),@wareID nvarchar(50),@unite nvarchar(10)
+as
+
+select  '' as time, h.name_book as nam_doc,[no],d.purchase_hd_id as no_inv,d.qty*d.f_unite/@unite as qty,(select cost from wares where code_items=@c and id_ware=@wareID) as item_price,code_items,name_items,h.date_P as [date],h.vcs_name,h.vcs_code,name_unite from purchase_dt d left join purchase_hd h on d.purchase_hd_id=h.purchase_hd_id  where d.code_items=@c  and  h.date_P between @datee and @datee2 and h.id_ware=@wareID  
+union all   
+select time_h as time,'POS ' +[state] as nam_doc,'0' as [no], pos_inv_no as no_inv, qty* f_unite/@unite *-1 as qty , item_price, code_items, name_items, date_d as [date], vcs_name, vcs_code, name_unite from pos_dt where code_items = @c and date_d between @datee and @datee2  and id_ware = @wareID    
+union all     
+select   '' as time,attachnamebook as nam_doc,'' as [no], attachno as no_inv, qty* f_unite/@unite, 0 as item_price, code_items, name_items, dates as [date], vcs_name, vcs_code, name_unite from items_trans where code_items = @c and attachbook = 'سند جرد مخزني' and dates between @datee and @datee2  and id_ware = @wareID     
+union all
+select   '' as time,h.name_book as nam_doc ,'' as [no], d.rpurchase_hd_id as no_inv, qty* f_unite-1/@unite as qty, 0 as item_price, code_items, name_items, h.date_P as [date], vcs_name, vcs_code, name_unite from rpurchase_dt d left join rpurchase_hd h on d.rpurchase_hd_id = h.rpurchase_hd_id  where code_items = @c and date_P between @datee and @datee2 and h.id_ware = @wareID       
+union all       
+select  '' as time,h.name_book as nam_doc,'' as [no], d.sale_hd_id as no_inv, qty* f_unite*-1/@unite as qty, 0 as item_price, code_items, name_items, h.date_P as [date], vcs_name, vcs_code, name_unite from sale_dt d left join sale_hd h on d.sale_hd_id = h.sale_hd_id  where code_items = @c and date_P between @datee and @datee2  and h.id_ware = @wareID        
+union all        
+select  '' as time,h.name_book as nam_doc,'' as [no], d.rsale_hd_id as no_inv, qty * f_unite/@unite, 0 as item_price, code_items, name_items, h.date_P as [date], vcs_name, vcs_code, name_unite from rsale_dt d left join rsale_hd h on d.rsale_hd_id = h.rsale_hd_id  where code_items = @c and date_P between @datee and @datee2 and h.id_ware = @wareID        
+union all        
+select  '' as time,h.name_book as nam_doc,'' as [no], d.issuer_inv_hd_id as no_inv, d.qty* d.f_unite * -1 as qty, 0 as item_price, d.code_items, d.name_items, h.date_P as [date], vcs_name, vcs_code, name_unite from issuer_inv_dt d left join issuer_inv_hd h on d.issuer_inv_hd_id = h.issuer_inv_hd_id  where d.code_items = @c and h.date_P between @datee and @datee2 and h.id_ware = @wareID 
+union all 
+select  '' as time,h.name_book as nam_doc,'' as [no], d.trans_hd_id as no_inv, d.qty* d.f_unite * -1 as qty, 0 as item_price, d.code_items, d.name_items, h.date_P as [date], vcs_name, vcs_code, name_unite from trans_dt d left join trans_hd h on d.trans_hd_id = h.trans_hd_id  where d.code_items = @c and h.date_P between @datee and @datee2 and h.id_ware = @wareID  
+union all 
+select  '' as time,h.name_book as nam_doc,'' as [no], d.trans_hd_id as no_inv, d.qty* d.f_unite  as qty, 0 as item_price, d.code_items, d.name_items, h.date_P as [date], vcs_name, vcs_code, name_unite from trans_dt d left join trans_hd h on d.trans_hd_id = h.trans_hd_id  where d.code_items = @c and h.date_P between @datee and @datee2 and h.id_ware2 = @wareID order by date 
+
+
+-----------------------------------------------------------------------------------------------------------------

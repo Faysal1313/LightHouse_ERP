@@ -1,0 +1,12 @@
+--delete from entry where dates>='2023-08-27'
+--delete from pos_cash
+--delete from pos_dt
+--delete from pos_shift
+--delete from entry where name_book='POS'
+
+
+--delete from room_operation_hot where dateIn !=''
+--delete from servies_records_hot
+--delete from guest_records_hot
+--delete from room_history_hot
+--delete from end_day_hot

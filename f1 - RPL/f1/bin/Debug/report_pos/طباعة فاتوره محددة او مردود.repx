@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="21.1.5.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="Report2" SnapGridSize="25" ReportUnit="TenthsOfAMillimeter" RollPaper="true" Margins="0, 0, 323, 56" PrinterName="Microsoft XPS Document Writer" PaperKind="Custom" PageWidth="500" PageHeight="787" Version="21.1" DataMember="pos_recet" DataSource="#Ref-0" TextAlignment="TopRight" Dpi="254" Font="Arial, 9.75pt">
+  <Parameters>
+    <Item1 Ref="3" Description="رقم الفتورة" ValueInfo="500011817452" Name="parameter1" />
+    <Item2 Ref="4" Description="رقم الوردية" ValueInfo="50" Name="parameter2" />
+  </Parameters>
+  <CalculatedFields>
+    <Item1 Ref="5" Name="price_inc_taxs" Expression="([item_price]*[taxes])+[item_price]" DataMember="pos_recet" />
+  </CalculatedFields>
+  <Bands>
+    <Item1 Ref="6" ControlType="TopMarginBand" Name="TopMargin" HeightF="323" Dpi="254" Font="Arial, 5pt">
+      <Controls>
+        <Item1 Ref="7" ControlType="XRLabel" Name="label11" Multiline="true" Text="المــــــــــــــــــــــرايا" TextAlignment="TopCenter" SizeF="439.6351,81.16356" LocationFloat="14.53786,7.47827959" Dpi="254" Font="Arial, 17pt, style=Bold, Underline" Padding="5,5,0,0,254">
+          <StylePriority Ref="8" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="9" ControlType="XRBarCode" Name="barCode2" Module="1" AutoModule="true" TextAlignment="MiddleCenter" Text="12345678911" SizeF="454.3799,78.466774" LocationFloat="25,105.535973" Dpi="254" Padding="25,25,0,0,254">
+          <Symbology Ref="10" Name="Code128" />
+          <ExpressionBindings>
+            <Item1 Ref="11" EventName="BeforePrint" PropertyName="Text" Expression="[pos_inv_no]" />
+          </ExpressionBindings>
+          <StylePriority Ref="12" UseTextAlignment="false" />
+        </Item2>
+        <Item3 Ref="13" ControlType="XRLabel" Name="label17" Multiline="true" Text="اسم الكاشير" TextAlignment="TopCenter" SizeF="139.822159,15.6811371" LocationFloat="254.602386,198.675552" Dpi="254" Font="Arial, 3pt, style=Bold" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="14" EventName="BeforePrint" PropertyName="Text" Expression="[time_h]" />
+          </ExpressionBindings>
+          <StylePriority Ref="15" UseFont="false" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="16" ControlType="XRLabel" Name="label16" Multiline="true" Text=":الوقت" TextAlignment="MiddleRight" SizeF="73.5716248,11.9989166" LocationFloat="380.597534,202.357758" Dpi="254" Font="Arial, 6pt" Padding="5,5,0,0,254">
+          <StylePriority Ref="17" UseFont="false" UseTextAlignment="false" />
+        </Item4>
+        <Item5 Ref="18" ControlType="XRLabel" Name="label15" Multiline="true" Text=":التاريخ" TextAlignment="MiddleRight" SizeF="59.7446,18.24701" LocationFloat="394.424561,184.002762" Dpi="254" Font="Arial, 4pt, style=Bold" Padding="5,5,0,0,254">
+          <StylePriority Ref="19" UseFont="false" UseTextAlignment="false" />
+        </Item5>
+        <Item6 Ref="20" ControlType="XRLabel" Name="label14" TextFormatString="{0:dd/MM/yyyy}" Multiline="true" Text="اسم الكاشير" TextAlignment="TopCenter" SizeF="139.822159,20.9208527" LocationFloat="254.602386,184.002762" Dpi="254" Font="Arial, 3pt, style=Bold" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="21" EventName="BeforePrint" PropertyName="Text" Expression="[date_d]" />
+          </ExpressionBindings>
+          <StylePriority Ref="22" UseFont="false" UseTextAlignment="false" />
+        </Item6>
+        <Item7 Ref="23" ControlType="XRLabel" Name="label8" Multiline="true" Text="اسم الدلفري" SizeF="145.3988,26.6717072" LocationFloat="238.072845,220.604752" Dpi="254" Font="Arabic Typesetting, 6pt" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="24" EventName="BeforePrint" PropertyName="Text" Expression="[vcs_code]" />
+          </ExpressionBindings>
+          <StylePriority Ref="25" UseFont="false" />
+        </Item7>
+        <Item8 Ref="26" ControlType="XRLabel" Name="label7" Multiline="true" Text="كود العميل" SizeF="57.7188721,26.6717072" LocationFloat="410.2811,220.604752" Dpi="254" Font="Arial, 4pt, style=Bold" Padding="5,5,0,0,254">
+          <StylePriority Ref="27" UseFont="false" />
+        </Item8>
+        <Item9 Ref="28" ControlType="XRLabel" Name="label6" Multiline="true" Text="اسم الدلفري" SizeF="81.62939,26.6717072" LocationFloat="43.6840935,220.604736" Dpi="254" Font="Arabic Typesetting, 6pt" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="29" EventName="BeforePrint" PropertyName="Text" Expression="[vcs_name]" />
+          </ExpressionBindings>
+          <StylePriority Ref="30" UseFont="false" />
+        </Item9>
+        <Item10 Ref="31" ControlType="XRLabel" Name="label5" Multiline="true" Text="اسم العميل" SizeF="59.74462,26.6717072" LocationFloat="138.389542,220.604736" Dpi="254" Font="Arial, 4pt, style=Bold" Padding="5,5,0,0,254">
+          <StylePriority Ref="32" UseFont="false" />
+        </Item10>
+        <Item11 Ref="33" ControlType="XRLabel" Name="label4" Multiline="true" Text="اسم الكاشير" TextAlignment="MiddleCenter" SizeF="97.82636,13.0072479" LocationFloat="0,198.675552" Dpi="254" Font="Arial, 4pt, style=Bold" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="34" EventName="BeforePrint" PropertyName="Text" Expression="[delivery_name]" />
+          </ExpressionBindings>
+          <StylePriority Ref="35" UseFont="false" UseTextAlignment="false" />
+        </Item11>
+        <Item12 Ref="36" ControlType="XRLabel" Name="label3" Multiline="true" Text="اسم الكاشير" TextAlignment="MiddleCenter" SizeF="97.826355,13.0072174" LocationFloat="0,185.668335" Dpi="254" Font="Arabic Typesetting, 4pt, style=Bold" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="37" EventName="BeforePrint" PropertyName="Text" Expression="[user_name]" />
+          </ExpressionBindings>
+          <StylePriority Ref="38" UseFont="false" UseTextAlignment="false" />
+        </Item12>
+        <Item13 Ref="39" ControlType="XRLabel" Name="label2" Multiline="true" Text="اسم الدلفري" TextAlignment="MiddleCenter" SizeF="75.94165,13.0072479" LocationFloat="110.45697,198.675552" Dpi="254" Font="Arabic Typesetting, 6pt, style=Bold" Padding="5,5,0,0,254">
+          <StylePriority Ref="40" UseFont="false" UseTextAlignment="false" />
+        </Item13>
+        <Item14 Ref="41" ControlType="XRLabel" Name="label1" Multiline="true" Text="اسم الكاشير" TextAlignment="MiddleCenter" SizeF="75.94165,13.0072174" LocationFloat="110.45697,185.668335" Dpi="254" Font="Arial, 4pt, style=Bold" Padding="5,5,0,0,254">
+          <StylePriority Ref="42" UseFont="false" UseTextAlignment="false" />
+        </Item14>
+        <Item15 Ref="43" ControlType="XRTable" Name="table1" AnchorVertical="Bottom" TextAlignment="MiddleCenter" SizeF="491,50.18167" LocationFloat="0,272.818329" Dpi="254" Font="Microsoft Sans Serif, 5pt, style=Bold" BackColor="Gainsboro" Padding="2,2,0,0,96" BorderColor="Black" Borders="Bottom" BorderWidth="1" BorderDashStyle="Solid">
+          <Rows>
+            <Item1 Ref="44" ControlType="XRTableRow" Name="tableRow1" Weight="1" Dpi="254">
+              <Cells>
+                <Item1 Ref="45" ControlType="XRTableCell" Name="tableCell1" Weight="0.461499349586104" CanGrow="false" Multiline="true" Text="م&#xD;&#xA;" Dpi="254" Font="Microsoft Sans Serif, 4pt, style=Bold" Borders="Left, Top, Bottom" BorderWidth="0.1" BorderDashStyle="Solid">
+                  <StylePriority Ref="46" UseFont="false" UseBorderWidth="false" />
+                </Item1>
+                <Item2 Ref="47" ControlType="XRTableCell" Name="tableCell9" Weight="2.3565637506993165" CanGrow="false" Multiline="true" Text="اسم الصنف" Dpi="254" Font="Microsoft Sans Serif, 4pt, style=Bold" Borders="All" BorderWidth="0.1" BorderDashStyle="Solid">
+                  <StylePriority Ref="48" UseFont="false" UseBorderWidth="false" />
+                </Item2>
+                <Item3 Ref="49" ControlType="XRTableCell" Name="tableCell10" Weight="0.67018579823928592" CanGrow="false" Multiline="true" Text="وحدة" TextAlignment="MiddleCenter" Dpi="254" StyleName="Style1" Font="Microsoft Sans Serif, 4pt, style=Bold" Borders="Top, Right, Bottom" BorderWidth="0.1" BorderDashStyle="Solid">
+                  <StylePriority Ref="50" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="51" ControlType="XRTableCell" Name="tableCell7" Weight="1.0686483492266512" CanGrow="false" Multiline="true" Text="السعر" Dpi="254" Font="Microsoft Sans Serif, 4pt, style=Bold" Borders="Top, Right, Bottom" BorderWidth="0.1" BorderDashStyle="Solid">
+                  <StylePriority Ref="52" UseFont="false" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" />
+                </Item4>
+                <Item5 Ref="53" ControlType="XRTableCell" Name="tableCell2" Weight="1.0174502793824418" CanGrow="false" Multiline="true" Text="الكمية" Dpi="254" Font="Microsoft Sans Serif, 4pt, style=Bold" Borders="Top, Bottom" BorderWidth="0.1" BorderDashStyle="Solid">
+                  <StylePriority Ref="54" UseFont="false" UseBorders="false" UseBorderWidth="false" />
+                </Item5>
+                <Item6 Ref="55" ControlType="XRTableCell" Name="tableCell3" Weight="0.98704993340363079" CanGrow="false" Multiline="true" Text="الاجمالي" Dpi="254" Font="Microsoft Sans Serif, 4pt, style=Bold" Borders="All" BorderWidth="0.1" BorderDashStyle="Solid">
+                  <StylePriority Ref="56" UseFont="false" UseBorders="false" UseBorderWidth="false" UseBorderDashStyle="false" />
+                </Item6>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="57" UseFont="false" UseBackColor="false" UseBorderWidth="false" UseTextAlignment="false" />
+        </Item15>
+      </Controls>
+      <StylePriority Ref="58" UseFont="false" />
+    </Item1>
+    <Item2 Ref="59" ControlType="DetailBand" Name="Detail" HeightF="28.1582584" Dpi="254" Font="Arial, 5pt">
+      <HierarchyPrintOptions Ref="60" Indent="50.8" />
+      <Controls>
+        <Item1 Ref="61" ControlType="XRTable" Name="table2" AnchorVertical="Top" SizeF="491.000031,27.7236538" LocationFloat="0,0" Dpi="254" StyleName="Style1" Borders="All" BorderWidth="0.1" BorderDashStyle="Solid">
+          <Rows>
+            <Item1 Ref="62" ControlType="XRTableRow" Name="tableRow2" Weight="1" Dpi="254">
+              <Cells>
+                <Item1 Ref="63" ControlType="XRTableCell" Name="tableCell4" Weight="0.521334577467765" Multiline="true" Text="tableCell4" Dpi="254" StyleName="Style3">
+                  <Summary Ref="64" Running="Page" />
+                  <ExpressionBindings>
+                    <Item1 Ref="65" EventName="BeforePrint" PropertyName="Text" Expression="sumRecordNumber([code_items])" />
+                  </ExpressionBindings>
+                </Item1>
+                <Item2 Ref="66" ControlType="XRTableCell" Name="tableCell8" Weight="2.662102271431892" Multiline="true" Text="tableCell8" TextAlignment="MiddleCenter" Dpi="254" Font="Arial, 5pt" BorderColor="Black" Borders="Left, Right, Bottom" BorderWidth="0.1" BorderDashStyle="Solid">
+                  <ExpressionBindings>
+                    <Item1 Ref="67" EventName="BeforePrint" PropertyName="Text" Expression="[name_items]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="68" UseFont="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="69" ControlType="XRTableCell" Name="tableCell5" Weight="0.75707827408389572" Multiline="true" Text="tableCell5" TextAlignment="MiddleCenter" Dpi="254" Font="Arabic Typesetting, 5pt, style=Bold" Borders="Right, Bottom" BorderDashStyle="Solid">
+                  <ExpressionBindings>
+                    <Item1 Ref="70" EventName="BeforePrint" PropertyName="Text" Expression="[name_unite]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="71" UseFont="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="72" ControlType="XRTableCell" Name="tableCell11" Weight="1.2072028188830333" TextFormatString="{0:#.00}" Multiline="true" Text="tableCell11" TextAlignment="MiddleCenter" Dpi="254" Font="Arabic Typesetting, 5pt, style=Bold" Borders="Right, Bottom" BorderDashStyle="Solid">
+                  <ExpressionBindings>
+                    <Item1 Ref="73" EventName="BeforePrint" PropertyName="Text" Expression="[price_inc_taxs]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="74" UseFont="false" UseTextAlignment="false" />
+                </Item4>
+                <Item5 Ref="75" ControlType="XRTableCell" Name="tableCell12" Weight="1.1493663495413051" Multiline="true" Text="tableCell12" TextAlignment="MiddleCenter" Dpi="254" Font="Arabic Typesetting, 5pt, style=Bold" Borders="Bottom" BorderDashStyle="Solid">
+                  <ExpressionBindings>
+                    <Item1 Ref="76" EventName="BeforePrint" PropertyName="Text" Expression="[qty]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="77" UseFont="false" UseTextAlignment="false" />
+                </Item5>
+                <Item6 Ref="78" ControlType="XRTableCell" Name="tableCell6" Weight="1.1150249526251101" Multiline="true" Text="tableCell6" TextAlignment="MiddleCenter" Dpi="254" Font="Arabic Typesetting, 5pt, style=Bold" Borders="Left, Right, Bottom" BorderWidth="0.1" BorderDashStyle="Solid">
+                  <ExpressionBindings>
+                    <Item1 Ref="79" EventName="BeforePrint" PropertyName="Text" Expression="[incloud_taxes]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="80" UseFont="false" UseBorderWidth="false" UseTextAlignment="false" />
+                </Item6>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="81" UseBorderWidth="false" UseBorderDashStyle="false" />
+        </Item1>
+      </Controls>
+      <StylePriority Ref="82" UseFont="false" />
+    </Item2>
+    <Item3 Ref="83" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="56.3383" TextAlignment="TopCenter" Dpi="254" Font="Arial, 5pt">
+      <Controls>
+        <Item1 Ref="84" ControlType="XRLabel" Name="label19" Multiline="true" Text="01000 93 20 55" TextAlignment="MiddleCenter" SizeF="123.313492,18.75209" LocationFloat="369.6865,37.58621" Dpi="254" Font="Arabic Typesetting, 6pt, style=Bold, Underline" Padding="5,5,0,0,254">
+          <StylePriority Ref="85" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="86" ControlType="XRLabel" Name="label9" Multiline="true" Text="Power by LightHouse ERP system For Account system&#xD;&#xA;                    www.ad4sas.com" TextAlignment="MiddleCenter" SizeF="491,56.3383" LocationFloat="0,0" Dpi="254" Font="Arabic Typesetting, 6pt, style=Bold" Padding="5,5,0,0,254" Borders="Top" BorderWidth="1">
+          <StylePriority Ref="87" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
+        </Item2>
+      </Controls>
+      <StylePriority Ref="88" UseFont="false" UseTextAlignment="false" />
+    </Item3>
+    <Item4 Ref="89" ControlType="ReportFooterBand" Name="ReportFooter" HeightF="132.193954" Dpi="254">
+      <Controls>
+        <Item1 Ref="90" ControlType="XRTable" Name="table4" AnchorVertical="Top" SizeF="456.465271,29.9132824" LocationFloat="36.53473,0" Dpi="254" StyleName="Style1" Font="Arabic Typesetting, 0.1pt, style=Underline" BackColor="LightGray" Borders="All" BorderWidth="0.1" BorderDashStyle="Solid">
+          <Rows>
+            <Item1 Ref="91" ControlType="XRTableRow" Name="tableRow4" Weight="1" Dpi="254">
+              <Cells>
+                <Item1 Ref="92" ControlType="XRTableCell" Name="tableCell13" Weight="4.6129437362138832" Multiline="true" Text="خصــــــــــــــم" TextAlignment="MiddleCenter" Dpi="254" Font="Arabic Typesetting, 10pt, style=Bold" BorderColor="Black" Borders="Left, Bottom" BorderWidth="0.1" BorderDashStyle="Solid">
+                  <StylePriority Ref="93" UseFont="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="94" ControlType="XRTableCell" Name="tableCell15" Weight="4.7664811552438042" Multiline="true" Text="tableCell6" TextAlignment="MiddleCenter" Dpi="254" Font="Arabic Typesetting, 8pt, style=Bold" Borders="Left, Right, Bottom" BorderWidth="0.1" BorderDashStyle="Solid">
+                  <Summary Ref="95" Running="Report" />
+                  <ExpressionBindings>
+                    <Item1 Ref="96" EventName="BeforePrint" PropertyName="Text" Expression="[dis_all]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="97" UseFont="false" UseBorderWidth="false" UseTextAlignment="false" />
+                </Item2>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="98" UseFont="false" UseBackColor="false" UseBorderWidth="false" UseBorderDashStyle="false" />
+        </Item1>
+        <Item2 Ref="99" ControlType="XRLabel" Name="label18" Multiline="true" Text="0123456788" TextAlignment="MiddleRight" SizeF="318.12442,21.8155441" LocationFloat="0,88.56285" Dpi="254" Font="Arabic Typesetting, 6pt, style=Bold" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="100" EventName="BeforePrint" PropertyName="Text" Expression="[info_co].[info_co_facebook]" />
+          </ExpressionBindings>
+          <StylePriority Ref="101" UseFont="false" UseTextAlignment="false" />
+        </Item2>
+        <Item3 Ref="102" ControlType="XRLabel" Name="label13" Multiline="true" Text="0123456788" TextAlignment="MiddleLeft" SizeF="172.87561,21.8155518" LocationFloat="318.1244,88.56285" Dpi="254" Font="Arabic Typesetting, 6pt, style=Bold" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="103" EventName="BeforePrint" PropertyName="Text" Expression="[info_co].[mob1]" />
+          </ExpressionBindings>
+          <StylePriority Ref="104" UseFont="false" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="105" ControlType="XRLabel" Name="label10" Multiline="true" Text="0123456788" TextAlignment="MiddleCenter" SizeF="491,21.81556" LocationFloat="0,110.37838" Dpi="254" Font="Arabic Typesetting, 6pt, style=Bold" Padding="5,5,0,0,254">
+          <ExpressionBindings>
+            <Item1 Ref="106" EventName="BeforePrint" PropertyName="Text" Expression="[info_co].[address1]" />
+          </ExpressionBindings>
+          <StylePriority Ref="107" UseFont="false" UseTextAlignment="false" />
+        </Item4>
+        <Item5 Ref="108" ControlType="XRTable" Name="table3" AnchorVertical="Top" SizeF="456.465271,29.9132824" LocationFloat="34.53474,39.89746" Dpi="254" StyleName="Style1" Font="Arabic Typesetting, 0.1pt, style=Underline" BackColor="LightGray" Borders="All" BorderWidth="0.1" BorderDashStyle="Solid">
+          <Rows>
+            <Item1 Ref="109" ControlType="XRTableRow" Name="tableRow3" Weight="1" Dpi="254">
+              <Cells>
+                <Item1 Ref="110" ControlType="XRTableCell" Name="tableCell14" Weight="4.654039633262042" Multiline="true" Text="إجـــــــــــــــــــــــــــــــمالي" TextAlignment="MiddleCenter" Dpi="254" Font="Arabic Typesetting, 10pt, style=Bold" BorderColor="Black" Borders="Left, Bottom" BorderWidth="0.1" BorderDashStyle="Solid">
+                  <StylePriority Ref="111" UseFont="false" UseBorderWidth="false" UseBorderDashStyle="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="112" ControlType="XRTableCell" Name="tableCell18" Weight="4.7253852581956455" Multiline="true" Text="tableCell6" TextAlignment="MiddleCenter" Dpi="254" Font="Arabic Typesetting, 8pt, style=Bold" Borders="Left, Right, Bottom" BorderWidth="0.1" BorderDashStyle="Solid">
+                  <Summary Ref="113" Running="Report" />
+                  <ExpressionBindings>
+                    <Item1 Ref="114" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([incloud_taxes])-[dis_all]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="115" UseFont="false" UseBorderWidth="false" UseTextAlignment="false" />
+                </Item2>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="116" UseFont="false" UseBackColor="false" UseBorderWidth="false" UseBorderDashStyle="false" />
+        </Item5>
+        <Item6 Ref="117" ControlType="XRLabel" Name="label12" Multiline="true" Text=" البضاعة المباعة تسترد خلال 14 يوم مع سلامة البضاعة -ممنوع استرجاع او استبدال الميك اب نهائيا" TextAlignment="MiddleCenter" SizeF="491,18.7521" LocationFloat="0,69.81075" Dpi="254" Font="Arabic Typesetting, 6pt, style=Bold, Underline" Padding="5,5,0,0,254">
+          <StylePriority Ref="118" UseFont="false" UseTextAlignment="false" />
+        </Item6>
+      </Controls>
+    </Item4>
+  </Bands>
+  <StyleSheet>
+    <Item1 Ref="119" Name="Style1" BorderStyle="Inset" Font="Arabic Typesetting, 0.1pt" BorderDashStyle="Solid" Sides="Left, Right" StringFormat="Near;Center;FitBlackBox, LineLimit, NoClip;None;Character;GenericTypographic" TextAlignment="MiddleLeft" />
+    <Item2 Ref="120" Name="Style2" BorderStyle="Inset" Font="Arial, 4pt" BorderDashStyle="Solid" Sides="Left, Bottom" StringFormat="Center;Center;FitBlackBox, LineLimit, NoClip;None;Character;GenericTypographic" TextAlignment="MiddleCenter" BorderWidthSerializable="0.1" />
+    <Item3 Ref="121" Name="Style3" BorderStyle="Inset" Font="Arial, 4pt" BorderDashStyle="Solid" Sides="Left, Bottom" StringFormat="Center;Center;FitBlackBox, LineLimit, NoClip;None;Character;GenericTypographic" TextAlignment="MiddleCenter" BorderWidthSerializable="0.1" />
+  </StyleSheet>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v21.1" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImNuIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJTZWxlY3RRdWVyeSIgTmFtZT0iaW5mb19jbyI+PFRhYmxlcz48VGFibGUgTmFtZT0iaW5mb19jbyIgWD0iMzAiIFk9IjMwIiBXaWR0aD0iMTI1IiBIZWlnaHQ9Ijk2MiIgLz48L1RhYmxlcz48Q29sdW1ucz48QWxsQ29sdW1ucyBUYWJsZT0iaW5mb19jbyIgLz48Q29sdW1uIFRhYmxlPSJpbmZvX2NvIiBOYW1lPSJwZXJpb2QiIC8+PENvbHVtbiBUYWJsZT0iaW5mb19jbyIgTmFtZT0ibmFtZV9vZl9jb21wYW55IiAvPjxDb2x1bW4gVGFibGU9ImluZm9fY28iIE5hbWU9ImZheCIgLz48Q29sdW1uIFRhYmxlPSJpbmZvX2NvIiBOYW1lPSJlbWFpbCIgLz48Q29sdW1uIFRhYmxlPSJpbmZvX2NvIiBOYW1lPSJmYWNlYm9vayIgLz48Q29sdW1uIFRhYmxlPSJpbmZvX2NvIiBOYW1lPSJ3ZXBzaXRlIiAvPjxDb2x1bW4gVGFibGU9ImluZm9fY28iIE5hbWU9ImxvZ28iIC8+PENvbHVtbiBUYWJsZT0iaW5mb19jbyIgTmFtZT0iYWRkcmVzcyIgLz48L0NvbHVtbnM+PC9RdWVyeT48UXVlcnkgVHlwZT0iU3RvcmVkUHJvY1F1ZXJ5IiBOYW1lPSJwb3NfcmVjZXQiPjxQYXJhbWV0ZXIgTmFtZT0iQHBhcm0xIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5TdHJpbmcpKD9wYXJhbWV0ZXIxKTwvUGFyYW1ldGVyPjxQYXJhbWV0ZXIgTmFtZT0iQHBhcmFtMiIgVHlwZT0iRGV2RXhwcmVzcy5EYXRhQWNjZXNzLkV4cHJlc3Npb24iPihTeXN0ZW0uU3RyaW5nKSg/cGFyYW1ldGVyMik8L1BhcmFtZXRlcj48UHJvY05hbWU+cG9zX3JlY2V0PC9Qcm9jTmFtZT48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9ImluZm9fY28iPjxGaWVsZCBOYW1lPSJpbmZvX2NvX3BlcmlvZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImluZm9fY29fbmFtZV9vZl9jb21wYW55IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InRlbDEiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idGVsMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJtb2IxIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Im1vYjIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iaW5mb19jb19mYXgiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iaW5mb19jb19lbWFpbCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJpbmZvX2NvX2ZhY2Vib29rIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImluZm9fY29fd2Vwc2l0ZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJhZGRyZXNzMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJhZGRyZXNzMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJ0YXhlc19ubyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJ0YXhlc19udW0iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0ibm90ZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJpbmZvX2NvX2xvZ28iIFR5cGU9IkJ5dGVBcnJheSIgLz48RmllbGQgTmFtZT0ic3RvcF9xdHlfbW92ZSIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0ic3RvcF9lbnRyeSIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0ib3Blbl9xdHkiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9Im9wZW5fdmNzIiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJlbnRyeV9lcnJvciIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iZXhwaXJ5IiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJyZXByZXNlbnRhdGl2ZSIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iYmFyY29kZSIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iY3VycmFuY2V5IiBUeXBlPSJCb29sZWFuIiAvPjxGaWVsZCBOYW1lPSJkaXNjb3VudCIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0idGF4ZXMiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9Imludm9pY2VfdGF4ZXMiIFR5cGU9IkJvb2xlYW4iIC8+PEZpZWxkIE5hbWU9InR5cGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iaWQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0ibmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJpbmZvX2NvX2FkZHJlc3MiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iYnJhbmNoSWQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY291bnRyeSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJnb3Zlcm5hdGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icmVnaW9uQ2l0eSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJzdHJlZXQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iYnVpbGRpbmdOdW1iZXIiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icG9zdGFsQ29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJmbG9vciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJpZF9lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InNlY3JldF9lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Iml0ZW1UeXBlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InRheHBheWVyQWN0aXZpdHlDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Im92ZXJfZHJhZnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idDEiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJ0IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iZGVmX3RheGVzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImRlZl9uYW1lX3VuaXRlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InBlcmlvZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Im5hbWVfb2ZfY29tcGFueSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJmYXgiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iZW1haWwiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iZmFjZWJvb2siIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0id2Vwc2l0ZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJsb2dvIiBUeXBlPSJCeXRlQXJyYXkiIC8+PEZpZWxkIE5hbWU9ImFkZHJlc3MiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PFZpZXcgTmFtZT0icG9zX3JlY2V0Ij48RmllbGQgTmFtZT0ibm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJwb3NfaW52X25vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InNoaWZ0X25vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InBvc19kdF9pZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImNvZGVfaXRlbXMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0ibmFtZV9pdGVtcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJxdHkiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9ImZfdW5pdGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iaXRlbV9wcmljZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0idG90X2JlZiIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iZGlzY291bnQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9InRvdF9hZnRlcl9kaXMiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9InRheGVzIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJpbmNsb3VkX3RheGVzIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJ0YXhlc192YWx1ZSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iaWRfd2FyZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Im5hbWVfd2FycyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJuYW1lX3VuaXRlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImV4cCIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0idHlwZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InNlcmlhbF9QIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iY29zdF9leHBfZWRpdCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0idXNlcl9jb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InVzZXJfbmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJ2Y3NfY29kZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJ2Y3NfbmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJ0aW1lX2giIFR5cGU9IlVua25vd24iIC8+PEZpZWxkIE5hbWU9ImRhdGVfZCIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9ImNhc2hfYmFsIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJ2aXNhX2JhbCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0ib3BlbmluZ19iYWwiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9InBob25lX3ZjcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJkZWxpdmVyeV9jb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImRlbGl2ZXJ5X25hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0ic3RhdGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icmVfcG9zX2ludl9ubyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJleHBfZGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9ImRpc2NvdW50X2FsbCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iZGlzX2FsbCIgVHlwZT0iRGVjaW1hbCIgLz48L1ZpZXc+PC9EYXRhU2V0PjwvUmVzdWx0U2NoZW1hPjxDb25uZWN0aW9uT3B0aW9ucyBDbG9zZUNvbm5lY3Rpb249InRydWUiIC8+PC9TcWxEYXRhU291cmNlPg==" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>

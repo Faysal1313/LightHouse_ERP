@@ -1,0 +1,104 @@
+  Alter table jn_jopnumber
+  ADD fess4 decimal(10, 2)
+  
+  
+    Alter table jn_jopnumber
+  ADD fess5 decimal(10, 2)
+
+  Alter table jn_consolidated_invoice
+  ADD number_of_cargo_num decimal(10, 2)
+
+Alter table jn_consolidated_invoice
+  ADD cargo_qty_delevery decimal(10, 2)
+
+
+
+
+
+CREATE PROCEDURE jn_invoice_d (@id nvarchar(50))
+as
+
+ 
+SELECT [d_vale] as value ,[d_price] as price ,[d_qty] as qty ,
+[d_name_stations] as station ,(d_qty/51) as number_of_cargo,[d_name_stroehouse] as ware,(select max(no_voucher) from jn_jopnumber where id=[no_jop])as voucher,(select max(date_d) from jn_jopnumber where id=[no_jop])as date_joporder
+,[date_pp]FROM [jn_consolidated_invoice_d]   where id=@id --id='SIC1'
+
+
+
+
+CREATE PROCEDURE jn_invoice_h (@id nvarchar(50))
+as
+
+select  c_value,
+(select MAX(d_price) FROM [jn_consolidated_invoice_d] where id=jn_consolidated_invoice.id and d_code_stations=jn_consolidated_invoice.c_code_stations) as price,
+(select MAX(d_name_stroehouse) FROM [jn_consolidated_invoice_d] where id=jn_consolidated_invoice.id and d_code_stations=jn_consolidated_invoice.c_code_stations) as store_house,
+
+c_name_stations,number_of_cargo_num ,cargo_qty_delevery from jn_consolidated_invoice where id=@id
+
+
+
+CREATE PROCEDURE jn_invoice_tot (@id nvarchar(50))
+as
+select (select top 1 date_p from jn_consolidated_invoice)as date,(select top 1 vcs_name from jn_consolidated_invoice)as name ,(sum(number_of_cargo_num))as number_cargo,sum(c_value) as addional,(select bonace from info_co)as bonace  from jn_consolidated_invoice where id=@id
+//==============================================
+
+ edite d_qty to decemail and d_price and d_value
+c_value ,c_qty
+
+add term f4 and f5 in tbl term
+سند امر شغل نقل	امر شغل1		امر شغل نقل	530311	مصاريف ادارية أخرى	f4	0	حساب  مصاريف ادارية أخرى 530311	sj1	سند قيد فرع 1	NULL	NULL	0	NULL	3
+سند امر شغل نقل	امر شغل1		امر شغل نقل	530311	مصاريف ادارية أخرى	f5	0	حساب  مصاريف ادارية أخرى 530311	sj1	سند قيد فرع 1	NULL	NULL	0	NULL	3
+-------------------------------------------------------------------------------------
+--pos revenue
+ALTER PROCEDURE [dbo].[pos_rev_all](@d1 date ,@d2 date,@pram1 nvarchar(10))
+as
+select * from entry where code_entry <>'-11'  and type_acc='قائمة دخل' and acc_num =@pram1 
+and dates between @d1 and @d2
+---------------------------------------------------------------------
+--pos p and l 
+ALTER procedure [dbo].[sum_credit_by_prams](@d1 date ,@d2 date,@net_Sale nvarchar(20),@net_reSale nvarchar(20),@Cogs nvarchar(20),@discount_sale nvarchar(20),@expenses_other nvarchar(20))
+as
+select isnull(SUM(credit),0) as net_Sale,
+(select top 1 isnull(SUM(depit),0) as net_reSale  from entry where code_entry<>'-11' and acc_num='410201'and dates between @d1 and @d2) as net_reSale,
+(select top 1  isnull(SUM(depit),0) as Cogs from entry where code_entry<>'-11' and acc_num='510401' and dates between @d1 and @d2)as cogs,
+(select top 1 isnull(SUM(depit),0) as discount_sale from entry where code_entry<>'-11' and acc_num='410301' and dates between @d1 and @d2)as discount_sale,
+(select top 1 SUM(depit)as expenses_other from entry where code_entry<>'-11'  and type_acc = 'قائمة دخل' and acc_num<>'410102' and acc_num<>'410201' and  acc_num<>'510401'  and acc_num<>'410301'and depit>0 and dates between @d1 and @d2)as expenses_other
+ from entry where code_entry<>'-11' and acc_num='410102' and dates between @d1 and @d2
+
+----------------------------------------------------------------------
+
+  Alter table info_co
+  ADD costCenter_mund bit
+  update info_co set costCenter_mund='0'
+----------------------------------------------
+
+ALTER PROCEDURE [dbo].[jn_invoice_tot] (@id nvarchar(50))
+as
+select 
+(select top 1 date_p from jn_consolidated_invoice)as date,
+(select top 1 vcs_name from jn_consolidated_invoice)as name ,
+(sum(number_of_cargo_num))as number_cargo,
+
+  --sum(c_value) as addional,
+ (select SUM(d_vale) from jn_consolidated_invoice_d where id=@id) as addional,
+ (select bonace from info_co)as bonace
+   
+ from jn_consolidated_invoice where id=@id
+
+--select SUM(d_vale) from jn_consolidated_invoice_d where id='SIC1'
+
+-----------------------------------------------------------------------
+
+ALTER PROCEDURE [dbo].[jn_invoice_h] (@id nvarchar(50))
+as
+
+select  
+c_qty*
+(select MAX(d_price) FROM [jn_consolidated_invoice_d] where id=jn_consolidated_invoice.id and d_code_stations=jn_consolidated_invoice.c_code_stations) as c_value,
+
+(select MAX(d_price) FROM [jn_consolidated_invoice_d] where id=jn_consolidated_invoice.id and d_code_stations=jn_consolidated_invoice.c_code_stations) as price,
+(select MAX(d_name_stroehouse) FROM [jn_consolidated_invoice_d] where id=jn_consolidated_invoice.id and d_code_stations=jn_consolidated_invoice.c_code_stations) as store_house,
+
+c_name_stations,number_of_cargo_num ,cargo_qty_delevery from jn_consolidated_invoice where id=@id
+
+------------------------------------------------------------------------------------------------------

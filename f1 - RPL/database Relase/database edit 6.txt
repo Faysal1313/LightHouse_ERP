@@ -1,0 +1,5 @@
+
+Alter table info_co 
+ADD year_card  int
+
+update info_co set year_card='2021'
