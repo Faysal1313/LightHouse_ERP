@@ -1,6 +1,10 @@
 # Lighthouse ERP System 
 =>This repository was created recently to provide easy access and review for the ACS assessment.
 ==>The project itself was originally developed in 2021. A Lighthouse ERP demonstration video is also attached.
+
+[**Watch ERP Lighthouse Demonstration Video**](./Erp%20Lighthouse.mp4)
+
+
 ℹ️ Technical Notes & Improvement Areas
 This project reflects an early developmental stage and may contain some practices that can be improved for a production environment:
 
