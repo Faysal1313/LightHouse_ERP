@@ -1,4 +1,4 @@
-# Lighthouse ERP System - ACS RPL Project
+# Lighthouse ERP System 
 =>This repository was created recently to provide easy access and review for the ACS assessment.
 ==>The project itself was originally developed in 2019. A Lighthouse ERP demonstration video is also attached.
 ℹ️ Technical Notes & Improvement Areas
